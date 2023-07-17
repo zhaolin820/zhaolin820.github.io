@@ -3,79 +3,79 @@
   \****************************************************************************/
 @font-face {
     font-family: "Lyon-Text";
-    src: url(lyon-text-regular-3be84b20b1d9ff1e3456b0a220ae449b.woff);
+    src: url(assets/lyon-text-regular-3be84b20b1d9ff1e3456b0a220ae449b.woff);
     font-style: normal;
     font-weight: 400
     }
 @font-face {
     font-family: "Lyon-Text";
-    src: url(lyon-text-regular-italic-437d32a42fc5b8268bb4a1e0cc8b363f.woff);
+    src: url(assets/lyon-text-regular-italic-437d32a42fc5b8268bb4a1e0cc8b363f.woff);
     font-style: italic;
     font-weight: 400
     }
 @font-face {
     font-family: "Lyon-Text";
-    src: url(lyon-text-semibold-acb7f110189034ff6a1afa4b730be0ed.woff);
+    src: url(assets/lyon-text-semibold-acb7f110189034ff6a1afa4b730be0ed.woff);
     font-style: normal;
     font-weight: 600
     }
 @font-face {
     font-family: "Lyon-Text";
-    src: url(lyon-text-semibold-italic-1f81a2f93060f05edd7f078ac91f25e6.woff);
+    src: url(assets/lyon-text-semibold-italic-1f81a2f93060f05edd7f078ac91f25e6.woff);
     font-style: italic;
     font-weight: 600
     }
 @font-face {
     font-family: "iawriter-mono";
-    src: url(iawriter-mono-regular-4b73d071988a4f1cd2283524716ad970.woff);
+    src: url(assets/iawriter-mono-regular-4b73d071988a4f1cd2283524716ad970.woff);
     font-style: normal;
     font-weight: 400
     }
 @font-face {
     font-family: "iawriter-mono";
-    src: url(iawriter-mono-italic-d5d3224c1377168e261efc6aa0ce89c6.woff);
+    src: url(assets/iawriter-mono-italic-d5d3224c1377168e261efc6aa0ce89c6.woff);
     font-style: italic;
     font-weight: 400
     }
 @font-face {
     font-family: "iawriter-mono";
-    src: url(iawriter-mono-bold-eb96a5e539892d26cf8b0cb2367e3580.woff);
+    src: url(assets/iawriter-mono-bold-eb96a5e539892d26cf8b0cb2367e3580.woff);
     font-style: normal;
     font-weight: 600
     }
 @font-face {
     font-family: "iawriter-mono";
-    src: url(iawriter-mono-bold-italic-743b231fa82483406c79a00fa1f12fe8.woff);
+    src: url(assets/iawriter-mono-bold-italic-743b231fa82483406c79a00fa1f12fe8.woff);
     font-style: italic;
     font-weight: 600
     }
 @font-face {
     font-family: "inter";
-    src: url(inter-ui-regular-3ae6a7d3890c33d857fc00bd2e4c4820.woff);
+    src: url(assets/inter-ui-regular-3ae6a7d3890c33d857fc00bd2e4c4820.woff);
     font-style: normal;
     font-weight: 400
     }
 @font-face {
     font-family: "inter";
-    src: url(inter-ui-medium-95b8a98959d1af9ab432d7ffe295ef94.woff);
+    src: url(assets/inter-ui-medium-95b8a98959d1af9ab432d7ffe295ef94.woff);
     font-style: normal;
     font-weight: 500
     }
 @font-face {
     font-family: "inter";
-    src: url(inter-ui-semibold-19b57197b819695d334b9961ee41910e.woff);
+    src: url(assets/inter-ui-semibold-19b57197b819695d334b9961ee41910e.woff);
     font-style: normal;
     font-weight: 600
     }
 @font-face {
     font-family: "inter";
-    src: url(inter-ui-bold-001893789f7f342b520f29ac8af7d6ca.woff);
+    src: url(assets/inter-ui-bold-001893789f7f342b520f29ac8af7d6ca.woff);
     font-style: normal;
     font-weight: 700
     }
 @font-face {
     font-family: "permanent-marker";
-    src: url(permanent-marker-a6d62939e7c920a184ddddcf4149e62c.woff);
+    src: url(assets/permanent-marker-a6d62939e7c920a184ddddcf4149e62c.woff);
     font-style: normal;
     font-weight: 400
     }
@@ -499,11 +499,6 @@ mention token. */
 /* ==================================================================== */
 /* Animation */
 /* ==================================================================== */
-/* TODO(pm-announcement): Remove after launch */
-.pm-announcement-modal-fadein {
-    animation: fadein ease-in 1s;
-    animation-fill-mode: both
-    }
 .notion-fadein {
     animation: fadein ease-in 330ms
     }
@@ -736,9 +731,11 @@ input[type="range"]::-webkit-slider-thumb {
     /* Hide the default slider thumb so we can customize */
     -webkit-appearance: none;
     box-shadow: 0 1px 4px rgba(0, 0, 0, 0.25);
+    border: 0.5px solid var(--inputRangeThumb--borderColor);
     height: 14px;
     width: 14px;
     border-radius: 50%;
+    background: var(--inputRangeThumb--background);
     cursor: pointer;
     -webkit-appearance: none;
     margin-top: -4px
@@ -748,9 +745,11 @@ input[type="range"]::-moz-range-thumb {
     /* Hide the default slider thumb so we can customize */
     -webkit-appearance: none;
     box-shadow: 0 1px 4px rgba(0, 0, 0, 0.25);
+    border: 0.5px solid var(--inputRangeThumb--border-color);
     height: 14px;
     width: 14px;
     border-radius: 50%;
+    background: var(--inputRangeThumb--background);
     cursor: pointer;
     -webkit-appearance: none;
     margin-top: -4px
@@ -760,6 +759,7 @@ input[type="range"]::-webkit-slider-runnable-track {
     -webkit-appearance: none;
     width: 100%;
     height: 6px;
+    background: var(--inputRangeTrack--color);
     border-radius: 10px;
     cursor: pointer
     }
@@ -767,6 +767,7 @@ input[type="range"]::-webkit-slider-runnable-track {
 input[type="range"]::-moz-range-track {
     width: 100%;
     height: 6px;
+    background: var(--inputRangeTrack--color);
     border-radius: 10px;
     cursor: pointer
     }
@@ -854,10 +855,56 @@ input[type="number"].input-hide-arrows {
  * We use camelCase names here so they're easier to write in Typescript.
  * TODO: use something like linaria to automate this shenanigans.
 /* ==================================================================== */
+.pseudoAfter:after {
+    color: var(--pseudoAfter--color);
+    content: var(--pseudoAfter--content);
+    border: var(--pseudoAfter--border);
+    width: var(--pseudoAfter--width);
+    height: var(--pseudoAfter--height);
+    display: var(--pseudoAfter--display);
+    background: var(--pseudoAfter--background)
+    }
+.pseudoBefore:before {
+    color: var(--pseudoBefore--color);
+    content: var(--pseudoBefore--content);
+    border: var(--pseudoBefore--border);
+    width: var(--pseudoBefore--width);
+    height: var(--pseudoBefore--height);
+    display: var(--pseudoBefore--display) !important;
+    background: var(--pseudoBefore--background);
+    font-family: var(--pseudoBefore--fontFamily)
+    }
+.pseudoHover:hover {
+    background: var(--pseudoHover--background)
+    }
+.pseudoActive:active {
+    background: var(--pseudoActive--background)
+    }
+.pseudoSelection ::selection, .pseudoSelection::selection {
+    color: var(--pseudoSelection--color);
+    -webkit-text-fill-color: var(--pseudoSelection--WebkitTextFillColor);
+    background: var(--pseudoSelection--background);
+    text-shadow: var(--pseudoSelection--textShadow)
+    }
 /** Conditional style when self is contentEditable */
+.whenContentEditable[contenteditable="true"] {
+    caret-color: var(--whenContentEditable--caretColor);
+    -webkit-user-modify: var(--whenContentEditable--WebkitUserModify)
+    }
 /** Conditional style when a content-editable root is editable */
+[data-content-editable-selecting="true"] .whenRootSelecting {
+    display: var(--whenRootSelecting--display) !important
+    }
 /** Conditional style when an element is or is inside a focused contentEditable. */
+.whenFocusedEditable[contenteditable="true"]:focus, [contenteditable="true"]:focus-within .whenFocusedEditable {
+    -webkit-user-modify: var(--whenFocusedEditable--WebkitUserModify) !important;
+    -webkit-user-select: var(--whenFocusedEditable--WebkitUserSelect) !important;
+    user-select: var(--whenFocusedEditable--userSelect) !important
+    }
 /** Conditional styles for :after when we are composing text */
+[data-content-editable-composing="true"] .pseudoAfterWhenComposing:after {
+    display: var(--pseudoAfterWhenComposing--display) !important
+    }
 /* ==================================================================== */
 /* Layout components
 /* 
@@ -877,6 +924,7 @@ input[type="number"].input-hide-arrows {
  *
  */
 .layout {
+    --content-width: 900px;
     display: grid
     }
 /**
