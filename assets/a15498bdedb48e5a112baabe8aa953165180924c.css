@@ -926,11 +926,16 @@ input[type="number"].input-hide-arrows {
 .layout {
     --content-width: 900px;
     --margin-width: 1fr;
-    display: grid
+    display: grid;
+    width: 100%
     }
 .layout.layout-wide {
     --content-width: 1fr;
     --margin-width: 96px
+    }
+.layout.layout-side-peek {
+    --content-width: 1fr;
+    --margin-width: 48px
     }
 /**
  * Place content in the centered "content" area
