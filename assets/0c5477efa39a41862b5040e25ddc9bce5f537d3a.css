@@ -979,6 +979,34 @@ input[type="number"].input-hide-arrows {
     scroll-snap-type: x proximity;
     scrollbar-width: none
     }
+/* Prevent items in layout-content from expanding the grid off-screen */
+.layout-content {
+    min-width: 0
+    }
+/* But allow children in a layout-margin-scrollable to expand */
+.layout-margin-scrollable > * {
+    min-width: auto
+    }
+/**
+ * [Legacy] PageViewBlock.renderPageHeader() renders gray borders between
+ * detailSections, and a bottom gray border if the list is non-empty.
+ *
+ * The following CSS recreates that effect.
+ */
+.layout-header-detailSections .layout-content + .layout-content {
+    border-top: 1px solid rgba(55, 53, 47, 0.09)
+    }
+.layout-header-detailSections > :last-child {
+    border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+    margin-bottom: 8px
+    }
+/**
+ * [Legacy] PageViewBlock.getPageContent() renders a <main> with a padding-top
+ * of 5px.
+ */
+.layout-editor {
+    padding-top: 5px
+    }
 /*!*************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./src/client/css/react-datetime.css ***!
   \*************************************************************************************/
