@@ -718,6 +718,7 @@ html.notion-front-page .notion-app-inner {
         transform: translateX(100%);
         }
     }
+/** Calendar shimmer */
 @keyframes text-shimmer-fade-in {
     0% {
         opacity: 0.1;
@@ -763,6 +764,40 @@ html.notion-front-page .notion-app-inner {
     }
 .animation-delay-7 {
     animation-delay: 1.2s
+    }
+/** Timeline shimmer */
+@keyframes shimmer-timeline-transition {
+    0% {
+        opacity: 0.5;
+        } 100% {
+        opacity: 1;
+        }
+    }
+.notion-shimmer-timeline-transition {
+    animation-duration: 0.5s;
+    animation-iteration-count: 1;
+    animation-name: shimmer-timeline-transition;
+    animation-timing-function: ease-in-out
+    }
+@keyframes shimmer-timeline-fade-in {
+    0% {
+        opacity: 0.15;
+        } 40% {
+        opacity: 0.5;
+        } 50% {
+        opacity: 0.5;
+        } 60% {
+        opacity: 0.5;
+        } 100% {
+        opacity: 0.15;
+        }
+    }
+.notion-shimmer-timeline {
+    opacity: 0.15;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+    animation-name: shimmer-timeline-fade-in;
+    animation-timing-function: ease-in-out
     }
 /* ==================================================================== */
 /* input range
@@ -953,7 +988,7 @@ input[type="number"].input-hide-arrows {
     }
 /* ==================================================================== */
 /* Layout components
-/* 
+/*
 /* See Layout.tsx
 /* ==================================================================== */
 /**
@@ -982,6 +1017,14 @@ input[type="number"].input-hide-arrows {
 .layout.layout-side-peek {
     --content-width: 1fr;
     --margin-width: 48px
+    }
+.layout.layout-center-peek {
+    --content-width: 1fr;
+    --margin-width: 126px
+    }
+.layout.layout-collection-page {
+    --content-width: 100%;
+    --margin-width: 0
     }
 /**
  * Place content in the centered "content" area
@@ -1013,7 +1056,9 @@ input[type="number"].input-hide-arrows {
 .layout-nested-grid {
     grid-column: full;
     display: grid;
-    grid-template-columns: inherit
+    grid-template-columns: inherit;
+    /* Align items at the start of the grid */
+    align-items: self-start
     }
 /**
  * A utility class which can make a layout component (usually a full-width one)
