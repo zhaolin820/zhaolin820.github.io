@@ -555,6 +555,12 @@ html.notion-front-page .notion-app-inner {
     animation-timing-function: ease-in-out;
     opacity: 0.15
     }
+:root {
+    --safe-area-inset-top: env(safe-area-inset-top, 0);
+    --safe-area-inset-right: env(safe-area-inset-right, 0);
+    --safe-area-inset-left: env(safe-area-inset-left, 0);
+    --safe-area-inset-bottom: env(safe-area-inset-bottom, 0)
+    }
 input[type=range] {
     -webkit-appearance: none;
     background: transparent
@@ -691,6 +697,110 @@ input[type=number].input-hide-arrows {
 [data-content-editable-composing=true] .pseudoAfterWhenComposing:after {
     display: var(--pseudoAfterWhenComposing--display) !important
     }
+.autolayout-fill-width {
+    width: 100%
+    }
+.autolayout-fill-height {
+    height: 100%
+    }
+.autolayout-col > .autolayout-fill-width {
+    align-self: stretch;
+    width: unset
+    }
+.autolayout-col > .autolayout-fill-height {
+    flex: 1 0 0;
+    height: unset
+    }
+.autolayout-row > .autolayout-fill-width {
+    flex: 1 1 0;
+    width: unset
+    }
+.autolayout-row > .autolayout-fill-height {
+    align-self: stretch;
+    height: unset
+    }
+.autolayout-col {
+    display: flex;
+    flex-direction: column;
+    position: relative
+    }
+.autolayout-col.autolayout-top-left {
+    align-items: flex-start
+    }
+.autolayout-col.autolayout-top-center {
+    align-items: center
+    }
+.autolayout-col.autolayout-top-right {
+    align-items: flex-end
+    }
+.autolayout-col.autolayout-center-left {
+    align-items: flex-start;
+    justify-content: center
+    }
+.autolayout-col.autolayout-center {
+    align-items: center;
+    justify-content: center
+    }
+.autolayout-col.autolayout-center-right {
+    align-items: flex-end;
+    justify-content: center
+    }
+.autolayout-col.autolayout-bottom-left {
+    align-items: flex-start;
+    justify-content: flex-end
+    }
+.autolayout-col.autolayout-bottom-center {
+    align-items: center;
+    justify-content: flex-end
+    }
+.autolayout-col.autolayout-bottom-right {
+    align-items: flex-end;
+    justify-content: flex-end
+    }
+.autolayout-col.autolayout-stretch {
+    align-items: stretch
+    }
+.autolayout-row {
+    display: flex;
+    flex-direction: row;
+    position: relative
+    }
+.autolayout-row.autolayout-top-left {
+    align-items: flex-start
+    }
+.autolayout-row.autolayout-top-center {
+    align-items: flex-start;
+    justify-content: center
+    }
+.autolayout-row.autolayout-top-right {
+    align-items: flex-start;
+    justify-content: flex-end
+    }
+.autolayout-row.autolayout-center-left {
+    align-items: center
+    }
+.autolayout-row.autolayout-center {
+    align-items: center;
+    justify-content: center
+    }
+.autolayout-row.autolayout-center-right {
+    align-items: center;
+    justify-content: flex-end
+    }
+.autolayout-row.autolayout-bottom-left {
+    align-items: flex-end
+    }
+.autolayout-row.autolayout-bottom-center {
+    align-items: flex-end;
+    justify-content: center
+    }
+.autolayout-row.autolayout-bottom-right {
+    align-items: flex-end;
+    justify-content: flex-end
+    }
+.autolayout-row.autolayout-stretch {
+    align-items: stretch
+    }
 .layout {
     --content-width: minmax(auto, 708px);
     --margin-width: minmax(96px, 1fr);
@@ -717,6 +827,14 @@ input[type=number].input-hide-arrows {
 .layout.layout-collection-page {
     --content-width: 100%;
     --margin-width: 0
+    }
+.layout.layout-phone {
+    --content-width: 1fr;
+    --margin-width: 24px
+    }
+.layout.layout-tablet {
+    --content-width: 1fr;
+    --margin-width: 96px
     }
 .layout.layout-home {
     --content-width: minmax(auto, 1200px);
@@ -774,6 +892,33 @@ input[type=number].input-hide-arrows {
     }
 .layout-editor {
     padding-top: 5px
+    }
+.tx-body-12-med {
+    font-size: 12px;
+    font-weight: 500
+    }
+.tx-body-12-reg {
+    font-size: 12px;
+    font-weight: 400
+    }
+.tx-body-14-reg {
+    font-size: 14px;
+    font-weight: 400
+    }
+.tx-heading-17-med {
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 22px
+    }
+.tx-heading-17-reg {
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 22px
+    }
+.tx-page-content-h3 {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 150%
     }
 /*!
  * https://github.com/arqex/react-datetime
