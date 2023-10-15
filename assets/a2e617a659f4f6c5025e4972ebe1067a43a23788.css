@@ -2,79 +2,79 @@
     font-family: Lyon-Text;
     font-style: normal;
     font-weight: 400;
-    src: url(assets/lyon-text-regular-3be84b20b1d9ff1e3456b0a220ae449b.woff)
+    src: url(https:/www.notion.so/_assets/________lyon-text-regular-3be84b20b1d9ff1e3456b0a220ae449b.woff)
     }
 @font-face {
     font-family: Lyon-Text;
     font-style: italic;
     font-weight: 400;
-    src: url(assets/lyon-text-regular-italic-437d32a42fc5b8268bb4a1e0cc8b363f.woff)
+    src: url(https:/www.notion.so/_assets/________lyon-text-regular-italic-437d32a42fc5b8268bb4a1e0cc8b363f.woff)
     }
 @font-face {
     font-family: Lyon-Text;
     font-style: normal;
     font-weight: 600;
-    src: url(assets/lyon-text-semibold-acb7f110189034ff6a1afa4b730be0ed.woff)
+    src: url(https:/www.notion.so/_assets/________lyon-text-semibold-acb7f110189034ff6a1afa4b730be0ed.woff)
     }
 @font-face {
     font-family: Lyon-Text;
     font-style: italic;
     font-weight: 600;
-    src: url(assets/lyon-text-semibold-italic-1f81a2f93060f05edd7f078ac91f25e6.woff)
+    src: url(https:/www.notion.so/_assets/________lyon-text-semibold-italic-1f81a2f93060f05edd7f078ac91f25e6.woff)
     }
 @font-face {
     font-family: iawriter-mono;
     font-style: normal;
     font-weight: 400;
-    src: url(assets/iawriter-mono-regular-4b73d071988a4f1cd2283524716ad970.woff)
+    src: url(https:/www.notion.so/_assets/________iawriter-mono-regular-4b73d071988a4f1cd2283524716ad970.woff)
     }
 @font-face {
     font-family: iawriter-mono;
     font-style: italic;
     font-weight: 400;
-    src: url(assets/iawriter-mono-italic-d5d3224c1377168e261efc6aa0ce89c6.woff)
+    src: url(https:/www.notion.so/_assets/________iawriter-mono-italic-d5d3224c1377168e261efc6aa0ce89c6.woff)
     }
 @font-face {
     font-family: iawriter-mono;
     font-style: normal;
     font-weight: 600;
-    src: url(assets/iawriter-mono-bold-eb96a5e539892d26cf8b0cb2367e3580.woff)
+    src: url(https:/www.notion.so/_assets/________iawriter-mono-bold-eb96a5e539892d26cf8b0cb2367e3580.woff)
     }
 @font-face {
     font-family: iawriter-mono;
     font-style: italic;
     font-weight: 600;
-    src: url(assets/iawriter-mono-bold-italic-743b231fa82483406c79a00fa1f12fe8.woff)
+    src: url(https:/www.notion.so/_assets/________iawriter-mono-bold-italic-743b231fa82483406c79a00fa1f12fe8.woff)
     }
 @font-face {
     font-family: inter;
     font-style: normal;
     font-weight: 400;
-    src: url(assets/inter-ui-regular-3ae6a7d3890c33d857fc00bd2e4c4820.woff)
+    src: url(https:/www.notion.so/_assets/________inter-ui-regular-3ae6a7d3890c33d857fc00bd2e4c4820.woff)
     }
 @font-face {
     font-family: inter;
     font-style: normal;
     font-weight: 500;
-    src: url(assets/inter-ui-medium-95b8a98959d1af9ab432d7ffe295ef94.woff)
+    src: url(https:/www.notion.so/_assets/________inter-ui-medium-95b8a98959d1af9ab432d7ffe295ef94.woff)
     }
 @font-face {
     font-family: inter;
     font-style: normal;
     font-weight: 600;
-    src: url(assets/inter-ui-semibold-19b57197b819695d334b9961ee41910e.woff)
+    src: url(https:/www.notion.so/_assets/________inter-ui-semibold-19b57197b819695d334b9961ee41910e.woff)
     }
 @font-face {
     font-family: inter;
     font-style: normal;
     font-weight: 700;
-    src: url(assets/inter-ui-bold-001893789f7f342b520f29ac8af7d6ca.woff)
+    src: url(https:/www.notion.so/_assets/________inter-ui-bold-001893789f7f342b520f29ac8af7d6ca.woff)
     }
 @font-face {
     font-family: permanent-marker;
     font-style: normal;
     font-weight: 400;
-    src: url(assets/permanent-marker-a6d62939e7c920a184ddddcf4149e62c.woff)
+    src: url(https:/www.notion.so/_assets/________permanent-marker-a6d62939e7c920a184ddddcf4149e62c.woff)
     }
 .notion-frame .katex-display .katex {
     padding-right: 32px
@@ -262,6 +262,17 @@ td, th {
     }
 .notion-external-object-token::selection, .notion-page-mention-token::selection {
     background: rgba(35, 131, 226, 0.14)
+    }
+.notion-citation-mention-token {
+    background-color: #acaba9;
+    color: #fff
+    }
+.notion-dark-theme .notion-citation-mention-token {
+    background-color: #787774;
+    color: #2f2f2f
+    }
+.notion-citation-mention-token.notion-enable-hover:hover {
+    background-color: #2383e2
     }
 .notion-focusable-within:focus-within {
     box-shadow: inset 0 0 0 1px rgba(35, 131, 226, 0.57), 0 0 0 2px rgba(35, 131, 226, 0.35) !important
@@ -724,13 +735,13 @@ input[type=number].input-hide-arrows {
     flex-direction: column;
     position: relative
     }
-.autolayout-col.autolayout-top-left {
+.autolayout-col.autolayout-start, .autolayout-col.autolayout-top-left {
     align-items: flex-start
     }
 .autolayout-col.autolayout-top-center {
     align-items: center
     }
-.autolayout-col.autolayout-top-right {
+.autolayout-col.autolayout-end, .autolayout-col.autolayout-top-right {
     align-items: flex-end
     }
 .autolayout-col.autolayout-center-left {
@@ -757,15 +768,15 @@ input[type=number].input-hide-arrows {
     align-items: flex-end;
     justify-content: flex-end
     }
-.autolayout-col.autolayout-stretch {
-    align-items: stretch
+.autolayout-col.autolayout-space {
+    justify-content: space-between
     }
 .autolayout-row {
     display: flex;
     flex-direction: row;
     position: relative
     }
-.autolayout-row.autolayout-top-left {
+.autolayout-row.autolayout-start, .autolayout-row.autolayout-top-left {
     align-items: flex-start
     }
 .autolayout-row.autolayout-top-center {
@@ -787,7 +798,7 @@ input[type=number].input-hide-arrows {
     align-items: center;
     justify-content: flex-end
     }
-.autolayout-row.autolayout-bottom-left {
+.autolayout-row.autolayout-bottom-left, .autolayout-row.autolayout-end {
     align-items: flex-end
     }
 .autolayout-row.autolayout-bottom-center {
@@ -798,8 +809,8 @@ input[type=number].input-hide-arrows {
     align-items: flex-end;
     justify-content: flex-end
     }
-.autolayout-row.autolayout-stretch {
-    align-items: stretch
+.autolayout-row.autolayout-space {
+    justify-content: space-between
     }
 .layout {
     --content-width: minmax(auto, 708px);
@@ -824,9 +835,14 @@ input[type=number].input-hide-arrows {
     --content-width: 1fr;
     --margin-width: 126px
     }
-.layout.layout-collection-page {
+.layout.layout-wiki {
     --content-width: 100%;
     --margin-width: 0
+    }
+.layout.layout-wiki-right-margin-expanded {
+    --content-width: 1fr;
+    --margin-left-width: 0;
+    --margin-right-width: 372px
     }
 .layout.layout-phone {
     --content-width: 1fr;
@@ -837,8 +853,18 @@ input[type=number].input-hide-arrows {
     --margin-width: 96px
     }
 .layout.layout-home {
-    --content-width: minmax(auto, 1200px);
+    --content-width: minmax(auto, 1050px);
     --margin-width: minmax(56px, 1fr)
+    }
+.home-content:before {
+    background: rgba(0, 0, 0, 0.02);
+    content: " ";
+    filter: blur(24px);
+    position: absolute
+    }
+.layout.layout-template-preview {
+    --content-width: minmax(auto, 900px);
+    --margin-width: minmax(20px, 1fr)
     }
 .layout-content {
     gap: inherit;
@@ -901,9 +927,19 @@ input[type=number].input-hide-arrows {
     font-size: 12px;
     font-weight: 400
     }
+.tx-body-14-med {
+    font-size: 14px;
+    font-weight: 510;
+    line-height: 18px
+    }
 .tx-body-14-reg {
     font-size: 14px;
     font-weight: 400
+    }
+.tx-body-14-semi {
+    font-size: 14px;
+    font-weight: 590;
+    line-height: 18px
     }
 .tx-heading-17-med {
     font-size: 17px;
@@ -914,6 +950,32 @@ input[type=number].input-hide-arrows {
     font-size: 17px;
     font-weight: 400;
     line-height: 22px
+    }
+.tx-heading-17-semi {
+    font-size: 17px;
+    font-weight: 590;
+    line-height: 22px
+    }
+.tx-ios-callout-16-reg {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 21px
+    }
+.tx-ios-caption-12-reg {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px
+    }
+.tx-ios-subhead-15-med-c {
+    font-size: 15px;
+    font-weight: 510;
+    letter-spacing: -0.24px;
+    line-height: normal
+    }
+.tx-ios-title-3-bold {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 25px
     }
 .tx-page-content-h3 {
     font-size: 20px;
