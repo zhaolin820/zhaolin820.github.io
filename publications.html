@@ -45,7 +45,17 @@
     .code strong a { color : #000; }
     .external a { margin : 0 10px; }
     .external a.first { margin : 0 10px 0 0; }
-    .subtitle {font-family: Menlo;}
+    .mono_font {font-family:ui-monospace, 
+             Menlo, Monaco, 
+             "Cascadia Mono", "Segoe UI Mono", 
+             "Roboto Mono", 
+             "Oxygen Mono", 
+             "Ubuntu Mono", 
+             "Source Code Pro",
+             "Fira Mono", 
+             "Droid Sans Mono", 
+             "Consolas", "Courier New", monospace;}
+    .paper_table {margin-left: -10px; font-size: 13px; width: 710px}
 </style>
 
 </head>
@@ -65,13 +75,38 @@
         </h2>
     </div>
 
+        
     <div class="container">
-        <h2 class="subtitle">Journal Articles</h2>
-        <ol style="font-size: 13px; width: 690px;">
-            <li>Y. Liu, C. Ouyang, <b>Z. Wang</b>, J. Xu, X. Mu and A. L. Swindlehurst, “<a href="https://ieeexplore.ieee.org/document/10716601">Near-Field Communications: A Comprehensive Survey</a>,” <i>IEEE Communications Surveys & Tutorials</i>, early access, Oct. 2024. [<a href="https://arxiv.org/abs/2401.05900">Arxiv</a>]</li>
+        <h2 class="mono_font">Preprints</h2>
+        <ol class = "paper_table">
+
+            <li> <b>Z. Wang</b>, C Ouyang, and Y. Liu, “<a href="https://arxiv.org/abs/2410.13677">Beamforming Optimization for Continuous Aperture Array (CAPA)-based Communications</a>,” Oct. 2024. [<a href="https://arxiv.org/abs/2410.13677">Arxiv</a>]</li>
             <br>
 
-            <li>Y. Guo, Y. Zhang, <b>Z. Wang</b>, and Y. Liu, “<a href="">Wideband Beamforming for Near-Field Communications with Circular Arrays</a>,” <i>IEEE Transactions on Wireless Communications</i>, accepted to appear, Oct. 2024. [<a href="https://arxiv.org/abs/2404.02811">Arxiv</a>]</li>
+            <li>  C. Ouyang, <b>Z. Wang</b>, X. Zhang, and Y. Liu, “<a href="https://arxiv.org/abs/2408.13948">Diversity and Multiplexing for Continuous Aperture Array (CAPA)-Based Communications</a>,” Sep. 2024. [<a href="https://arxiv.org/abs/2408.13948">Arxiv</a>]</li>
+            <br>
+
+            <li>  <b>Z. Wang</b>, X. Mu, and Y. Liu, “<a href="https://arxiv.org/abs/2404.05076">Performance Analysis of Near-Field Sensing (NISE) in Wideband MIMO Systems</a>,” Aug. 2024. [<a href="https://arxiv.org/abs/2404.05076">Arxiv</a>]</li>
+
+        </ol>
+    </div>
+
+    <div class="container">
+        <h2 class="mono_font">Journal Articles</h2>
+        <ol class = "paper_table">
+            <li> <b>Z. Wang</b>, P Ramezani, Y Liu, and E Björnson, “<a href="https://arxiv.org/abs/2406.10941">Near-Field Localization and Sensing with Large-Aperture Arrays: From Signal Modeling to Processing</a>,” <i>IEEE Signal Processing Magazine</i>, accepted to appear, 2024. [<a href="https://arxiv.org/abs/2406.10941">Arxiv</a>]</li>
+            <br>
+
+            <li>H. Ting, <b>Z. Wang</b>, and Y. Liu, “<a href="https://arxiv.org/abs/2403.18146">Adaptive TTD Configurations for Near-Field Communications: An Unsupervised Transformer Approach</a>,” <i>IEEE Transactions on Wireless Communications</i>, accepted to appear, Oct. 2024.[<a href="https://arxiv.org/abs/2403.18146">Arxiv</a>]</li>
+            <br>
+
+            <li>X. Mu, <b>Z. Wang</b>, and Y. Liu, “<a href="https://ieeexplore.ieee.org/abstract/document/10718344">Simultaneously Transmitting And Reflecting Surfaces (STARS) for Multi-Functional 6G</a>,” <i>IEEE Network</i>, early access, Oct. 2024.</li>
+            <br>
+
+            <li>Y. Liu, C. Ouyang, <b>Z. Wang</b>, J. Xu, X. Mu, and A. L. Swindlehurst, “<a href="https://ieeexplore.ieee.org/document/10716601">Near-Field Communications: A Comprehensive Survey</a>,” <i>IEEE Communications Surveys & Tutorials</i>, early access, Oct. 2024. [<a href="https://arxiv.org/abs/2401.05900">Arxiv</a>]</li>
+            <br>
+
+            <li>Y. Guo, Y. Zhang, <b>Z. Wang</b>, and Y. Liu, “<a href="https://ieeexplore.ieee.org/document/10723247">Wideband Beamforming for Near-Field Communications with Circular Arrays</a>,” <i>IEEE Transactions on Wireless Communications</i>, accepted to appear, Oct. 2024. [<a href="https://arxiv.org/abs/2404.02811">Arxiv</a>]</li>
             <br>
 
             <li>  <b>Z. Wang</b>, X. Mu, and Y. Liu, “<a href="https://ieeexplore.ieee.org/abstract/document/10664591">Near-Field Velocity Sensing and Predictive Beamforming</a>,” <i>IEEE Transactions on Vehicular Technology</i>, early access, Sep. 2024. [<a href="https://arxiv.org/abs/2311.09888">Arxiv</a>] [<a href="https://github.com/zhaolin820/near-field-velocity-sensing-and-predictive-beamforming">Code</a>]</li>
@@ -160,8 +195,8 @@
     </div>
 
     <div class="container">
-        <h2 class="subtitle">Conference Proceedings</h2>
-        <ol style="font-size: 13px; width: 690px;">
+        <h2 class="mono_font">Conference Proceedings</h2>
+        <ol class = "paper_table">
         <li> J. Hao, <b>Z. Wang</b>, Y. Liu, “<a href="https://ieeexplore.ieee.org/document/10622539">Active-Sensing-Based Beam Alignment for Near Field MIMO Communications</a>,” in <i>Proc. IEEE Int. Communications Conf. (ICC'24)</i>, Denver, CO, USA, Jun. 2024.</li>
         <br>
 
@@ -195,7 +230,7 @@
 
     <!-- <div class="container">
         <h2>Preprints</h2>
-        <ol style="font-size: 13px; width: 690px;">
+        <ol class = "paper_table">
         <li>  <b>Z. Wang</b>, P. Ramezani, Y. Liu, and E. Björnson, “Near-Field Localization and Sensing with Large-Aperture Arrays: From Signal Modeling to Processing,” 2024. [<a href="https://arxiv.org/abs/2406.10941">Arxiv</a>]</li>
         <br>
 
