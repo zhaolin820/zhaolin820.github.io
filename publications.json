@@ -1,0 +1,460 @@
+{
+  "categories": [
+    {
+      "type": "preprints",
+      "title": "Preprints",
+      "items": [
+        {
+          "authors": "Y. Liu, <b>Z. Wang</b>, X. Mu, C. Ouyang, X. Xu, Z. Ding",
+          "title": "Pinching Antenna Systems (PASS): Architecture Designs, Opportunities, and Outlook",
+          "date": "Jan. 2025",
+          "main_link": "https://arxiv.org/abs/2501.18409",
+          "links": []
+        },
+        {
+          "authors": "Y. Liu, C. Ouyang, <b>Z. Wang</b>, J. Xu, X. Mu, Z. Ding",
+          "title": "CAPA: Continuous-Aperture Arrays for Revolutionizing 6G Wireless Communications",
+          "date": "Jan. 2025",
+          "main_link": "https://arxiv.org/abs/2412.00894",
+          "links": []
+        },
+        {
+          "authors": "<b>Z. Wang</b>, C Ouyang, and Y. Liu",
+          "title": "Optimal Beamforming for Multi-User Continuous Aperture Array (CAPA) Systems",
+          "date": "Nov. 2024",
+          "main_link": "https://arxiv.org/abs/2411.14919",
+          "links": []
+        },
+        {
+          "authors": "C. Ouyang, <b>Z. Wang</b>, X. Zhang, and Y. Liu",
+          "title": "Performance of Linear Receive Beamforming for Continuous Aperture Arrays (CAPAs)",
+          "date": "Nov. 2024",
+          "main_link": "https://arxiv.org/abs/2411.06620",
+          "links": []
+        },
+        {
+          "authors": "<b>Z. Wang</b>, C Ouyang, and Y. Liu",
+          "title": "Beamforming Optimization for Continuous Aperture Array (CAPA)-based Communications",
+          "date": "Oct. 2024",
+          "main_link": "https://arxiv.org/abs/2410.13677",
+          "links": []
+        },
+        {
+          "authors": "C. Ouyang, <b>Z. Wang</b>, X. Zhang, and Y. Liu",
+          "title": "Diversity and Multiplexing for Continuous Aperture Array (CAPA)-Based Communications",
+          "date": "Sep. 2024",
+          "main_link": "https://arxiv.org/abs/2408.13948",
+          "links": []
+        },
+        {
+          "authors": "<b>Z. Wang</b>, X. Mu, and Y. Liu",
+          "title": "Performance Analysis of Near-Field Sensing (NISE) in Wideband MIMO Systems",
+          "date": "Aug. 2024",
+          "main_link": "https://arxiv.org/abs/2404.05076",
+          "links": []
+        }
+      ]
+    },
+    {
+      "type": "journal_articles",
+      "title": "Journal Articles",
+      "items": [
+        {
+          "authors": "Y. Liu, J. Xu, <b>Z. Wang</b>, X. Mu, and L. Hanzo",
+          "title": "Near-Field Communications: What Will Be Different?",
+          "journal": "IEEE Wireless Communications",
+          "status": "accepted to appear",
+          "date": "2025",
+          "main_link": "https://ieeexplore.ieee.org/document/10841363",
+          "links": [
+            {"text": "Arxiv", "url": "https://arxiv.org/abs/2303.04003"}
+          ]
+        },
+        {
+          "authors": "<b>Z. Wang</b>, P Ramezani, Y Liu, and E Björnson",
+          "title": "Near-Field Localization and Sensing with Large-Aperture Arrays: From Signal Modeling to Processing",
+          "journal": "IEEE Signal Processing Magazine",
+          "status": "accepted to appear",
+          "date": "2025",
+          "main_link": "https://ieeexplore.ieee.org/document/10841363",
+          "links": [
+            {"text": "Arxiv", "url": "https://arxiv.org/abs/2406.10941"}
+          ]
+        },
+        {
+          "authors": "H. Jiang <b>Z. Wang</b>, and Y. Liu",
+          "title": "Near-Field Sensing: A Low-Complexity Wavenumber-Domain Positioning Method",
+          "journal": "IEEE Wireless Communications Letters",
+          "status": "early access",
+          "date": "Jan. 2025",
+          "main_link": "https://ieeexplore.ieee.org/document/10841363",
+          "links": [
+            {"text": "Arxiv", "url": "https://arxiv.org/abs/2408.09592"}
+          ]
+        },
+        {
+          "authors": "<b>Z. Wang</b>, X. Mu, and Y. Liu",
+          "title": "Beamfocusing Optimization for Near-Field Wideband Multi-User Communications",
+          "journal": "IEEE Transactions on Communications",
+          "status": "vol. 73, no. 1, pp. 555-572",
+          "date": "Jan. 2025",
+          "main_link": "https://ieeexplore.ieee.org/document/10587118",
+          "links": [
+            {"text": "Arxiv", "url": "https://arxiv.org/abs/2306.16861"},
+            {"text": "Code", "url": "https://github.com/zhaolin820/beamfocusing-optimization-for-near-field-wideband-multi-user-communications"}
+          ]
+        },
+        {
+          "authors": "<b>Z. Wang</b>, X. Mu, and Y. Liu",
+          "title": "Near-Field Velocity Sensing and Predictive Beamforming",
+          "journal": "IEEE Transactions on Vehicular Technology",
+          "status": "vol. 74, no. 1, pp. 1806-1810",
+          "date": "Jan. 2025",
+          "main_link": "https://ieeexplore.ieee.org/document/10664591",
+          "links": [
+            {"text": "Arxiv", "url": "https://arxiv.org/abs/2311.09888"},
+            {"text": "Code", "url": "https://github.com/zhaolin820/near-field-velocity-sensing-and-predictive-beamforming"}
+          ]
+        },
+        {
+          "authors": "H. Ting, <b>Z. Wang</b>, and Y. Liu",
+          "title": "Adaptive TTD Configurations for Near-Field Communications: An Unsupervised Transformer Approach",
+          "journal": "IEEE Transactions on Wireless Communications",
+          "status": "vol. 24, no. 1, pp. 277-292",
+          "date": "Jan. 2025",
+          "main_link": "https://ieeexplore.ieee.org/document/10841363",
+          "links": [
+            {"text": "Arxiv", "url": "https://arxiv.org/abs/2403.18146"}
+          ]
+        },
+        {
+          "authors": "X. Mu, <b>Z. Wang</b>, and Y. Liu",
+          "title": "Simultaneously Transmitting And Reflecting Surfaces (STARS) for Multi-Functional 6G",
+          "journal": "IEEE Network",
+          "status": "vol. 39, no. 1, pp. 47-55",
+          "date": "Jan. 2025",
+          "main_link": "https://ieeexplore.ieee.org/document/10718344",
+          "links": []
+        },
+        {
+          "authors": "R. Zhang, <b>Z. Wang</b>, Z. Wei, Y. Liu, Z. Xiong and Z. Feng",
+          "title": "ISAR Sensing Based on MUSIC Algorithm in Integrated Sensing and Communications",
+          "journal": "IEEE Transactions on Cognitive Communications and Networking",
+          "status": "early access",
+          "date": "Jan. 2025",
+          "main_link": "https://ieeexplore.ieee.org/document/10851319",
+          "links": []
+        },
+        {
+          "authors": "Y. Liu, C. Ouyang, <b>Z. Wang</b>, J. Xu, X. Mu, and A. L. Swindlehurst",
+          "title": "Near-Field Communications: A Comprehensive Survey",
+          "journal": "IEEE Communications Surveys & Tutorials",
+          "status": "early access",
+          "date": "Oct. 2024",
+          "main_link": "https://ieeexplore.ieee.org/document/10716601",
+          "links": [
+            {"text": "Arxiv", "url": "https://arxiv.org/abs/2401.05900"}
+          ]
+        },
+        {
+          "authors": "Y. Guo, Y. Zhang, <b>Z. Wang</b>, and Y. Liu",
+          "title": "Wideband Beamforming for Near-Field Communications with Circular Arrays",
+          "journal": "IEEE Transactions on Wireless Communications",
+          "status": "vol. 23, no. 12, pp. 19065-19082",
+          "date": "Dec. 2024",
+          "main_link": "https://ieeexplore.ieee.org/document/10723247",
+          "links": [
+            {"text": "Arxiv", "url": "https://arxiv.org/abs/2404.02811"}
+          ]
+        },
+        {
+          "authors": "H. Jiang, <b>Z. Wang</b>, and Y. Liu",
+          "title": "Sense-Then-Train: An Active-Sensing-Based Beam Training Design for Near-Field MIMO Systems",
+          "journal": "IEEE Transactions on Wireless Communications",
+          "status": "vol. 23, no. 10, pp. 15525-15539",
+          "date": "Oct. 2024",
+          "main_link": "https://ieeexplore.ieee.org/document/10609801",
+          "links": [
+            {"text": "Arxiv", "url": "https://arxiv.org/abs/2402.15634"}
+          ]
+        },
+        {
+          "authors": "C. Ouyang, <b>Z. Wang</b>, B. Zhao, X. Zhang, and Y. Liu",
+          "title": "On the Impact of Reactive Region on the Near-Field Channel Gain",
+          "journal": "IEEE Communications Letters",
+          "status": "vol. 28, no. 10, pp. 2417-2421",
+          "date": "Oct. 2024",
+          "main_link": "https://ieeexplore.ieee.org/document/10614327",
+          "links": [
+            {"text": "Arxiv", "url": "https://arxiv.org/abs/2404.08343"}
+          ]
+        },
+        {
+          "authors": "Z. Zheng, Y. Liu, <b>Z. Wang</b>, J. Chen, and T. Quek",
+          "title": "Dynamic MIMO architecture design for near-field communications",
+          "journal": "IEEE Transactions on Wireless Communications",
+          "status": "vol. 23, no. 10, pp. 14669-14684",
+          "date": "Oct. 2024",
+          "main_link": "https://ieeexplore.ieee.org/document/10577546",
+          "links": [
+            {"text": "Arxiv", "url": "https://arxiv.org/abs/2312.15757"}
+          ]
+        },
+        {
+          "authors": "<b>Z. Wang</b>, X. Mu, and Y. Liu",
+          "title": "Rethinking Integrated Sensing and Communication: When Near Field Meets Wideband",
+          "journal": "IEEE Communications Magazine",
+          "status": "vol. 62, no. 9, pp. 44-50",
+          "date": "Sep. 2024",
+          "main_link": "https://ieeexplore.ieee.org/document/10663786",
+          "links": [
+            {"text": "Arxiv", "url": "https://arxiv.org/abs/2311.11416"}
+          ]
+        },
+        {
+          "authors": "H. Li, <b>Z. Wang</b>, X. Mu, Z. Pan, and Y. Liu",
+          "title": "Near-Field Integrated Sensing, Positioning, and Communication: A Downlink and Uplink Framework",
+          "journal": "IEEE Journal on Selected Areas in Communications",
+          "status": "vol. 42, no. 9, pp. 2196-2212",
+          "date": "Sep. 2024",
+          "main_link": "https://ieeexplore.ieee.org/document/10579914",
+          "links": [
+            {"text": "Arxiv", "url": "https://arxiv.org/abs/2311.07722"}
+          ]
+        },
+        {
+          "authors": "C. Ouyang, <b>Z. Wang</b>, Y. Chen, X. Mu, and P. Zhu",
+          "title": "A Primer on Near-Field Communications for Next-Generation Multiple Access",
+          "journal": "Proceedings of the IEEE",
+          "status": "vol. 112, no. 9, pp. 1527-1565",
+          "date": "Sep. 2024",
+          "main_link": "https://ieeexplore.ieee.org/document/10639537",
+          "links": [
+            {"text": "Arxiv", "url": "https://www.arxiv.org/abs/2408.00952"}
+          ]
+        },
+        {
+          "authors": "<b>Z. Wang</b>, X. Mu, and Y. Liu",
+          "title": "Bidirectional Integrated Sensing and Communication: Full-Duplex or Half-Duplex?",
+          "journal": "IEEE Transactions on Wireless Communications",
+          "status": "vol. 23, no. 8, pp. 8184-8199",
+          "date": "Aug. 2024",
+          "main_link": "https://ieeexplore.ieee.org/document/10375302",
+          "links": [
+            {"text": "Arxiv", "url": "https://arxiv.org/abs/2210.14112"}
+          ]
+        },
+        {
+          "authors": "Z. Zhang, Y. Liu, <b>Z. Wang</b>, X. Mu, and J. Chen",
+          "title": "Simultaneous Wireless Information and Power Transfer in Near-Field Communications",
+          "journal": "IEEE Internet of Things Journal",
+          "status": "vol. 11, no. 16, pp. 27760-27774",
+          "date": "Aug. 2024",
+          "main_link": "https://ieeexplore.ieee.org/document/10559261",
+          "links": [
+            {"text": "Arxiv", "url": "https://arxiv.org/abs/2305.03775"}
+          ]
+        },
+        {
+          "authors": "Z. Zhang, Y. Liu, <b>Z. Wang</b>, X. Mu, and J. Chen",
+          "title": "Physical Layer Security in Near-Field Communications",
+          "journal": "IEEE Transactions on Vehicular Technology",
+          "status": "vol. 73, no. 7, pp. 10761-10766",
+          "date": "Jul. 2024",
+          "main_link": "https://ieeexplore.ieee.org/document/10436390",
+          "links": [
+            {"text": "Arxiv", "url": "https://arxiv.org/abs/2302.04189"}
+          ]
+        },
+        {
+          "authors": "X. Mu, <b>Z. Wang</b>, and Y. Liu",
+          "title": "NOMA for Integrating Sensing and Communications towards 6G: A Multiple Access Perspective",
+          "journal": "IEEE Wireless Communications",
+          "status": "vol. 31, no. 3, pp. 316-323",
+          "date": "Jun. 2024",
+          "main_link": "https://ieeexplore.ieee.org/document/10024901",
+          "links": [
+            {"text": "Arxiv", "url": "https://arxiv.org/abs/2206.00377"}
+          ],
+          "notes": [
+                {"type": "award", "text": "ESI Highly Cited Paper"}
+          ]
+        },
+        {
+          "authors": "Z. Zhang, Y. Liu, <b>Z. Wang</b>, J. Chen, and D. I. Kim",
+          "title": "Near Field Communications for DMA-NOMA Networks",
+          "journal": "IEEE Internet of Things Journal",
+          "status": "vol. 11, no. 17, pp. 28021-28035",
+          "date": "Jun. 2024",
+          "main_link": "https://ieeexplore.ieee.org/document/10566874",
+          "links": [
+            {"text": "Arxiv", "url": "https://arxiv.org/abs/2403.04925"}
+          ]
+        },
+        {
+          "authors": "X. Mu, J. Xu, <b>Z. Wang</b>, and N. Al-Dhahir",
+          "title": "Simultaneously Transmitting and Reflecting Surfaces for Ubiquitous Next Generation Multiple Access in 6G and Beyond",
+          "journal": "Proceedings of the IEEE",
+          "status": "early access",
+          "date": "Jun. 2024",
+          "main_link": "https://ieeexplore.ieee.org/document/10550177",
+          "links": []
+        },
+        {
+          "authors": "<b>Z. Wang</b>, X. Mu, Y. Liu, and R. Schober",
+          "title": "TTD Configurations for Near-Field Beamforming: Parallel, Serial, or Hybrid?",
+          "journal": "IEEE Transactions on Communications",
+          "status": "vol. 72, no. 6, pp. 3783-3799",
+          "date": "Jun. 2024",
+          "main_link": "https://ieeexplore.ieee.org/document/10458958",
+          "links": [
+            {"text": "Arxiv", "url": "https://arxiv.org/abs/2309.06861"},
+            {"text": "Code", "url": "https://github.com/zhaolin820/TTD-configurations-for-near-field-beamforming-parallel-serial-or-hybrid"}
+          ]
+        },
+        {
+          "authors": "Y. Liu, J. Xu, <b>Z. Wang</b>, X. Mu, J. Zhang and P. Zhang",
+          "title": "Simultaneously Transmitting And Reflecting (STAR) RISs for 6G: Fundamentals, Recent Advances, and Future Directions",
+          "journal": "Frontiers of Information Technology & Electronic Engineering",
+          "status": "vol. 24, pp. 1689-1707",
+          "date": "Jan. 2024",
+          "main_link": "https://link.springer.com/article/10.1631/FITEE.2300490",
+          "links": [
+            {"text": "Arxiv", "url": "https://arxiv.org/abs/2304.14180"}
+          ]
+        },
+        {
+          "authors": "J. Chen, K. Zhai, <b>Z. Wang</b>, Y. Liu, J. Jia, and X. Wang",
+          "title": "CoMP and RIS-assisted Multicast Transmission in a Multi-UAV Communication System",
+          "journal": "IEEE Transactions on Communications",
+          "status": "vol. 72, no. 6, pp. 3602-3617",
+          "date": "Jun. 2024",
+          "main_link": "https://ieeexplore.ieee.org/document/10411934",
+          "links": []
+        },
+        {
+          "authors": "J. Xiao, J. Wang, <b>Z. Wang</b>, W. Xie, Y. Liu",
+          "title": "Multi-Scale Attention Based Channel Estimation for RIS-Aided Massive MIMO Systems",
+          "journal": "IEEE Transactions on Wireless Communications",
+          "status": "vol. 23, no. 6, pp. 5969-5984",
+          "date": "Jun. 2024",
+          "main_link": "https://ieeexplore.ieee.org/document/10313112",
+          "links": [
+            {"text": "Code", "url": "https://github.com/WiCi-Lab/LPAN"}
+          ]
+        },
+        {
+          "authors": "Z. Zhang, Y. Liu, <b>Z. Wang</b>, and J. Chen",
+          "title": "STARS-ISAC: How Many Sensors Do We Need?",
+          "journal": "IEEE Transactions on Wireless Communications",
+          "status": "vol. 23, no. 2, pp. 1085-1099",
+          "date": "Feb. 2024",
+          "main_link": "https://ieeexplore.ieee.org/document/10155669",
+          "links": [
+            {"text": "Arxiv", "url": "https://arxiv.org/abs/2301.03436"}
+          ]
+        },
+        {
+          "authors": "Y. Liu, <b>Z. Wang</b>, J. Xu, C. Ouyang, X. Mu, and R. Schober",
+          "title": "Near-Field Communications: A Tutorial Review",
+          "journal": "IEEE Open Journal of the Communications Society",
+          "status": "vol. 4, pp. 1999-2049",
+          "date": "Aug. 2023",
+          "main_link": "https://ieeexplore.ieee.org/document/10220205",
+          "links": [
+            {"text": "Arxiv", "url": "https://arxiv.org/abs/2305.17751"}
+          ]
+        },
+        {
+          "authors": "<b>Z. Wang</b>, X. Mu, J. Xu, and Y. Liu",
+          "title": "Simultaneously Transmitting and Reflecting Surface (STARS) for Terahertz communications",
+          "journal": "IEEE Journal of Selected Topics in Signal Processing",
+          "status": "vol. 17, no. 4, pp. 861-877",
+          "date": "Jul. 2023",
+          "main_link": "https://ieeexplore.ieee.org/document/10133914",
+          "links": [
+            {"text": "Arxiv", "url": "https://arxiv.org/abs/2212.00497"},
+            {"text": "Code", "url": "https://github.com/zhaolin820/STAR-RIS-for-terahertz-communications"}
+          ]
+        },
+        {
+          "authors": "<b>Z. Wang</b>, X. Mu, and Y. Liu",
+          "title": "Near-Field Integrated Sensing and Communications",
+          "journal": "IEEE Communication Letters",
+          "status": "vol. 27, no. 8, pp. 2048-2052",
+          "date": "Aug. 2023",
+          "main_link": "https://ieeexplore.ieee.org/document/10135096",
+          "links": [
+            {"text": "Arxiv", "url": "https://arxiv.org/abs/2302.01153"},
+            {"text": "Code", "url": "https://github.com/zhaolin820/near-field-integrated-sensing-and-communications"}
+          ]
+        },
+        {
+          "authors": "<b>Z. Wang</b>, X. Mu, and Y. Liu",
+          "title": "STARS Enabled Integrated Sensing and Communications",
+          "journal": "IEEE Transactions on Wireless Communications",
+          "status": "vol. 22, no. 10, pp. 6750-6765",
+          "date": "Oct. 2023",
+          "main_link": "https://ieeexplore.ieee.org/document/10050406",
+          "links": [
+            {"text": "Arxiv", "url": "https://arxiv.org/abs/2207.10748"},
+            {"text": "Code", "url": "https://github.com/zhaolin820/stars-enabled-integrated-sensing-and-communications"}
+          ],
+          "notes": [
+                {"type": "award", "text": "ESI Highly Cited Paper"}
+          ]
+        },
+        {
+          "authors": "Z. Zhang, <b>Z. Wang</b>, Y. Liu, B. He, L. Lv, and J. Chen",
+          "title": "Security Enhancement for Coupled Phase-Shift STAR-RIS Networks",
+          "journal": "IEEE Transactions on Vehicular Technology",
+          "status": "vol. 72, no. 6, pp. 8210-8215",
+          "date": "Jun. 2023",
+          "main_link": "https://ieeexplore.ieee.org/document/10040906",
+          "links": [
+            {"text": "Arxiv", "url": "https://arxiv.org/abs/2208.10382"}
+          ]
+        },
+        {
+          "authors": "<b>Z. Wang</b>, X. Mu, Y. Liu, X. Xu, and P. Zhang",
+          "title": "NOMA-aided Joint Communication, Sensing, and Multi-tier Computing Systems",
+          "journal": "IEEE Journal on Selected Areas in Communications",
+          "status": "vol. 41, no. 3, pp. 574-588",
+          "date": "Mar. 2023",
+          "main_link": "https://ieeexplore.ieee.org/document/9996408",
+          "links": [
+            {"text": "Arxiv", "url": "https://arxiv.org/abs/2205.08272"},
+            {"text": "Code", "url": "https://github.com/zhaolin820/noma-aided-joint-communication-sensing-and-multi-tier-computing-systems"}
+          ]
+        },
+        {
+          "authors": "<b>Z. Wang</b>, X. Mu, Y. Liu, and R. Schober",
+          "title": "Coupled Phase-Shift STAR-RISs: A General Optimization Framework",
+          "journal": "IEEE Wireless Communication Letters",
+          "status": "vol. 12, no. 2, pp. 207-211",
+          "date": "Nov. 2022",
+          "main_link": "https://ieeexplore.ieee.org/document/9935266",
+          "links": [
+            {"text": "Arxiv", "url": "https://arxiv.org/abs/2208.01942"},
+            {"text": "Code", "url": "https://github.com/zhaolin820/coupled-phase-shift-STAR-RIS"}
+          ]
+        },
+        {
+          "authors": "<b>Z. Wang</b>, Y. Liu, X. Mu, Z. Ding, and O. A. Dobre",
+          "title": "NOMA Empowered Integrated Sensing and Communication",
+          "journal": "IEEE Communication Letters",
+          "status": "vol. 26, no. 3, pp. 677-681",
+          "date": "Mar. 2022",
+          "main_link": "https://ieeexplore.ieee.org/document/9668964",
+          "links": [
+            {"text": "Arxiv", "url": "https://arxiv.org/abs/2112.04550"},
+            {"text": "Code", "url": "https://github.com/zhaolin820/noma-empowered-integrated-sensing-and-communication"}
+          ],
+          "notes": [
+                {"type": "award", "text": "ESI Highly Cited Paper"}
+          ]
+        }
+      ]
+    }
+  ]
+}
