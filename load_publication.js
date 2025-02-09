@@ -43,7 +43,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     entry += `.`;
                 }
 
-                // ============== 新增 notes 处理逻辑 ==============
+                // notes
                 if (item.notes && item.notes.length > 0) {
                     entry += item.notes.map(note => 
                         `<span class="pub-note ${note.type}">${note.text}</span>`
