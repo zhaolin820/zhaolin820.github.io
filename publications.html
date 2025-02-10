@@ -33,7 +33,7 @@
     #me { border : 0 solid black; margin-bottom : 50px; border-radius : 10px; }
     #sidebar { margin-left : 25px; margin-right : 50px; border : 0 solid black; float : left; margin-bottom : 0;}
     a { text-decoration : none; }
-    a:hover { text-decoration : underline; }
+    /* a:hover { text-decoration : underline; } */
     a, a:visited { color : #0050e7; }
     .publogo { width: 100 px; margin-right : 20px; float : left; border : 0;}
     .publication { clear : left; padding-bottom : 0px; }
@@ -104,14 +104,23 @@
         transform: translateY(0);
     }
 
-    /* 导航栏悬停效果 */
-    h2 a {
-        transition: color 0.3s ease, transform 0.3s ease;
+    /* 导航栏动态下划线 */
+       h2 a {
+        position: relative;
+        padding-bottom: 3px;
     }
-
-    h2 a:hover {
-        color: #003366;
-        transform: translateY(-2px);
+    h2 a::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 0;
+        height: 2px;
+        background: #0050e7;
+        transition: width 0.3s ease;
+    }
+    h2 a:hover::after {
+        width: 100%;
     }
 </style>
 
