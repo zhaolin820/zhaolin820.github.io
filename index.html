@@ -3,9 +3,10 @@
 
 <!-- Meta tags for search engines to crawl -->
 <meta name="robots" content="index,follow">
-<meta name="keywords" content="Zhaolin Wang; 王照霖; Beijing University of Posts and Telecommunications; Queen Mary University of London">
+<meta name="keywords" content="Zhaolin Wang; 王照霖; Queen Mary University of London">
 <script src="assets/js/jquery.scrolly.min.js"></script>
 <script src="assets/js/jquery.min.js"></script>
+<script src="scroll-animation.js"></script>
 <link rel="author" href="https://zhaolin820.github.io/">
 
 <title>Zhaolin Wang - Homepage</title>
@@ -55,13 +56,60 @@
              "Fira Mono", 
              "Droid Sans Mono", 
              "Consolas", "Courier New", monospace;}
+
+    /* 淡入效果 */
+    @keyframes fadeIn {
+        from { opacity: 0; }
+        to { opacity: 1; }
+    }
+
+    .fade-in {
+        animation: fadeIn 1s ease-in-out;
+    }
+
+    /* 悬停效果 */
+    a:hover, img:hover {
+        transform: scale(1.05);
+        transition: transform 0.3s ease;
+    }
+
+    /* 滚动动画 */
+    .scroll-animation {
+        opacity: 0;
+        transform: translateY(20px);
+        transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+    }
+
+    .scroll-animation.visible {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    /* 导航栏悬停效果 */
+    h2 a {
+        transition: color 0.3s ease, transform 0.3s ease;
+    }
+
+    h2 a:hover {
+        color: #003366;
+        transform: translateY(-2px);
+    }
+
+    #me {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    #me:hover {
+        transform: scale(1.05);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
 </style>
 
 </head>
 
 <body>
 
-    <div class="container">
+    <div class="container scroll-animation">
         <h2>
             <a href="./index.html">Home</a>&nbsp;&nbsp;&middot;&nbsp;&nbsp;
             <!-- <a href="./research.html">Research</a>&nbsp;&nbsp;&middot;&nbsp; -->
@@ -74,7 +122,7 @@
         </h2>
     </div>
 
-	<div class="container">
+	<div class="container scroll-animation">
 		<div id="sidebar">
             <img src="./homepage_files/me.jpg" vspace="50 px" width="250 px" id="me" itemprop="photo">
         </div>
@@ -110,14 +158,14 @@
 		</div>
 	</div>
 
-	<div class="container">
+	<div class="container scroll-animation">
 		<h2 class="mono_font">Short Bio</h2>
 		<p style="text-align:justify;"> 
             I received the first B.Eng. degree from the <a href="https://www.bupt.edu.cn">Beijing University of Posts and Telecommunications</a>, China, the second B.Eng. degree (Hons.) from the <a href="https://www.qmul.ac.uk/">Queen Mary University of London</a>, U.K., in 2020, the M.Sc. degree (Distinction) from <a href="https://www.imperial.ac.uk/">Imperial College London</a>, U.K., in 2021, and the Ph.D. degree with the <a href="https://www.qmul.ac.uk/">Queen Mary University of London</a> in 2024, advised by <a href="https://www.eee.hku.hk/~yuanwei/">Prof. Yuanwei Liu</a>. My current research interests include near-field communications, integrated sensing and communications, MIMO systems, and optimization theory.
 		</p>
 	</div>
 
-    <div class="container">
+    <div class="container scroll-animation">
         <h2 class="mono_font">News </h2>
 
         <table style="width:100%; border-spacing: 0px 10px;">
@@ -217,5 +265,12 @@
         <a href="https://liuziwei7.github.io/" target="_blank">Page Template</a>
     </div> -->
 
+    <div class="container scroll-animation" style="text-align: center; background-color: #f8f9fa;">
+        <p style="font-size: 14px; color: #666;">
+            &copy; 2025 Zhaolin Wang. All rights reserved. 
+            <br>
+            Page template inspired by <a href="https://liuziwei7.github.io/" target="_blank">Liu Ziwei</a>.
+        </p>
+    </div>
 </body>
 </html>
