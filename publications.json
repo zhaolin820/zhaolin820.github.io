@@ -5,6 +5,13 @@
       "title": "Preprints",
       "items": [
         {
+          "authors": "<b>Z. Wang</b>, C. Ouyang, X. Mu, Y. liu, X. Xu, Z. Ding",
+          "title": "Modeling and Beamforming Optimization for Pinching-Antenna Systems",
+          "date": "Feb. 2025",
+          "main_link": "https://arxiv.org/abs/2502.05917",
+          "links": []
+        },
+        {
           "authors": "Y. Liu, <b>Z. Wang</b>, X. Mu, C. Ouyang, X. Xu, Z. Ding",
           "title": "Pinching Antenna Systems (PASS): Architecture Designs, Opportunities, and Outlook",
           "date": "Jan. 2025",
