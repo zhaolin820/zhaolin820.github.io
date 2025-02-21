@@ -5,21 +5,21 @@
       "title": "Preprints",
       "items": [
         {
-          "authors": "<b>Z. Wang</b>, C. Ouyang, X. Mu, Y. liu, X. Xu, Z. Ding",
+          "authors": "<b>Z. Wang</b>, C. Ouyang, X. Mu, Y. liu, and Z. Ding",
           "title": "Modeling and Beamforming Optimization for Pinching-Antenna Systems",
           "date": "Feb. 2025",
           "main_link": "https://arxiv.org/abs/2502.05917",
           "links": []
         },
         {
-          "authors": "Y. Liu, <b>Z. Wang</b>, X. Mu, C. Ouyang, X. Xu, Z. Ding",
+          "authors": "Y. Liu, <b>Z. Wang</b>, X. Mu, C. Ouyang, X. Xu, and Z. Ding",
           "title": "Pinching Antenna Systems (PASS): Architecture Designs, Opportunities, and Outlook",
           "date": "Jan. 2025",
           "main_link": "https://arxiv.org/abs/2501.18409",
           "links": []
         },
         {
-          "authors": "Y. Liu, C. Ouyang, <b>Z. Wang</b>, J. Xu, X. Mu, Z. Ding",
+          "authors": "Y. Liu, C. Ouyang, <b>Z. Wang</b>, J. Xu, X. Mu, and Z. Ding",
           "title": "CAPA: Continuous-Aperture Arrays for Revolutionizing 6G Wireless Communications",
           "date": "Jan. 2025",
           "main_link": "https://arxiv.org/abs/2412.00894",
@@ -55,7 +55,7 @@
         },
         {
           "authors": "<b>Z. Wang</b>, X. Mu, and Y. Liu",
-          "title": "Performance Analysis of Near-Field Sensing (NISE) in Wideband MIMO Systems",
+          "title": "Performance Analysis of Near-Field Sensing in Wideband MIMO Systems",
           "date": "Aug. 2024",
           "main_link": "https://arxiv.org/abs/2404.05076",
           "links": []
