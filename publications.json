@@ -40,13 +40,6 @@
           "links": []
         },
         {
-          "authors": "<b>Z. Wang</b>, C Ouyang, and Y. Liu",
-          "title": "Beamforming Optimization for Continuous Aperture Array (CAPA)-based Communications",
-          "date": "Oct. 2024",
-          "main_link": "https://arxiv.org/abs/2410.13677",
-          "links": []
-        },
-        {
           "authors": "C. Ouyang, <b>Z. Wang</b>, X. Zhang, and Y. Liu",
           "title": "Diversity and Multiplexing for Continuous Aperture Array (CAPA)-Based Communications",
           "date": "Sep. 2024",
@@ -66,6 +59,17 @@
       "type": "journal_articles",
       "title": "Journal Articles",
       "items": [
+        {
+          "authors": "<b>Z. Wang</b>, C Ouyang, and Y. Liu",
+          "title": "Beamforming Optimization for Continuous Aperture Array (CAPA)-based Communications",
+          "journal": "IEEE Transactions on Wireless Communications",
+          "status": "accepted to appear",
+          "date": "2025",
+          "main_link": "https://arxiv.org/abs/2410.13677",
+          "links": [
+            {"text": "Arxiv", "url": "https://arxiv.org/abs/2410.13677"}
+          ]
+        },
         {
           "authors": "Y. Liu, J. Xu, <b>Z. Wang</b>, X. Mu, and L. Hanzo",
           "title": "Near-Field Communications: What Will Be Different?",
