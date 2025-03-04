@@ -65,9 +65,10 @@
           "journal": "IEEE Transactions on Wireless Communications",
           "status": "accepted to appear",
           "date": "2025",
-          "main_link": "https://arxiv.org/abs/2410.13677",
+          "main_link": "https://ieeexplore.ieee.org/document/10910020",
           "links": [
-            {"text": "Arxiv", "url": "https://arxiv.org/abs/2410.13677"}
+            {"text": "Arxiv", "url": "https://arxiv.org/abs/2410.13677"},
+            {"text": "Code", "url": "https://github.com/zhaolin820/beamforming-optimization-for-continuous-aperture-array-based-communications"}
           ]
         },
         {
