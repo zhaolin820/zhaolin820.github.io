@@ -74,29 +74,39 @@
     .paper_table {margin-left: -10px; font-size: 13px; width: 710px}
     .pub-note {
         display: inline-block;
-        margin-left: 10px;
-        padding: 2px 8px;
+        margin-left: 3px;
+        padding: 1px 3px;
         border-radius: 4px;
         font-size: 0.9em;
     }
-    .highlight {
-        background: #fff3cd;
-        color: #856404;
-        border: 1px solid #ffeeba;
+    /* .highlight {
+        background: #332c00;
+        color: #ffd54f;
+        border: 1px solid #665800;
     }
     .award {
         background: #d4edda;
         color: #155724;
         border: 1px solid #c3e6cb;
-    }
+    } */
 
     /* dark mode css */
     :root {
-    --bg-color: #ffffff;
-    --text-color: #333333;
-    --container-bg: #ffffff;
-    --link-color: #0050e7;
-    --body-bg: #e0e0e0;
+        --bg-color: #ffffff;
+        --text-color: #333333;
+        --container-bg: #ffffff;
+        --link-color: #0050e7;
+        --body-bg: #e0e0e0;
+
+        /* Highlight Colors */
+        --highlight-bg: #fff8e6;
+        --highlight-text: #8c6d1f;
+        --highlight-border: #ffe4b3;
+        
+        /* Award Colors */
+        --award-bg: #e8f5e9;
+        --award-text: #2e7d32;
+        --award-border: #c8e6c9;
     }
 
     [data-theme="dark"] {
@@ -105,6 +115,28 @@
         --container-bg: #2d2d2d;
         --link-color: #7aa6ff;
         --body-bg: #121212;
+
+        /* Highlight Colors */
+        --highlight-bg: #332e00;
+        --highlight-text: #ffd95c;
+        --highlight-border: #665800;
+        
+        /* Award Colors */
+        --award-bg: #1a2a1c;
+        --award-text: #66bb6a;
+        --award-border: #2d4a30;
+    }
+
+    .highlight {
+        background: var(--highlight-bg);
+        color: var(--highlight-text);
+        border: 1px solid var(--highlight-border);
+    }
+
+    .award {
+        background: var(--award-bg);
+        color: var(--award-text);
+        border: 1px solid var(--award-border);
     }
 
     html {
@@ -129,18 +161,6 @@
     /* a:hover {
         color: var(--link-color);
         opacity: 0.8;  
-    } */
-
-    .pub-note.highlight {
-        background: #332900;
-        color: #ffd700;
-        border-color: #665200;
-    }
-
-    /* .pub-note.award {
-        background: #003311;
-        color: #00cc66;
-        border-color: #006633;
     } */
 
     #theme-toggle {
