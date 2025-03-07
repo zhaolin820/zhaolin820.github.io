@@ -1,13 +1,27 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
+<script>
+    // Immediate theme initialization
+    (function() {
+        const savedTheme = localStorage.getItem('theme');
+        const systemDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        document.documentElement.setAttribute('data-theme', 
+            savedTheme || (systemDark ? 'dark' : 'light')
+        );
+    })();
+</script>
+
 <!-- Meta tags for search engines to crawl -->
 <meta name="robots" content="index,follow">
 <meta name="keywords" content="Zhaolin Wang; 王照霖; Queen Mary University of London">
 <script src="assets/js/jquery.scrolly.min.js"></script>
 <script src="assets/js/jquery.min.js"></script>
 <script src="load_publication.js"></script>
-<script src="scroll-animation.js"></script>
+<script src="scroll_animation.js"></script>
+<script src="dark_mode.js"></script>
+<link rel="stylesheet" href="scroll_animation.css">
+<link rel="stylesheet" href="dark_mode_button.css">
 <link rel="author" href="https://zhaolin820.github.io/">
 
 <title>Zhaolin Wang - Homepage</title>
@@ -76,52 +90,68 @@
         border: 1px solid #c3e6cb;
     }
 
-    /* 淡入效果 */
-    @keyframes fadeIn {
-        from { opacity: 0; }
-        to { opacity: 1; }
+    /* dark mode css */
+    :root {
+    --bg-color: #ffffff;
+    --text-color: #333333;
+    --container-bg: #ffffff;
+    --link-color: #0050e7;
+    --body-bg: #e0e0e0;
     }
 
-    .fade-in {
-        animation: fadeIn 1s ease-in-out;
+    [data-theme="dark"] {
+        --bg-color: #1a1a1a;
+        --text-color: #e0e0e0;
+        --container-bg: #2d2d2d;
+        --link-color: #7aa6ff;
+        --body-bg: #121212;
     }
 
-    /* 悬停效果 */
-    a:hover, img:hover {
-        transform: scale(1.05);
-        transition: transform 0.3s ease;
+    html {
+        background: var(--body-bg);
+        transition: background-color 0.3s ease;
     }
 
-    /* 滚动动画 */
-    .scroll-animation {
-        opacity: 0;
-        transform: translateY(20px);
-        transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+    body {
+        background-color: var(--body-bg);
+        color: var(--text-color);
+        transition: background-color 0.3s ease, color 0.3s ease;
     }
 
-    .scroll-animation.visible {
-        opacity: 1;
-        transform: translateY(0);
+    .container {
+        background-color: var(--container-bg);
     }
 
-    /* 导航栏动态下划线 */
-    h2 a {
-        position: relative;
-        padding-bottom: 3px;
+    a, a:visited {
+        color: var(--link-color);
     }
-    h2 a:hover {text-decoration : none; }
-    h2 a::after {
-        content: '';
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        width: 0;
-        height: 2px;
-        background: #0050e7;
-        transition: width 0.3s ease;
+
+    /* a:hover {
+        color: var(--link-color);
+        opacity: 0.8;  
+    } */
+
+    .pub-note.highlight {
+        background: #332900;
+        color: #ffd700;
+        border-color: #665200;
     }
-    h2 a:hover::after {
-        width: 100%;
+
+    /* .pub-note.award {
+        background: #003311;
+        color: #00cc66;
+        border-color: #006633;
+    } */
+
+    #theme-toggle {
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        cursor: pointer;
+        background: none;
+        border: none;
+        font-size: 24px;
+        color: var(--text-color);
     }
 </style>
 
@@ -144,14 +174,32 @@
 
 <div id="publications-container" class="scroll-animation"></div>
 
-<div class="container scroll-animation" style="text-align: center; background-color: #f8f9fa;">
-    <p style="font-size: 14px; color: #666;">
+<div class="container scroll-animation" style="text-align: center;">
+    <p style="font-size: 14px;">
         &copy; 2025 Zhaolin Wang. All rights reserved. 
         <br>
         Page template inspired by <a href="https://liuziwei7.github.io/" target="_blank">Ziwei Liu</a>.
     </p>
 </div>
 
+
+<!-- button for dark/light mode -->
+<button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">
+    <svg class="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="12" cy="12" r="5"></circle>
+      <line x1="12" y1="1" x2="12" y2="3"></line>
+      <line x1="12" y1="21" x2="12" y2="23"></line>
+      <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+      <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+      <line x1="1" y1="12" x2="3" y2="12"></line>
+      <line x1="21" y1="12" x2="23" y2="12"></line>
+      <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+      <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+    </svg>
+    <svg class="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+    </svg>
+</button>
 
 
 </body></html>

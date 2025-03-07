@@ -1,0 +1,47 @@
+/* 淡入效果 */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.fade-in {
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* 悬停效果 */
+a:hover, img:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+
+/* 滚动动画 */
+.scroll-animation {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.scroll-animation.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* 导航栏动态下划线 */
+h2 a {
+    position: relative;
+    padding-bottom: 3px;
+}
+h2 a:hover {text-decoration : none; }
+h2 a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: var(--link-color);
+    transition: width 0.3s ease;
+}
+h2 a:hover::after {
+    width: 100%;
+}
