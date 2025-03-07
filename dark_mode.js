@@ -27,26 +27,48 @@ function toggleTheme() {
     setTheme(currentTheme === 'dark' ? 'light' : 'dark');
 }
 
-// Initialize theme with proper system detection
+// // Initialize theme with proper system detection
+// document.addEventListener('DOMContentLoaded', function() {
+//     const savedTheme = localStorage.getItem('theme');
+//     const systemDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+    
+//     if (savedTheme) {
+//         setTheme(savedTheme, false);
+//     } else {
+//         // Apply system theme without saving to localStorage
+//         document.documentElement.setAttribute('data-theme', systemDark ? 'dark' : 'light');
+//         document.getElementById('theme-toggle').textContent = systemDark ? '🌙' : '☀️';
+//     }
+
+//     document.getElementById('theme-toggle').addEventListener('click', toggleTheme);
+    
+//     // Watch for system theme changes
+//     window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', e => {
+//         if (!localStorage.getItem('theme')) {
+//             document.documentElement.setAttribute('data-theme', e.matches ? 'dark' : 'light');
+//             document.getElementById('theme-toggle').textContent = e.matches ? '🌙' : '☀️';
+//         }
+//     });
+// });
+
 document.addEventListener('DOMContentLoaded', function() {
     const savedTheme = localStorage.getItem('theme');
     const systemDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
     
+    // Initial theme setup
     if (savedTheme) {
         setTheme(savedTheme, false);
     } else {
-        // Apply system theme without saving to localStorage
         document.documentElement.setAttribute('data-theme', systemDark ? 'dark' : 'light');
-        document.getElementById('theme-toggle').textContent = systemDark ? '🌙' : '☀️';
     }
 
+    // Button event listener
     document.getElementById('theme-toggle').addEventListener('click', toggleTheme);
-    
-    // Watch for system theme changes
+
+    // System theme change listener
     window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', e => {
         if (!localStorage.getItem('theme')) {
             document.documentElement.setAttribute('data-theme', e.matches ? 'dark' : 'light');
-            document.getElementById('theme-toggle').textContent = e.matches ? '🌙' : '☀️';
         }
     });
 });
