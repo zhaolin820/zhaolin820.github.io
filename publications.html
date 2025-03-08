@@ -3,12 +3,27 @@
 
 <script>
     // Immediate theme initialization
-    (function() {
-        const savedTheme = localStorage.getItem('theme');
+    // (function() {
+    //     const savedTheme = localStorage.getItem('theme');
+    //     const systemDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+    //     document.documentElement.setAttribute('data-theme', 
+    //         savedTheme || (systemDark ? 'dark' : 'light')
+    //     );
+    // })();
+    // 即时主题初始化 (需在所有CSS加载前执行)
+    (function(){
+        // 优先使用sessionStorage，其次系统偏好
+        const sessionTheme = sessionStorage.getItem('theme');
         const systemDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        
         document.documentElement.setAttribute('data-theme', 
-            savedTheme || (systemDark ? 'dark' : 'light')
+            sessionTheme || (systemDark ? 'dark' : 'light')
         );
+        
+        // 初始化后添加过渡效果
+        setTimeout(() => {
+            document.documentElement.style.transition = 'background-color 0.3s ease, color 0.3s ease';
+        }, 10);
     })();
 </script>
 
@@ -93,9 +108,9 @@
     /* dark mode css */
     :root {
         --bg-color: #ffffff;
-        --text-color: #333333;
+        --text-color: #333;
         --container-bg: #ffffff;
-        --link-color: #0050e7;
+        --link-color: #4A6CD4;
         --body-bg: #e0e0e0;
 
         /* Highlight Colors */
@@ -111,9 +126,9 @@
 
     [data-theme="dark"] {
         --bg-color: #1a1a1a;
-        --text-color: #e0e0e0;
+        --text-color: #EEE;
         --container-bg: #2d2d2d;
-        --link-color: #7aa6ff;
+        --link-color: #7D9FFF;
         --body-bg: #121212;
 
         /* Highlight Colors */
@@ -163,15 +178,21 @@
         opacity: 0.8;  
     } */
 
-    #theme-toggle {
+    .theme-toggle {
         position: fixed;
-        top: 20px;
-        right: 20px;
+        top: 30px;
+        right: 30px;
         cursor: pointer;
-        background: none;
+        background: var(--container-bg);
         border: none;
-        font-size: 24px;
-        color: var(--text-color);
+        width: 44px;
+        height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.3s ease;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        z-index: 1000;
     }
 </style>
 
@@ -202,24 +223,21 @@
     </p>
 </div>
 
-
-<!-- button for dark/light mode -->
 <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">
     <svg class="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-      <circle cx="12" cy="12" r="5"></circle>
-      <line x1="12" y1="1" x2="12" y2="3"></line>
-      <line x1="12" y1="21" x2="12" y2="23"></line>
-      <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
-      <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
-      <line x1="1" y1="12" x2="3" y2="12"></line>
-      <line x1="21" y1="12" x2="23" y2="12"></line>
-      <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
-      <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+    <circle cx="12" cy="12" r="5"></circle>
+    <line x1="12" y1="1" x2="12" y2="3"></line>
+    <line x1="12" y1="21" x2="12" y2="23"></line>
+    <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+    <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+    <line x1="1" y1="12" x2="3" y2="12"></line>
+    <line x1="21" y1="12" x2="23" y2="12"></line>
+    <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+    <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
     </svg>
     <svg class="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-      <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
     </svg>
 </button>
-
 
 </body></html>
