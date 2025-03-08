@@ -104,7 +104,11 @@
           "date": "Jan. 2025",
           "main_link": "https://ieeexplore.ieee.org/document/10841363",
           "links": [
-            {"text": "Arxiv", "url": "https://arxiv.org/abs/2408.09592"}
+            {"text": "Arxiv", "url": "https://arxiv.org/abs/2408.09592"},
+            {"text": "Code", "url": "https://github.com/Dr-Evil-Jiang/Near-Field-Sensing-A-Low-Complexity-Wavenumber-Domain-Positioning-Method"}
+          ],
+          "notes": [
+            {"type": "highlight", "text": "Code Available"}
           ]
         },
         {
