@@ -89,11 +89,12 @@
           "authors": "<b>Z. Wang</b>, P Ramezani, Y Liu, and E Björnson",
           "title": "Near-Field Localization and Sensing with Large-Aperture Arrays: From Signal Modeling to Processing",
           "journal": "IEEE Signal Processing Magazine",
-          "status": "accepted to appear",
-          "date": "2025",
-          "main_link": "https://arxiv.org/abs/2406.10941",
+          "status": "vol. 42, no. 1, pp. 74-87",
+          "date": "Jan. 2025",
+          "main_link": "https://ieeexplore.ieee.org/document/10934790",
           "links": [
-            {"text": "Arxiv", "url": "https://arxiv.org/abs/2406.10941"}
+            {"text": "Arxiv", "url": "https://arxiv.org/abs/2406.10941"},
+            {"text": "Code", "url": "https://github.com/zhaolin820/near-field-localization-and-sensing-with-large-aperture-arrays"}
           ]
         },
         {
