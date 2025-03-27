@@ -26,13 +26,6 @@
           "links": []
         },
         {
-          "authors": "<b>Z. Wang</b>, C Ouyang, and Y. Liu",
-          "title": "Optimal Beamforming for Multi-User Continuous Aperture Array (CAPA) Systems",
-          "date": "Nov. 2024",
-          "main_link": "https://arxiv.org/abs/2411.14919",
-          "links": []
-        },
-        {
           "authors": "C. Ouyang, <b>Z. Wang</b>, X. Zhang, and Y. Liu",
           "title": "Performance of Linear Receive Beamforming for Continuous Aperture Arrays (CAPAs)",
           "date": "Nov. 2024",
@@ -61,9 +54,20 @@
       "items": [
         {
           "authors": "<b>Z. Wang</b>, C Ouyang, and Y. Liu",
+          "title": "Optimal Beamforming for Multi-User Continuous Aperture Array (CAPA) Systems",
+          "journal": "IEEE Transactions on Communications",
+          "status": "early access",
+          "date": "2025",
+          "main_link": "https://ieeexplore.ieee.org/document/10938678",
+          "links": [
+            {"text": "Arxiv", "url": "https://arxiv.org/abs/2411.14919"}
+          ]
+        },
+        {
+          "authors": "<b>Z. Wang</b>, C Ouyang, and Y. Liu",
           "title": "Beamforming Optimization for Continuous Aperture Array (CAPA)-based Communications",
           "journal": "IEEE Transactions on Wireless Communications",
-          "status": "accepted to appear",
+          "status": "early access",
           "date": "2025",
           "main_link": "https://ieeexplore.ieee.org/document/10910020",
           "links": [
