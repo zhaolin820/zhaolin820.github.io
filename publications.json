@@ -5,6 +5,13 @@
       "title": "Preprints",
       "items": [
         {
+          "authors": "<b>Z. Wang</b>, C. Ouyang, and Y. liu",
+          "title": "Beamforming Design for Continuous Aperture Array (CAPA)-Based MIMO Systems",
+          "date": "Mar. 2025",
+          "main_link": "https://arxiv.org/abs/2504.00181",
+          "links": []
+        },
+        {
           "authors": "<b>Z. Wang</b>, C. Ouyang, X. Mu, Y. liu, and Z. Ding",
           "title": "Modeling and Beamforming Optimization for Pinching-Antenna Systems",
           "date": "Feb. 2025",
