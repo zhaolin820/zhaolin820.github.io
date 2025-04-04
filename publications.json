@@ -104,8 +104,7 @@
           "date": "Jan. 2025",
           "main_link": "https://ieeexplore.ieee.org/document/10934790",
           "links": [
-            {"text": "Arxiv", "url": "https://arxiv.org/abs/2406.10941"},
-            {"text": "Code", "url": "https://github.com/zhaolin820/near-field-localization-and-sensing-with-large-aperture-arrays"}
+            {"text": "Arxiv", "url": "https://arxiv.org/abs/2406.10941"}
           ]
         },
         {
