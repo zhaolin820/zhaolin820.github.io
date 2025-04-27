@@ -45,13 +45,6 @@
           "date": "Sep. 2024",
           "main_link": "https://arxiv.org/abs/2408.13948",
           "links": []
-        },
-        {
-          "authors": "<b>Z. Wang</b>, X. Mu, and Y. Liu",
-          "title": "Performance Analysis of Near-Field Sensing in Wideband MIMO Systems",
-          "date": "Aug. 2024",
-          "main_link": "https://arxiv.org/abs/2404.05076",
-          "links": []
         }
       ]
     },
@@ -59,6 +52,17 @@
       "type": "journal_articles",
       "title": "Journal Articles",
       "items": [
+        {
+          "authors": "<b>Z. Wang</b>, X. Mu, and Y. Liu",
+          "title": "Performance Analysis of Near-Field Sensing in Wideband MIMO Systems",
+          "journal": "IEEE Transactions on Wireless Communications",
+          "status": "accepted to appear",
+          "date": "2025",
+          "main_link": "https://arxiv.org/abs/2404.05076",
+          "links": [
+            {"text": "Arxiv", "url": "https://arxiv.org/abs/2404.05076"}
+          ]
+        },
         {
           "authors": "<b>Z. Wang</b>, C Ouyang, and Y. Liu",
           "title": "Optimal Beamforming for Multi-User Continuous Aperture Array (CAPA) Systems",
