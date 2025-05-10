@@ -26,24 +26,10 @@
           "links": []
         },
         {
-          "authors": "Y. Liu, C. Ouyang, <b>Z. Wang</b>, J. Xu, X. Mu, and Z. Ding",
-          "title": "CAPA: Continuous-Aperture Arrays for Revolutionizing 6G Wireless Communications",
-          "date": "Jan. 2025",
-          "main_link": "https://arxiv.org/abs/2412.00894",
-          "links": []
-        },
-        {
           "authors": "C. Ouyang, <b>Z. Wang</b>, X. Zhang, and Y. Liu",
           "title": "Performance of Linear Receive Beamforming for Continuous Aperture Arrays (CAPAs)",
           "date": "Nov. 2024",
           "main_link": "https://arxiv.org/abs/2411.06620",
-          "links": []
-        },
-        {
-          "authors": "C. Ouyang, <b>Z. Wang</b>, X. Zhang, and Y. Liu",
-          "title": "Diversity and Multiplexing for Continuous Aperture Array (CAPA)-Based Communications",
-          "date": "Sep. 2024",
-          "main_link": "https://arxiv.org/abs/2408.13948",
           "links": []
         }
       ]
@@ -53,18 +39,51 @@
       "title": "Journal Articles",
       "items": [
         {
-          "authors": "<b>Z. Wang</b>, X. Mu, and Y. Liu",
-          "title": "Performance Analysis of Near-Field Sensing in Wideband MIMO Systems",
+          "authors": "Y. Liu, C. Ouyang, <b>Z. Wang</b>, J. Xu, X. Mu, and Z. Ding",
+          "title": "CAPA: Continuous-Aperture Arrays for Revolutionizing 6G Wireless Communications",
+          "journal": "IEEE Wireless Communications",
+          "status": "accepted to appear",
+          "date": "2025",
+          "main_link": "https://arxiv.org/abs/2412.00894",
+          "links": [
+            {"text": "Arxiv", "url": "https://arxiv.org/abs/2412.00894"}
+          ]
+        },
+        {
+          "authors": "C. Ouyang, <b>Z. Wang</b>, X. Zhang, and Y. Liu",
+          "title": "Diversity and Multiplexing for Continuous Aperture Array (CAPA)-Based Communications",
           "journal": "IEEE Transactions on Wireless Communications",
           "status": "accepted to appear",
           "date": "2025",
-          "main_link": "https://arxiv.org/abs/2404.05076",
+          "main_link": "https://arxiv.org/abs/2408.13948",
+          "links": [
+            {"text": "Arxiv", "url": "https://arxiv.org/abs/2408.13948"}
+          ]
+        },
+        {
+          "authors": "C. Ouyang, <b>Z. Wang</b>, Y. Liu, and Z. Ding",
+          "title": "Array Gain for Pinching-Antenna Systems (PASS)",
+          "journal": "IEEE Communications Letters",
+          "status": "early access",
+          "date": "2025",
+          "main_link": "https://ieeexplore.ieee.org/document/10981775",
+          "links": [
+            {"text": "Arxiv", "url": "https://arxiv.org/abs/2501.05657"}
+          ]
+        },
+        {
+          "authors": "<b>Z. Wang</b>, X. Mu, and Y. Liu",
+          "title": "Performance Analysis of Near-Field Sensing in Wideband MIMO Systems",
+          "journal": "IEEE Transactions on Wireless Communications",
+          "status": "early access",
+          "date": "2025",
+          "main_link": "https://ieeexplore.ieee.org/document/10988576",
           "links": [
             {"text": "Arxiv", "url": "https://arxiv.org/abs/2404.05076"}
           ]
         },
         {
-          "authors": "<b>Z. Wang</b>, C Ouyang, and Y. Liu",
+          "authors": "<b>Z. Wang</b>, C. Ouyang, and Y. Liu",
           "title": "Optimal Beamforming for Multi-User Continuous Aperture Array (CAPA) Systems",
           "journal": "IEEE Transactions on Communications",
           "status": "early access",
