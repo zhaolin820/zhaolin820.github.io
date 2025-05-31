@@ -39,6 +39,25 @@
       "title": "Journal Articles",
       "items": [
         {
+          "authors": "Y. Guo, Y. Zhang, <b>Z. Wang</b>, M. Shang, Y. Chen, and Y. Liu",
+          "title": "Impact of Array Orientations on Degrees of Freedom for Continuous Aperture Arrays",
+          "journal": "IEEE Wireless Communications Letters",
+          "status": "early access",
+          "date": "2025",
+          "main_link": "https://ieeexplore.ieee.org/abstract/document/11015930"
+        },
+        {
+          "authors": "C. Meng, D. Ma, <b>Z. Wang</b>, Y. Liu, Z. Wei, and Z. Feng",
+          "title": "Near-Field Hybrid Beamforming Design for Modular XL-MIMO ISAC Systems",
+          "journal": "IEEE Transactions on Communications",
+          "status": "early access",
+          "date": "2025",
+          "main_link": "https://ieeexplore.ieee.org/abstract/document/11015468",
+          "links": [
+            {"text": "Arxiv", "url": "https://arxiv.org/abs/2406.12323"}
+          ]
+        },
+        {
           "authors": "Y. Liu, C. Ouyang, <b>Z. Wang</b>, J. Xu, X. Mu, and Z. Ding",
           "title": "CAPA: Continuous-Aperture Arrays for Revolutionizing 6G Wireless Communications",
           "journal": "IEEE Wireless Communications",
@@ -53,7 +72,7 @@
           "authors": "C. Ouyang, <b>Z. Wang</b>, X. Zhang, and Y. Liu",
           "title": "Diversity and Multiplexing for Continuous Aperture Array (CAPA)-Based Communications",
           "journal": "IEEE Transactions on Wireless Communications",
-          "status": "accepted to appear",
+          "status": "early access",
           "date": "2025",
           "main_link": "https://ieeexplore.ieee.org/document/11005662",
           "links": [
