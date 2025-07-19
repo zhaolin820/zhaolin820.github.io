@@ -39,6 +39,17 @@
       "title": "Journal Articles",
       "items": [
         {
+          "authors": "C. Meng, <b>Z. Wang</b>, Z. Wei, Y. Liu, and Z. Feng",
+          "title": "Near-Field Motion Parameter Estimation: A Variational Bayesian Approach",
+          "journal": "IEEE Transactions on Wireless Communications",
+          "status": "early access",
+          "date": "2025",
+          "main_link": "https://ieeexplore.ieee.org/abstract/document/11082451",
+          "links": [
+            {"text": "Arxiv", "url": "https://arxiv.org/abs/2502.14193"}
+          ]
+        },
+        {
           "authors": "Y. Guo, Y. Zhang, <b>Z. Wang</b>, M. Shang, Y. Chen, and Y. Liu",
           "title": "Impact of Array Orientations on Degrees of Freedom for Continuous Aperture Arrays",
           "journal": "IEEE Wireless Communications Letters",
