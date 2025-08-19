@@ -5,31 +5,10 @@
       "title": "Preprints",
       "items": [
         {
-          "authors": "<b>Z. Wang</b>, C. Ouyang, and Y. liu",
-          "title": "Beamforming Design for Continuous Aperture Array (CAPA)-Based MIMO Systems",
-          "date": "Mar. 2025",
-          "main_link": "https://arxiv.org/abs/2504.00181",
-          "links": []
-        },
-        {
           "authors": "<b>Z. Wang</b>, C. Ouyang, X. Mu, Y. liu, and Z. Ding",
           "title": "Modeling and Beamforming Optimization for Pinching-Antenna Systems",
           "date": "Feb. 2025",
           "main_link": "https://arxiv.org/abs/2502.05917",
-          "links": []
-        },
-        {
-          "authors": "Y. Liu, <b>Z. Wang</b>, X. Mu, C. Ouyang, X. Xu, and Z. Ding",
-          "title": "Pinching Antenna Systems (PASS): Architecture Designs, Opportunities, and Outlook",
-          "date": "Jan. 2025",
-          "main_link": "https://arxiv.org/abs/2501.18409",
-          "links": []
-        },
-        {
-          "authors": "C. Ouyang, <b>Z. Wang</b>, X. Zhang, and Y. Liu",
-          "title": "Performance of Linear Receive Beamforming for Continuous Aperture Arrays (CAPAs)",
-          "date": "Nov. 2024",
-          "main_link": "https://arxiv.org/abs/2411.06620",
           "links": []
         }
       ]
@@ -38,6 +17,56 @@
       "type": "journal_articles",
       "title": "Journal Articles",
       "items": [
+        {
+          "authors": "Y. Liu, <b>Z. Wang</b>, X. Mu, C. Ouyang, X. Xu, and Z. Ding",
+          "title": "Pinching Antenna Systems (PASS): Architecture Designs, Opportunities, and Outlook",
+          "journal": "IEEE Wireless Communications",
+          "status": "accepted to appear",
+          "date": "2025",
+          "main_link": "https://arxiv.org/abs/2501.18409",
+          "links": []
+        },
+        {
+          "authors": "<b>Z. Wang</b>, C. Ouyang, and Y. liu",
+          "title": "Beamforming Design for Continuous Aperture Array (CAPA)-Based MIMO Systems",
+          "journal": "IEEE Transactions on Wireless Communications",
+          "status": "early access",
+          "date": "2025",
+          "main_link": "https://ieeexplore-ieee-org.eproxy.lib.hku.hk/document/11122426",
+          "links": [
+            {"text": "Arxiv", "url": "https://arxiv.org/abs/2504.00181"},
+            {"text": "Code", "url": "https://github.com/zhaolin820/beamforming-design-for-continuous-aperture-array-based-MIMO-systems/tree/main"}
+          ],
+          "notes": [
+            {"type": "highlight", "text": "Code Available"}
+          ]
+        },
+        {
+          "authors": "C. Ouyang, <b>Z. Wang</b>, X. Zhang, and Y. Liu",
+          "title": "Linear Receive Beamforming for CAPA Systems",
+          "journal": "IEEE Transactions on Wireless Communications",
+          "status": "early access",
+          "date": "2025",
+          "main_link": "https://ieeexplore-ieee-org.eproxy.lib.hku.hk/abstract/document/11087508",
+          "links": [
+            {"text": "Arxiv", "url": "https://arxiv.org/abs/2411.06620"}
+          ]
+        },
+        {
+          "authors": "<b>Z. Wang</b>, C. Ouyang, Y. liu, and A. Nallanathan",
+          "title": "Wireless Sensing via Pinching-Antenna Systems",
+          "journal": "IEEE Wireless Communications Letters",
+          "status": "early access",
+          "date": "2025",
+          "main_link": "https://ieeexplore-ieee-org.eproxy.lib.hku.hk/document/11111701",
+          "links": [
+            {"text": "Arxiv", "url": "https://arxiv.org/abs/2505.15430"},
+            {"text": "Code", "url": "https://github.com/zhaolin820/wireless-sensing-via-pinching-antenna-systems"}
+          ],
+          "notes": [
+            {"type": "highlight", "text": "Code Available"}
+          ]
+        },
         {
           "authors": "C. Meng, <b>Z. Wang</b>, Z. Wei, Y. Liu, and Z. Feng",
           "title": "Near-Field Motion Parameter Estimation: A Variational Bayesian Approach",
