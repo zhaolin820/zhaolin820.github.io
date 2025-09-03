@@ -20,7 +20,7 @@
         {
           "authors": "Y. Liu, <b>Z. Wang</b>, X. Mu, C. Ouyang, X. Xu, and Z. Ding",
           "title": "Pinching Antenna Systems (PASS): Architecture Designs, Opportunities, and Outlook",
-          "journal": "IEEE Wireless Communications",
+          "journal": "IEEE Communications Magazine",
           "status": "accepted to appear",
           "date": "2025",
           "main_link": "https://arxiv.org/abs/2501.18409",
@@ -32,7 +32,7 @@
           "journal": "IEEE Transactions on Wireless Communications",
           "status": "early access",
           "date": "2025",
-          "main_link": "https://ieeexplore-ieee-org.eproxy.lib.hku.hk/document/11122426",
+          "main_link": "https://ieeexplore.ieee.org/document/11122426",
           "links": [
             {"text": "Arxiv", "url": "https://arxiv.org/abs/2504.00181"},
             {"text": "Code", "url": "https://github.com/zhaolin820/beamforming-design-for-continuous-aperture-array-based-MIMO-systems/tree/main"}
