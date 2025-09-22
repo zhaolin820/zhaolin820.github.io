@@ -69,9 +69,6 @@
           "links": [
             {"text": "Arxiv", "url": "https://arxiv.org/abs/2505.15430"},
             {"text": "Code", "url": "https://github.com/zhaolin820/wireless-sensing-via-pinching-antenna-systems"}
-          ],
-          "notes": [
-            {"type": "highlight", "text": "Code Available"}
           ]
         },
         {
@@ -223,7 +220,8 @@
             {"text": "Code", "url": "https://github.com/zhaolin820/beamfocusing-optimization-for-near-field-wideband-multi-user-communications"}
           ],
           "notes": [
-            {"type": "highlight", "text": "Code Available"}
+            {"type": "highlight", "text": "Code Available"},
+            {"type": "award", "text": "ESI Highly Cited Paper"}
           ]
         },
         {
@@ -279,6 +277,9 @@
           "main_link": "https://ieeexplore.ieee.org/document/10716601",
           "links": [
             {"text": "Arxiv", "url": "https://arxiv.org/abs/2401.05900"}
+          ],
+          "notes": [
+            {"type": "award", "text": "ESI Highly Cited Paper"}
           ]
         },
         {
