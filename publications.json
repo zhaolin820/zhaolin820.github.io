@@ -67,8 +67,7 @@
           "date": "2025",
           "main_link": "https://ieeexplore-ieee-org.eproxy.lib.hku.hk/document/11111701",
           "links": [
-            {"text": "Arxiv", "url": "https://arxiv.org/abs/2505.15430"},
-            {"text": "Code", "url": "https://github.com/zhaolin820/wireless-sensing-via-pinching-antenna-systems"}
+            {"text": "Arxiv", "url": "https://arxiv.org/abs/2505.15430"}
           ]
         },
         {
