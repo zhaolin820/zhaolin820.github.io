@@ -28,10 +28,12 @@
           "authors": "Y. Liu, <b>Z. Wang</b>, X. Mu, C. Ouyang, X. Xu, and Z. Ding",
           "title": "Pinching Antenna Systems (PASS): Architecture Designs, Opportunities, and Outlook",
           "journal": "IEEE Communications Magazine",
-          "status": "accepted to appear",
+          "status": "early access",
           "date": "2025",
-          "main_link": "https://arxiv.org/abs/2501.18409",
-          "links": []
+          "main_link": "https://ieeexplore.ieee.org/document/11169486",
+          "links": [
+            {"text": "Arxiv", "url": "https://arxiv.org/abs/2501.18409"}
+          ]
         },
         {
           "authors": "<b>Z. Wang</b>, C. Ouyang, and Y. Liu",
@@ -219,8 +221,8 @@
             {"text": "Code", "url": "https://github.com/zhaolin820/beamfocusing-optimization-for-near-field-wideband-multi-user-communications"}
           ],
           "notes": [
-            {"type": "highlight", "text": "Code Available"},
-            {"type": "award", "text": "ESI Highly Cited Paper"}
+            {"type": "award", "text": "ESI Highly Cited Paper"},
+            {"type": "highlight", "text": "Code Available"}
           ]
         },
         {
