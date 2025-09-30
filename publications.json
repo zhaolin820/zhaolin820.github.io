@@ -525,6 +525,7 @@
             {"text": "Code", "url": "https://github.com/zhaolin820/near-field-integrated-sensing-and-communications"}
           ],
           "notes": [
+            {"type": "award", "text": "ESI Hot Paper"},
             {"type": "award", "text": "ESI Highly Cited Paper"},
             {"type": "highlight", "text": "Code Available"}
           ]
