@@ -85,7 +85,7 @@ document.addEventListener('DOMContentLoaded', function() {
             // If we have both types, separate them
             if (firstAuthorItems.length > 0 && coAuthorItems.length > 0) {
                 innerHTML += `
-                    <h3 class="sub-category">First / Corresponding Author</h3>
+                    <h3 class="sub-category">First Author</h3>
                     <ol class="paper_table">${generateListHTML(firstAuthorItems)}</ol>
                     
                     <h3 class="sub-category">Co-Author</h3>
