@@ -29,11 +29,49 @@
           ]
         },
         {
+          "authors": "H. Jiang, <b>Z. Wang</b>, Y. Liu and A. Nallanathan",
+          "title": "Cramér-Rao Bound Optimization for Near-Field Sensing with Continuous-Aperture Arrays",
+          "journal": "IEEE Transactions on Wireless Communications",
+          "status": "early access",
+          "date": "Nov. 2025",
+          "main_link": "https://ieeexplore.ieee.org/document/11241087",
+          "links": [
+            {"text": "Arxiv", "url": "https://arxiv.org/abs/2412.15007"}
+          ]
+        },
+        {
+          "authors": "Z. Zhang, <b>Z. Wang</b>, X. Mu, B. He, J. Chen and Y. Liu",
+          "title": "Integrated Sensing and Communications for Pinching-Antenna Systems (PASS)",
+          "journal": "IEEE Communications Letters ",
+          "status": "early access",
+          "date": "Oct. 2025",
+          "main_link": "https://ieeexplore.ieee.org/document/11197530",
+          "links": [
+            {"text": "Arxiv", "url": "https://arxiv.org/abs/2504.07709"}
+          ]
+        },
+        {
+          "authors": "Q. Wang, X. Chen, Q. Qi, <b>Z. Wang</b>, and Y. Liu",
+          "title": "Integration of Navigation and Remote Sensing in LEO Satellite Constellations",
+          "journal": "IEEE Transactions on Communications",
+          "status": "early access",
+          "date": "Nov. 2025",
+          "main_link": "https://ieeexplore.ieee.org/document/11224933"
+        },
+        {
+          "authors": "H. Jiang, <b>Z. Wang</b>, Y. Liu, A. Nallanathan, and H. Shin",
+          "title": "Beam Alignment for MIMO Fluid Antenna Systems",
+          "journal": "IEEE Journal on Selected Areas in Communications",
+          "status": "early access",
+          "date": "Oct. 2025",
+          "main_link": "https://ieeexplore.ieee.org/document/11193820"
+        },
+        {
           "authors": "Y. Liu, <b>Z. Wang</b>, X. Mu, C. Ouyang, X. Xu, and Z. Ding",
           "title": "Pinching Antenna Systems (PASS): Architecture Designs, Opportunities, and Outlook",
           "journal": "IEEE Communications Magazine",
           "status": "early access",
-          "date": "2025",
+          "date": "Sep. 2025",
           "main_link": "https://ieeexplore.ieee.org/document/11169486",
           "links": [
             {"text": "Arxiv", "url": "https://arxiv.org/abs/2501.18409"}
@@ -44,7 +82,7 @@
           "title": "Beamforming Design for Continuous Aperture Array (CAPA)-Based MIMO Systems",
           "journal": "IEEE Transactions on Wireless Communications",
           "status": "early access",
-          "date": "2025",
+          "date": "Aug. 2025",
           "main_link": "https://ieeexplore.ieee.org/document/11122426",
           "links": [
             {"text": "Arxiv", "url": "https://arxiv.org/abs/2504.00181"},
@@ -59,7 +97,7 @@
           "title": "Linear Receive Beamforming for CAPA Systems",
           "journal": "IEEE Transactions on Wireless Communications",
           "status": "early access",
-          "date": "2025",
+          "date": "Jul. 2025",
           "main_link": "https://ieeexplore-ieee-org.eproxy.lib.hku.hk/abstract/document/11087508",
           "links": [
             {"text": "Arxiv", "url": "https://arxiv.org/abs/2411.06620"}
@@ -69,8 +107,8 @@
           "authors": "<b>Z. Wang</b>, C. Ouyang, Y. Liu, and A. Nallanathan",
           "title": "Wireless Sensing via Pinching-Antenna Systems",
           "journal": "IEEE Wireless Communications Letters",
-          "status": "early access",
-          "date": "2025",
+          "status": "vol. 14, no. 11, pp. 3475-3479",
+          "date": "Nov. 2025",
           "main_link": "https://ieeexplore-ieee-org.eproxy.lib.hku.hk/document/11111701",
           "links": [
             {"text": "Arxiv", "url": "https://arxiv.org/abs/2505.15430"}
@@ -81,7 +119,7 @@
           "title": "Near-Field Motion Parameter Estimation: A Variational Bayesian Approach",
           "journal": "IEEE Transactions on Wireless Communications",
           "status": "early access",
-          "date": "2025",
+          "date": "Jul. 2025",
           "main_link": "https://ieeexplore.ieee.org/abstract/document/11082451",
           "links": [
             {"text": "Arxiv", "url": "https://arxiv.org/abs/2502.14193"}
@@ -99,8 +137,8 @@
           "authors": "C. Meng, D. Ma, <b>Z. Wang</b>, Y. Liu, Z. Wei, and Z. Feng",
           "title": "Near-Field Hybrid Beamforming Design for Modular XL-MIMO ISAC Systems",
           "journal": "IEEE Transactions on Communications",
-          "status": "early access",
-          "date": "2025",
+          "status": "vol. 73, no. 11, pp. 11840-11854",
+          "date": "Nov. 2025",
           "main_link": "https://ieeexplore.ieee.org/abstract/document/11015468",
           "links": [
             {"text": "Arxiv", "url": "https://arxiv.org/abs/2406.12323"}
@@ -110,8 +148,8 @@
           "authors": "Y. Liu, C. Ouyang, <b>Z. Wang</b>, J. Xu, X. Mu, and Z. Ding",
           "title": "CAPA: Continuous-Aperture Arrays for Revolutionizing 6G Wireless Communications",
           "journal": "IEEE Wireless Communications",
-          "status": "accepted to appear",
-          "date": "2025",
+          "status": "vol. 32, no. 4, pp. 38-45",
+          "date": "Aug. 2025",
           "main_link": "https://arxiv.org/abs/2412.00894",
           "links": [
             {"text": "Arxiv", "url": "https://arxiv.org/abs/2412.00894"}
@@ -121,8 +159,8 @@
           "authors": "C. Ouyang, <b>Z. Wang</b>, X. Zhang, and Y. Liu",
           "title": "Diversity and Multiplexing for Continuous Aperture Array (CAPA)-Based Communications",
           "journal": "IEEE Transactions on Wireless Communications",
-          "status": "early access",
-          "date": "2025",
+          "status": "vol. 24, no. 10, pp. 8662-8680",
+          "date": "Oct. 2025",
           "main_link": "https://ieeexplore.ieee.org/document/11005662",
           "links": [
             {"text": "Arxiv", "url": "https://arxiv.org/abs/2408.13948"}
@@ -143,8 +181,8 @@
           "authors": "<b>Z. Wang</b>, X. Mu, and Y. Liu",
           "title": "Performance Analysis of Near-Field Sensing in Wideband MIMO Systems",
           "journal": "IEEE Transactions on Wireless Communications",
-          "status": "early access",
-          "date": "2025",
+          "status": "vol. 24, no. 10, pp. 8236-8251",
+          "date": "Oct. 2025",
           "main_link": "https://ieeexplore.ieee.org/document/10988576",
           "links": [
             {"text": "Arxiv", "url": "https://arxiv.org/abs/2404.05076"}
@@ -154,8 +192,8 @@
           "authors": "<b>Z. Wang</b>, C. Ouyang, and Y. Liu",
           "title": "Optimal Beamforming for Multi-User Continuous Aperture Array (CAPA) Systems",
           "journal": "IEEE Transactions on Communications",
-          "status": "early access",
-          "date": "2025",
+          "status": "vol. 73, no. 10, pp. 9207-9221",
+          "date": "Oct, 2025",
           "main_link": "https://ieeexplore.ieee.org/document/10938678",
           "links": [
             {"text": "Arxiv", "url": "https://arxiv.org/abs/2411.14919"}
@@ -268,8 +306,8 @@
           "authors": "R. Zhang, <b>Z. Wang</b>, Z. Wei, Y. Liu, Z. Xiong and Z. Feng",
           "title": "ISAR Sensing Based on MUSIC Algorithm in Integrated Sensing and Communications",
           "journal": "IEEE Transactions on Cognitive Communications and Networking",
-          "status": "early access",
-          "date": "Jan. 2025",
+          "status": "vol. 11, no. 5, pp. 3292-3305",
+          "date": "Oct. 2025",
           "main_link": "https://ieeexplore.ieee.org/document/10851319",
           "links": []
         },
