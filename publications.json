@@ -4,7 +4,14 @@
       "type": "preprints",
       "title": "Preprints",
       "items": [
-                {
+        {
+          "authors": "<b>Z. Wang</b>, K. R. R. Ranasinghe, G. T. F. de Abreu, and Y. Liu",
+          "title": "Mutual Coupling in Continuous Aperture Arrays: Physical Modeling and Beamforming Design",
+          "date": "Nov. 2025",
+          "main_link": "https://arxiv.org/abs/2511.11225",
+          "links": []
+        },
+        {
           "authors": "<b>Z. Wang</b>, J. Xu, C. Ouyang, X. Mu, and Y. Liu",
           "title": "Multiport Network Modeling and Optimization for Reconfigurable Pinching-Antenna Systems",
           "date": "Sep. 2025",
