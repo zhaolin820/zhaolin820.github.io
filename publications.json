@@ -25,6 +25,47 @@
       "title": "Journal Articles",
       "items": [
         {
+          "authors": "M. Sun, C. Ouyang, <b>Z. Wang</b>, S. Wu and Y. Liu",
+          "title": "Secure Beamforming for Continuous Aperture Array (CAPA) Systems",
+          "journal": "IEEE Transactions on Wireless Communications,",
+          "status": "early access",
+          "date": "Dec. 2025",
+          "main_link": "https://ieeexplore.ieee.org/document/11299446",
+          "links": [
+            {"text": "Arxiv", "url": "https://arxiv.org/abs/2501.04924"}
+          ]
+        },
+        {
+          "authors": "H. Ting, <b>Z. Wang</b>, and Y. Liu",
+          "title": "Personalized Mobile Edge Generation: a Stable Personalized Training Approach via Scaling Connection",
+          "journal": "IEEE Transactions on Mobile Computing,",
+          "status": "early access",
+          "date": "Nov. 2025",
+          "main_link": "https://ieeexplore.ieee.org/document/11268972"
+        },
+        {
+          "authors": "H. Jiang, <b>Z. Wang</b>, and Y. Liu",
+          "title": "Pinching-Antenna System (PASS) Enhanced Covert Communications",
+          "journal": "IEEE Journal on Selected Areas in Communications",
+          "status": "early access",
+          "date": "Dec. 2025",
+          "main_link": "https://ieeexplore.ieee.org/document/11289518",
+          "links": [
+            {"text": "Arxiv", "url": "https://arxiv.org/abs/2504.10442"}
+          ]
+        },
+        {
+          "authors": "X. Xu, X. Mu, <b>Z. Wang</b>, Y. Liu, and A. Nallanathan",
+          "title": "Pinching-Antenna Systems (PASS): Power Radiation Model and Optimal Beamforming Design",
+          "journal": "IEEE Transactions on Communications",
+          "status": "early access",
+          "date": "Nov. 2025",
+          "main_link": "https://ieeexplore.ieee.org/document/11263923",
+          "links": [
+            {"text": "Arxiv", "url": "https://arxiv.org/abs/2505.00218"}
+          ]
+        },
+        {
           "authors": "<b>Z. Wang</b>, C. Ouyang, X. Mu, Y. Liu, and Z. Ding",
           "title": "Modeling and Beamforming Optimization for Pinching-Antenna Systems",
           "journal": "IEEE Transactions on Communications",
