@@ -5,6 +5,20 @@
       "title": "Preprints",
       "items": [
         {
+          "authors": "<b>Z. Wang</b>, Z. Zhou, C. J. Zhao, and Y. Liu",
+          "title": "Generative Site-Specific Beamforming for Next-Generation Spatial Intelligence",
+          "date": "Jan. 2026",
+          "main_link": "https://arxiv.org/abs/2601.02301",
+          "links": []
+        },
+        {
+          "authors": "Z. Zhou, <b>Z. Wang</b>, and Y. Liu",
+          "title": "Beam-Brainstorm: A Generative Site-Specific Beamforming Approach",
+          "date": "Jan. 2026",
+          "main_link": "https://arxiv.org/abs/2601.02219",
+          "links": []
+        },
+        {
           "authors": "<b>Z. Wang</b>, K. R. R. Ranasinghe, G. T. F. de Abreu, and Y. Liu",
           "title": "Mutual Coupling in Continuous Aperture Arrays: Physical Modeling and Beamforming Design",
           "date": "Nov. 2025",
