@@ -94,8 +94,8 @@
           "authors": "H. Jiang, <b>Z. Wang</b>, Y. Liu and A. Nallanathan",
           "title": "Cramér-Rao Bound Optimization for Near-Field Sensing with Continuous-Aperture Arrays",
           "journal": "IEEE Transactions on Wireless Communications",
-          "status": "early access",
-          "date": "Nov. 2025",
+          "status": "vol. 25, pp. 7032-7047",
+          "date": "Jan. 2026",
           "main_link": "https://ieeexplore.ieee.org/document/11241087",
           "links": [
             {"text": "Arxiv", "url": "https://arxiv.org/abs/2412.15007"}
@@ -116,8 +116,8 @@
           "authors": "Q. Wang, X. Chen, Q. Qi, <b>Z. Wang</b>, and Y. Liu",
           "title": "Integration of Navigation and Remote Sensing in LEO Satellite Constellations",
           "journal": "IEEE Transactions on Communications",
-          "status": "early access",
-          "date": "Nov. 2025",
+          "status": "vol. 74, pp. 581-597",
+          "date": "Jan. 2026",
           "main_link": "https://ieeexplore.ieee.org/document/11224933"
         },
         {
@@ -143,8 +143,8 @@
           "authors": "<b>Z. Wang</b>, C. Ouyang, and Y. Liu",
           "title": "Beamforming Design for Continuous Aperture Array (CAPA)-Based MIMO Systems",
           "journal": "IEEE Transactions on Wireless Communications",
-          "status": "early access",
-          "date": "Aug. 2025",
+          "status": "vol. 25, pp. 2167-2182",
+          "date": "Jan. 2026",
           "main_link": "https://ieeexplore.ieee.org/document/11122426",
           "links": [
             {"text": "Arxiv", "url": "https://arxiv.org/abs/2504.00181"},
@@ -180,8 +180,8 @@
           "authors": "C. Meng, <b>Z. Wang</b>, Z. Wei, Y. Liu, and Z. Feng",
           "title": "Near-Field Motion Parameter Estimation: A Variational Bayesian Approach",
           "journal": "IEEE Transactions on Wireless Communications",
-          "status": "early access",
-          "date": "Jul. 2025",
+          "status": "vol. 25, pp. 832-847",
+          "date": "Jan. 2026",
           "main_link": "https://ieeexplore.ieee.org/abstract/document/11082451",
           "links": [
             {"text": "Arxiv", "url": "https://arxiv.org/abs/2502.14193"}
