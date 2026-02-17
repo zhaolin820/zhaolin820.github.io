@@ -5,6 +5,13 @@
       "title": "Preprints",
       "items": [
         {
+          "authors": "C. J. Zhao, <b>Z. Wang</b>, and Y. Liu",
+          "title": "Generative Site-Specific Beamforming via Information-Maximizing Codebook",
+          "date": "Feb. 2026",
+          "main_link": "https://arxiv.org/abs/2602.12552",
+          "links": []
+        },
+        {
           "authors": "<b>Z. Wang</b>, Z. Zhou, C. J. Zhao, and Y. Liu",
           "title": "Generative Site-Specific Beamforming for Next-Generation Spatial Intelligence",
           "date": "Jan. 2026",
