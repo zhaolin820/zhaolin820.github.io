@@ -1,175 +1,295 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
-    <head>
-        <!-- Google tag (gtag.js) -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-LJH79M478S"></script>
-        <script>
+
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-LJH79M478S"></script>
+    <script>
         window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
+        function gtag() { dataLayer.push(arguments); }
         gtag('js', new Date());
 
         gtag('config', 'G-LJH79M478S');
-        </script>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </script>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
-<script>
-    // Immediate theme initialization
-    // (function() {
-    //     const savedTheme = localStorage.getItem('theme');
-    //     const systemDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-    //     document.documentElement.setAttribute('data-theme', 
-    //         savedTheme || (systemDark ? 'dark' : 'light')
-    //     );
-    // })();
+    <script>
 
-    // 即时主题初始化 (需在所有CSS加载前执行)
-    (function(){
-        // 优先使用sessionStorage，其次系统偏好
-        const sessionTheme = sessionStorage.getItem('theme');
-        const systemDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-        
-        document.documentElement.setAttribute('data-theme', 
-            sessionTheme || (systemDark ? 'dark' : 'light')
-        );
-        
-        // 初始化后添加过渡效果
-        setTimeout(() => {
-            document.documentElement.style.transition = 'background-color 0.3s ease, color 0.3s ease';
-        }, 10);
-    })();
-</script>
-    
+        // 即时主题初始化 (需在所有CSS加载前执行)
+        (function () {
+            // 优先使用sessionStorage，其次系统偏好
+            const sessionTheme = sessionStorage.getItem('theme');
+            const systemDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
 
-<!-- Meta tags for search engines to crawl -->
-<meta name="robots" content="index,follow">
-<meta name="keywords" content="Zhaolin Wang; 王照霖; Queen Mary University of London">
-<script src="assets/js/jquery.scrolly.min.js"></script>
-<script src="assets/js/jquery.min.js"></script>
-<script src="scroll_animation.js"></script>
-<script src="dark_mode.js"></script>
-<link rel="stylesheet" href="scroll_animation.css">
-<link rel="stylesheet" href="dark_mode_button.css">
-<link rel="author" href="https://zhaolin820.github.io/">
+            document.documentElement.setAttribute('data-theme',
+                sessionTheme || (systemDark ? 'dark' : 'light')
+            );
 
-<title>Zhaolin Wang - Homepage</title>
-<style>
-    @media screen and (max-device-width: 480px){
-    body{
-        -webkit-text-size-adjust: none;
-    }
-    }
-    p { font-size : 16px; }
-    h1 { font-size : 34px; margin : 0; padding : 0; }
-    h2 { font-size : 20px; margin : 0; padding : 0;}
-    h3 { font-size : 18px; margin : 8; padding : 0; }
-    body { padding : 0; font-family : -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", "Helvetica Neue", Helvetica, Tahoma, Arial,"PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; font-size : 16px; background-color : rgb(224, 224, 224); }
-    .title { width : 650px; margin : 20px auto; }
-    .container { width : 750px; margin : 20px auto; border-radius: 10px;  background-color : #fff; padding : 20px;  clear:both;}
-    .container_title { width : 750px; margin : 20px auto; border-radius: 10px;  padding : 20px;  clear:both;}
-    .iframe_video {float: left; margin-right: 30px}
-    #bio {
-        padding-top : 0px;
-    }
-    #me { border : 0 solid black; margin-bottom : 50px; border-radius : 10px; }
-    #sidebar { margin-left : 25px; margin-right : 50px; border : 0 solid black; float : left; margin-top: -35px; margin-bottom : 0;}
-    a { text-decoration : none; }
-    a:hover { text-decoration : underline; }
-    a, a:visited { color : #0050e7; }
-    .publogo { width: 100 px; margin-right : 20px; float : left; border : 0;}
-    .publication { clear : left; padding-bottom : 0px; }
-    .publication p { height : 100px; padding-top : 5px;}
-    .publication strong a { color : #0000A0; }
-    .publication .links { position : relative; top : 15px }
-    .publication .links a { margin-right : 20px; }
-    .codelogo { margin-right : 10px; float : left; border : 0;}
-    .code { clear : left; padding-bottom : 10px; vertical-align :middle;} 
-    .code .download a { display : block; margin : 0 15px; float : left;}
-    .code strong a { color : #000; }
-    .external a { margin : 0 10px; }
-    .external a.first { margin : 0 10px 0 0; }
-    .date {width:13%; vertical-align: top;}
-    .mono_font {font-family:ui-monospace, 
-             Menlo, Monaco, 
-             "Cascadia Mono", "Segoe UI Mono", 
-             "Roboto Mono", 
-             "Oxygen Mono", 
-             "Ubuntu Mono", 
-             "Source Code Pro",
-             "Fira Mono", 
-             "Droid Sans Mono", 
-             "Consolas", "Courier New", monospace;}
-    
-    /* dark mode css */
-    :root {
-        --bg-color: #ffffff;
-        --text-color: #333;         
-        --container-bg: #ffffff;
-        --link-color: #4A6CD4;
-        --body-bg: #e0e0e0;
-    }
+            // 初始化后添加过渡效果
+            setTimeout(() => {
+                document.documentElement.style.transition = 'background-color 0.3s ease, color 0.3s ease';
+            }, 10);
+        })();
+    </script>
 
-    [data-theme="dark"] {
-        --bg-color: #1a1a1a;
-        --text-color: #EEE;      
-        --container-bg: #2d2d2d;
-        --link-color: #7D9FFF;
-        --body-bg: #121212;
-    }
 
-    html {
-        background: var(--body-bg);
-        transition: background-color 0.3s ease;
-    }
+    <!-- Meta tags for search engines to crawl -->
+    <meta name="robots" content="index,follow">
+    <meta name="keywords" content="Zhaolin Wang; 王照霖; Queen Mary University of London">
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/scroll_animation.js"></script>
+    <script src="assets/js/dark_mode.js"></script>
+    <link rel="stylesheet" href="assets/css/scroll_animation.css">
+    <link rel="stylesheet" href="assets/css/dark_mode_button.css">
+    <link rel="author" href="https://zhaolin820.github.io/">
 
-    body {
-        background-color: var(--body-bg);
-        color: var(--text-color);
-        transition: background-color 0.3s ease, color 0.3s ease;
-    }
+    <title>Zhaolin Wang - Homepage</title>
+    <style>
+        @media screen and (max-device-width: 480px) {
+            body {
+                -webkit-text-size-adjust: none;
+            }
+        }
 
-    .container {
-        background-color: var(--container-bg);
-    }
+        p {
+            font-size: 16px;
+        }
 
-    a, a:visited {
-        color: var(--link-color);
-    }
+        h1 {
+            font-size: 34px;
+            margin: 0;
+            padding: 0;
+        }
 
-    /* a:hover {
+        h2 {
+            font-size: 20px;
+            margin: 0;
+            padding: 0;
+        }
+
+        h3 {
+            font-size: 18px;
+            margin: 8;
+            padding: 0;
+        }
+
+        body {
+            padding: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", "Helvetica Neue", Helvetica, Tahoma, Arial, "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+            font-size: 16px;
+            background-color: rgb(224, 224, 224);
+        }
+
+        .title {
+            width: 650px;
+            margin: 20px auto;
+        }
+
+        .container {
+            width: 750px;
+            margin: 20px auto;
+            border-radius: 10px;
+            background-color: #fff;
+            padding: 20px;
+            clear: both;
+        }
+
+        .container_title {
+            width: 750px;
+            margin: 20px auto;
+            border-radius: 10px;
+            padding: 20px;
+            clear: both;
+        }
+
+        .iframe_video {
+            float: left;
+            margin-right: 30px
+        }
+
+        #bio {
+            padding-top: 0px;
+        }
+
+        #me {
+            border: 0 solid black;
+            margin-bottom: 50px;
+            border-radius: 10px;
+        }
+
+        #sidebar {
+            margin-left: 25px;
+            margin-right: 50px;
+            border: 0 solid black;
+            float: left;
+            margin-top: -35px;
+            margin-bottom: 0;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        a,
+        a:visited {
+            color: #0050e7;
+        }
+
+        .publogo {
+            width: 100 px;
+            margin-right: 20px;
+            float: left;
+            border: 0;
+        }
+
+        .publication {
+            clear: left;
+            padding-bottom: 0px;
+        }
+
+        .publication p {
+            height: 100px;
+            padding-top: 5px;
+        }
+
+        .publication strong a {
+            color: #0000A0;
+        }
+
+        .publication .links {
+            position: relative;
+            top: 15px
+        }
+
+        .publication .links a {
+            margin-right: 20px;
+        }
+
+        .codelogo {
+            margin-right: 10px;
+            float: left;
+            border: 0;
+        }
+
+        .code {
+            clear: left;
+            padding-bottom: 10px;
+            vertical-align: middle;
+        }
+
+        .code .download a {
+            display: block;
+            margin: 0 15px;
+            float: left;
+        }
+
+        .code strong a {
+            color: #000;
+        }
+
+        .external a {
+            margin: 0 10px;
+        }
+
+        .external a.first {
+            margin: 0 10px 0 0;
+        }
+
+        .date {
+            width: 13%;
+            vertical-align: top;
+        }
+
+        .mono_font {
+            font-family: ui-monospace,
+                Menlo, Monaco,
+                "Cascadia Mono", "Segoe UI Mono",
+                "Roboto Mono",
+                "Oxygen Mono",
+                "Ubuntu Mono",
+                "Source Code Pro",
+                "Fira Mono",
+                "Droid Sans Mono",
+                "Consolas", "Courier New", monospace;
+        }
+
+        /* dark mode css */
+        :root {
+            --bg-color: #ffffff;
+            --text-color: #333;
+            --container-bg: #ffffff;
+            --link-color: #4A6CD4;
+            --body-bg: #e0e0e0;
+        }
+
+        [data-theme="dark"] {
+            --bg-color: #1a1a1a;
+            --text-color: #EEE;
+            --container-bg: #2d2d2d;
+            --link-color: #7D9FFF;
+            --body-bg: #121212;
+        }
+
+        html {
+            background: var(--body-bg);
+            transition: background-color 0.3s ease;
+        }
+
+        body {
+            background-color: var(--body-bg);
+            color: var(--text-color);
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        .container {
+            background-color: var(--container-bg);
+        }
+
+        a,
+        a:visited {
+            color: var(--link-color);
+        }
+
+        /* a:hover {
         color: var(--link-color);
         opacity: 0.8;  
     } */
 
-    .pub-note.highlight {
-        background: #332900;
-        color: #ffd700;
-        border-color: #665200;
-    }
+        .pub-note.highlight {
+            background: #332900;
+            color: #ffd700;
+            border-color: #665200;
+        }
 
-    /* .pub-note.award {
+        /* .pub-note.award {
         background: #003311;
         color: #00cc66;
         border-color: #006633;
     } */
 
 
-    .theme-toggle {
-        position: fixed;
-        top: 30px;
-        right: 30px;
-        cursor: pointer;
-        background: var(--container-bg);
-        border: none;
-        width: 44px;
-        height: 44px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        transition: all 0.3s ease;
-        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-        z-index: 1000;
-    }
-</style>
+        .theme-toggle {
+            position: fixed;
+            top: 30px;
+            right: 30px;
+            cursor: pointer;
+            background: var(--container-bg);
+            border: none;
+            width: 44px;
+            height: 44px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+        }
+    </style>
 
 </head>
 
@@ -178,9 +298,10 @@
     <div class="container scroll-animation">
         <h2>
             <a href="./index.html">Home</a>&nbsp;&nbsp;&middot;&nbsp;&nbsp;
-            <!-- <a href="./research.html">Research</a>&nbsp;&nbsp;&middot;&nbsp; -->
+            <a href="./research.html">Research</a>&nbsp;&nbsp;&middot;&nbsp;
             <a href="./publications.html">Publications</a>&nbsp;&nbsp;&middot;&nbsp;&nbsp;
-            <a href="https://www.eee.hku.hk/~yuanwei/6G-HKU.html" target="_blank" rel="noopener noreferrer">6G@HKU</a>&nbsp;&nbsp;
+            <a href="https://www.eee.hku.hk/~yuanwei/6G-HKU.html" target="_blank"
+                rel="noopener noreferrer">6G@HKU</a>&nbsp;&nbsp;
             <!-- &middot;&nbsp; -->
             <!-- <a href="./softwares.html">Softwares</a>&nbsp;&nbsp;&middot;&nbsp;
             <a href="./team.html">Team</a>&nbsp;&nbsp;&middot;&nbsp;
@@ -190,22 +311,22 @@
         </h2>
     </div>
 
-	<div class="container scroll-animation">
-		<div id="sidebar">
-            <img src="./homepage_files/me.jpg" vspace="50 px" width="250 px" id="me" itemprop="photo">
+    <div class="container scroll-animation">
+        <div id="sidebar">
+            <img src="./assets/images/me.jpg" vspace="50 px" width="250 px" id="me" itemprop="photo">
         </div>
-		<div id="bio">
+        <div id="bio">
 
             <br>
 
-			<h1>
-				<span class="mono_font" itemprop="name">Zhaolin Wang </span>
-			</h1>
+            <h1>
+                <span class="mono_font" itemprop="name">Zhaolin Wang </span>
+            </h1>
 
             <br>
 
-			<p style="line-height:23px;">
-				Research Assistant Professor
+            <p style="line-height:23px;">
+                Research Assistant Professor
                 <br>
                 <br>
                 Department of Electrical and Computer Engineering
@@ -216,26 +337,36 @@
                 <br>
                 Email: zhaolin.wang@hku.hk
                 <br>
-			</p>
+            </p>
             </br>
             <p class="external">
                 <a href="https://scholar.google.com/citations?user=86LiyOsAAAAJ&hl" class="first">Google Scholar</a>
                 <a href="https://github.com/zhaolin820">GitHub</a>
                 <a href="https://www.researchgate.net/profile/Zhaolin-Wang-7">Research Gate</a>
             </p>
-		</div>
-	</div>
+        </div>
+    </div>
 
-	<div class="container scroll-animation">
-		<h2 class="mono_font">Short Bio</h2>
-		<p style="text-align:justify;"> 
+    <div class="container scroll-animation">
+        <h2 class="mono_font">Short Bio</h2>
+        <p style="text-align:justify;">
 
-            I received the dual B.Eng. degrees (with honors) from <a href="https://www.bupt.edu.cn">Beijing University of Posts and Telecommunications</a>, China, and <a href="https://www.qmul.ac.uk/">Queen Mary University of London (QMUL) </a>, U.K., in 2020, the M.Sc. degree (with distinction) from <a href="https://www.imperial.ac.uk/">Imperial College London</a>, U.K., in 2021, and the Ph.D. degree from QMUL in 2024, advised by <a href="https://www.eee.hku.hk/~yuanwei/">Prof. Yuanwei Liu</a>.
-        </br></br>
-            I am currently a Research Assistant Professor at <a href="https://www.hku.hk/">The University of Hong Kong</a>. Prior to that, I was a Postdoctoral Researcher with QMUL from 2024 to 2025.  My research focuses on near-field communications, integrated sensing and communications, and optimization theory for next-generation wireless systems. I have received the Best Student Paper Award at IEEE VTC2022-Fall, the 2023 IEEE Daniel E. Noble Fellowship Award, and the 2025 Andrea Goldsmith Young Scholar Award. I was also recognized as an Exemplary Reviewer for IEEE Wireless Communications Letters in 2023 and IEEE Communications Letters in 2024. I am serving as an Editor for IEEE Transactions on Communications.
+            I received the dual B.Eng. degrees (with honors) from <a href="https://www.bupt.edu.cn">Beijing University
+                of Posts and Telecommunications</a>, China, and <a href="https://www.qmul.ac.uk/">Queen Mary University
+                of London (QMUL) </a>, U.K., in 2020, the M.Sc. degree (with distinction) from <a
+                href="https://www.imperial.ac.uk/">Imperial College London</a>, U.K., in 2021, and the Ph.D. degree from
+            QMUL in 2024, advised by <a href="https://www.eee.hku.hk/~yuanwei/">Prof. Yuanwei Liu</a>.
+            </br></br>
+            I am currently a Research Assistant Professor at <a href="https://www.hku.hk/">The University of Hong
+                Kong</a>. Prior to that, I was a Postdoctoral Researcher with QMUL from 2024 to 2025. My research
+            focuses on near-field communications, integrated sensing and communications, and optimization theory for
+            next-generation wireless systems. I have received the Best Student Paper Award at IEEE VTC2022-Fall, the
+            2023 IEEE Daniel E. Noble Fellowship Award, and the 2025 Andrea Goldsmith Young Scholar Award. I was also
+            recognized as an Exemplary Reviewer for IEEE Wireless Communications Letters in 2023 and IEEE Communications
+            Letters in 2024. I am serving as an Editor for IEEE Transactions on Communications.
 
-		</p>
-	</div>
+        </p>
+    </div>
 
     <div class="container scroll-animation">
         <h2 class="mono_font">News </h2>
@@ -244,13 +375,16 @@
             <tr>
                 <td class="date mono_font">[2025-07]</td>
                 <td>
-                    I join The University of Hong Kong as a Research Assistant Professor. [<a href="https://www.eee.hku.hk/people/zhaolinw">HKU page</a>]
+                    I join The University of Hong Kong as a Research Assistant Professor. [<a
+                        href="https://www.eee.hku.hk/people/zhaolinw">HKU page</a>]
                 </td>
             </tr>
             <tr>
                 <td class="date mono_font">[2025-02]</td>
                 <td>
-                    I am awarded the 2025 <a href="https://comt.committees.comsoc.org/awards/andrea-goldsmith-young-scholars-award">Andrea Goldsmith Young Scholar Award</a>.
+                    I am awarded the 2025 <a
+                        href="https://comt.committees.comsoc.org/awards/andrea-goldsmith-young-scholars-award">Andrea
+                        Goldsmith Young Scholar Award</a>.
                 </td>
             </tr>
             <tr>
@@ -268,67 +402,81 @@
             <tr>
                 <td class="date mono_font">[2024-08]</td>
                 <td>
-                    I pass my PhD viva with minor corrections. Many thanks to both examiners <a href="https://sites.google.com/site/liuweipage">Prof. Wei Liu</a> and <a href="https://sites.google.com/site/micmatthaiou/home">Prof. Michalis Matthaiou</a>.
+                    I pass my PhD viva with minor corrections. Many thanks to both examiners <a
+                        href="https://sites.google.com/site/liuweipage">Prof. Wei Liu</a> and <a
+                        href="https://sites.google.com/site/micmatthaiou/home">Prof. Michalis Matthaiou</a>.
                 </td>
             </tr>
             <tr>
                 <td class="date mono_font">[2024-06]</td>
                 <td>
-                    I am awarded Exemplary Reviewer of IEEE Wireless Communications Letters [<a href="./homepage_files/WCL_2023_Exemplary_Reviewer.pdf">Certificate</a>].
+                    I am awarded Exemplary Reviewer of IEEE Wireless Communications Letters [<a
+                        href="./assets/pdfs/WCL_2023_Exemplary_Reviewer.pdf">Certificate</a>].
                 </td>
             </tr>
             <tr>
                 <td class="date mono_font">[2023-10]</td>
                 <td>
-                    I am awarded the 2023 <a href="https://vtsociety.org/award/fellowship/ieee-daniel-e-noble-fellowship-award">IEEE Daniel E. Noble Fellowship Award</a> [<a href="./homepage_files/Daniel_E_Noble_Fellowship.jpg">Certificate</a>].
+                    I am awarded the 2023 <a
+                        href="https://vtsociety.org/award/fellowship/ieee-daniel-e-noble-fellowship-award">IEEE Daniel
+                        E. Noble Fellowship Award</a> [<a
+                        href="./assets/images/Daniel_E_Noble_Fellowship.jpg">Certificate</a>].
                 </td>
             </tr>
             <tr>
                 <td class="date mono_font">[2022-11]</td>
                 <td>
-                    I am awarded the Student Travel Grant of <a href="https://globecom2022.ieee-globecom.org/">IEEE GLOBECOM 2022</a> [<a href="./homepage_files/GLOBECOM_STG_2022.pdf">Certificate</a>].
+                    I am awarded the Student Travel Grant of <a href="https://globecom2022.ieee-globecom.org/">IEEE
+                        GLOBECOM 2022</a> [<a href="./assets/pdfs/GLOBECOM_STG_2022.pdf">Certificate</a>].
                 </td>
             </tr>
             <tr>
                 <td class="date mono_font">[2022-09]</td>
                 <td>
-                    We are awarded the Best Student Paper of <a href="https://events.vtsociety.org/vtc2022-fall/">IEEE VTC2022-Fall</a> [<a href="./homepage_files/VTC2022-fall_best_paper.pdf">Certificate</a>].
+                    We are awarded the Best Student Paper of <a href="https://events.vtsociety.org/vtc2022-fall/">IEEE
+                        VTC2022-Fall</a> [<a href="./assets/pdfs/VTC2022-fall_best_paper.pdf">Certificate</a>].
                 </td>
             </tr>
             <tr>
                 <td class="date mono_font">[2022-04]</td>
                 <td>
-                    I am awarded the Student Travel Grant of <a href="https://icc2022.ieee-icc.org/index.html">IEEE ICC 2022</a> [<a href="./homepage_files/ICC_STG_2022.pdf">Certificate</a>].
+                    I am awarded the Student Travel Grant of <a href="https://icc2022.ieee-icc.org/index.html">IEEE ICC
+                        2022</a> [<a href="./assets/pdfs/ICC_STG_2022.pdf">Certificate</a>].
                 </td>
             </tr>
             <tr>
                 <td class="date mono_font">[2021-11]</td>
                 <td>
-                    I am awarded M.Sc. degree with Distinction from <a href="https://www.imperial.ac.uk/">Imperial College London</a> [<a href="./homepage_files/Imperial_certificate.pdf">Certificate</a>].
+                    I am awarded M.Sc. degree with Distinction from <a href="https://www.imperial.ac.uk/">Imperial
+                        College London</a> [<a href="./assets/pdfs/Imperial_certificate.pdf">Certificate</a>].
                 </td>
             </tr>
             <tr>
                 <td class="date mono_font">[2021-09]</td>
                 <td>
-                    I join <a href="https://csr.eecs.qmul.ac.uk/">Communication Systems Research Group</a> at <a href="https://www.qmul.ac.uk/">QMUL</a> as a PhD student.
+                    I join <a href="https://csr.eecs.qmul.ac.uk/">Communication Systems Research Group</a> at <a
+                        href="https://www.qmul.ac.uk/">QMUL</a> as a PhD student.
                 </td>
             </tr>
             <tr>
                 <td class="date mono_font">[2021-08]</td>
                 <td>
-                    I am awarded EECS Fee Waiver from <a href="https://www.qmul.ac.uk/">Queen Mary University of London</a>.
+                    I am awarded EECS Fee Waiver from <a href="https://www.qmul.ac.uk/">Queen Mary University of
+                        London</a>.
                 </td>
             </tr>
             <tr>
                 <td class="date mono_font">[2020-07]</td>
                 <td>
-                    I am awarded B.Eng. degree with First Class Honours from <a href="https://www.qmul.ac.uk/">QMUL</a> and <a href="https://www.bupt.edu.cn">BUPT</a>.
+                    I am awarded B.Eng. degree with First Class Honours from <a href="https://www.qmul.ac.uk/">QMUL</a>
+                    and <a href="https://www.bupt.edu.cn">BUPT</a>.
                 </td>
             </tr>
             <tr>
                 <td class="date mono_font">[2020-06]</td>
                 <td>
-                    I am awarded the Undergraduate College Prize of <a href="https://www.qmul.ac.uk/">Queen Mary University of London</a>.
+                    I am awarded the Undergraduate College Prize of <a href="https://www.qmul.ac.uk/">Queen Mary
+                        University of London</a>.
                 </td>
             </tr>
             <tr>
@@ -349,7 +497,7 @@
 
     <div class="container scroll-animation" style="text-align: center;">
         <p style="font-size: 14px;">
-            &copy; 2025 Zhaolin Wang. All rights reserved. 
+            &copy; 2026 Zhaolin Wang. All rights reserved.
             <br>
             Page template inspired by <a href="https://liuziwei7.github.io/" target="_blank">Ziwei Liu</a>.
         </p>
@@ -357,20 +505,23 @@
 
 
     <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">
-        <svg class="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-        <circle cx="12" cy="12" r="5"></circle>
-        <line x1="12" y1="1" x2="12" y2="3"></line>
-        <line x1="12" y1="21" x2="12" y2="23"></line>
-        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
-        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
-        <line x1="1" y1="12" x2="3" y2="12"></line>
-        <line x1="21" y1="12" x2="23" y2="12"></line>
-        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
-        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+        <svg class="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
         </svg>
-        <svg class="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+        <svg class="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
         </svg>
     </button>
 </body>
+
 </html>

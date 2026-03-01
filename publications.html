@@ -1,115 +1,242 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
 
-<script>
-    // Immediate theme initialization
-    // (function() {
-    //     const savedTheme = localStorage.getItem('theme');
-    //     const systemDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-    //     document.documentElement.setAttribute('data-theme', 
-    //         savedTheme || (systemDark ? 'dark' : 'light')
-    //     );
-    // })();
-    // 即时主题初始化 (需在所有CSS加载前执行)
-    (function(){
-        // 优先使用sessionStorage，其次系统偏好
-        const sessionTheme = sessionStorage.getItem('theme');
-        const systemDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-        
-        document.documentElement.setAttribute('data-theme', 
-            sessionTheme || (systemDark ? 'dark' : 'light')
-        );
-        
-        // 初始化后添加过渡效果
-        setTimeout(() => {
-            document.documentElement.style.transition = 'background-color 0.3s ease, color 0.3s ease';
-        }, 10);
-    })();
-</script>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
-<!-- Meta tags for search engines to crawl -->
-<meta name="robots" content="index,follow">
-<meta name="keywords" content="Zhaolin Wang; 王照霖; Queen Mary University of London">
-<script src="assets/js/jquery.scrolly.min.js"></script>
-<script src="assets/js/jquery.min.js"></script>
-<script src="load_publication.js"></script>
-<script src="scroll_animation.js"></script>
-<script src="dark_mode.js"></script>
-<link rel="stylesheet" href="scroll_animation.css">
-<link rel="stylesheet" href="dark_mode_button.css">
-<link rel="author" href="https://zhaolin820.github.io/">
+    <script>
+        (function () {
+            // 优先使用sessionStorage，其次系统偏好
+            const sessionTheme = sessionStorage.getItem('theme');
+            const systemDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
 
-<title>Zhaolin Wang - Homepage</title>
-<style>
-    @media screen and (max-device-width: 480px){
-    body{
-        -webkit-text-size-adjust: none;
-    }
-    }
-    p { font-size : 16px; }
-    h1 { font-size : 34px; margin : 0; padding : 0; }
-    h2 { font-size : 20px; margin : 0; padding : 0;}
-    h3 { font-size : 18px; margin : 8; padding : 0; }
-    li {text-align:justify;}
-    body { padding : 0; font-family : -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", "Helvetica Neue", Helvetica, Tahoma, Arial,"PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; font-size : 16px; background-color : rgb(224, 224, 224); }
-    .title { width : 650px; margin : 20px auto; }
-    .container { width : 750px; margin : 20px auto; border-radius: 10px;  background-color : #fff; padding : 20px;  clear:both;}
-    .container_title { width : 750px; margin : 20px auto; border-radius: 10px;  padding : 20px;  clear:both;}
-    .iframe_video {float: left; margin-right: 30px}
-    #bio {
-        padding-top : 20px;
-    }
-    #me { border : 0 solid black; margin-bottom : 50px; border-radius : 10px; }
-    #sidebar { margin-left : 25px; margin-right : 50px; border : 0 solid black; float : left; margin-bottom : 0;}
-    a { text-decoration : none; }
-    a:hover { text-decoration : underline; }
-    a, a:visited { color : #0050e7; }
-    .publogo { width: 100 px; margin-right : 20px; float : left; border : 0;}
-    .publication { clear : left; padding-bottom : 0px; }
-    .publication p { height : 100px; padding-top : 5px;}
-    .publication strong a { color : #0000A0; }
-    .publication .links { position : relative; top : 15px }
-    .publication .links a { margin-right : 20px; }
-    .codelogo { margin-right : 10px; float : left; border : 0;}
-    .code { clear : left; padding-bottom : 10px; vertical-align :middle;} 
-    .code .download a { display : block; margin : 0 15px; float : left;}
-    .code strong a { color : #000; }
-    .external a { margin : 0 10px; }
-    .external a.first { margin : 0 10px 0 0; }
-    .mono_font {font-family:ui-monospace, 
-             Menlo, Monaco, 
-             "Cascadia Mono", "Segoe UI Mono", 
-             "Roboto Mono", 
-             "Oxygen Mono", 
-             "Ubuntu Mono", 
-             "Source Code Pro",
-             "Fira Mono", 
-             "Droid Sans Mono", 
-             "Consolas", "Courier New", monospace;}
-    .paper_table {margin-left: -10px; font-size: 13px; width: 710px}
-    .pub-note {
-        display: inline-block;
-        margin-left: 3px;
-        padding: 1px 3px;
-        border-radius: 4px;
-        font-size: 0.9em;
-    }
+            document.documentElement.setAttribute('data-theme',
+                sessionTheme || (systemDark ? 'dark' : 'light')
+            );
 
-    /* Sub-headers for author separation */
-    h3.sub-category {
-        margin-top: 20px;
-        margin-bottom: 10px;
-        opacity: 0.8; /* Slightly softer than main headers */
-    }
+            // 初始化后添加过渡效果
+            setTimeout(() => {
+                document.documentElement.style.transition = 'background-color 0.3s ease, color 0.3s ease';
+            }, 10);
+        })();
+    </script>
 
-    .sub-category {
-        margin-top: 15px;
-        margin-bottom: 5px;
-        /* Using var(--text-color) ensures it switches to white in dark mode */
-        color: var(--text-color); 
-        opacity: 0.8; /* Makes it slightly lighter than the main headers */
-    }
-    /* .highlight {
+    <!-- Meta tags for search engines to crawl -->
+    <meta name="robots" content="index,follow">
+    <meta name="keywords" content="Zhaolin Wang; 王照霖; Queen Mary University of London">
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/load_publication.js"></script>
+    <script src="assets/js/scroll_animation.js"></script>
+    <script src="assets/js/dark_mode.js"></script>
+    <link rel="stylesheet" href="assets/css/scroll_animation.css">
+    <link rel="stylesheet" href="assets/css/dark_mode_button.css">
+    <link rel="author" href="https://zhaolin820.github.io/">
+
+    <title>Zhaolin Wang - Homepage</title>
+    <style>
+        @media screen and (max-device-width: 480px) {
+            body {
+                -webkit-text-size-adjust: none;
+            }
+        }
+
+        p {
+            font-size: 16px;
+        }
+
+        h1 {
+            font-size: 34px;
+            margin: 0;
+            padding: 0;
+        }
+
+        h2 {
+            font-size: 20px;
+            margin: 0;
+            padding: 0;
+        }
+
+        h3 {
+            font-size: 18px;
+            margin: 8;
+            padding: 0;
+        }
+
+        li {
+            text-align: justify;
+        }
+
+        body {
+            padding: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", "Helvetica Neue", Helvetica, Tahoma, Arial, "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+            font-size: 16px;
+            background-color: rgb(224, 224, 224);
+        }
+
+        .title {
+            width: 650px;
+            margin: 20px auto;
+        }
+
+        .container {
+            width: 750px;
+            margin: 20px auto;
+            border-radius: 10px;
+            background-color: #fff;
+            padding: 20px;
+            clear: both;
+        }
+
+        .container_title {
+            width: 750px;
+            margin: 20px auto;
+            border-radius: 10px;
+            padding: 20px;
+            clear: both;
+        }
+
+        .iframe_video {
+            float: left;
+            margin-right: 30px
+        }
+
+        #bio {
+            padding-top: 20px;
+        }
+
+        #me {
+            border: 0 solid black;
+            margin-bottom: 50px;
+            border-radius: 10px;
+        }
+
+        #sidebar {
+            margin-left: 25px;
+            margin-right: 50px;
+            border: 0 solid black;
+            float: left;
+            margin-bottom: 0;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        a,
+        a:visited {
+            color: #0050e7;
+        }
+
+        .publogo {
+            width: 100 px;
+            margin-right: 20px;
+            float: left;
+            border: 0;
+        }
+
+        .publication {
+            clear: left;
+            padding-bottom: 0px;
+        }
+
+        .publication p {
+            height: 100px;
+            padding-top: 5px;
+        }
+
+        .publication strong a {
+            color: #0000A0;
+        }
+
+        .publication .links {
+            position: relative;
+            top: 15px
+        }
+
+        .publication .links a {
+            margin-right: 20px;
+        }
+
+        .codelogo {
+            margin-right: 10px;
+            float: left;
+            border: 0;
+        }
+
+        .code {
+            clear: left;
+            padding-bottom: 10px;
+            vertical-align: middle;
+        }
+
+        .code .download a {
+            display: block;
+            margin: 0 15px;
+            float: left;
+        }
+
+        .code strong a {
+            color: #000;
+        }
+
+        .external a {
+            margin: 0 10px;
+        }
+
+        .external a.first {
+            margin: 0 10px 0 0;
+        }
+
+        .mono_font {
+            font-family: ui-monospace,
+                Menlo, Monaco,
+                "Cascadia Mono", "Segoe UI Mono",
+                "Roboto Mono",
+                "Oxygen Mono",
+                "Ubuntu Mono",
+                "Source Code Pro",
+                "Fira Mono",
+                "Droid Sans Mono",
+                "Consolas", "Courier New", monospace;
+        }
+
+        .paper_table {
+            margin-left: -10px;
+            font-size: 13px;
+            width: 710px
+        }
+
+        .pub-note {
+            display: inline-block;
+            margin-left: 3px;
+            padding: 1px 3px;
+            border-radius: 4px;
+            font-size: 0.9em;
+        }
+
+        /* Sub-headers for author separation */
+        h3.sub-category {
+            margin-top: 20px;
+            margin-bottom: 10px;
+            opacity: 0.8;
+            /* Slightly softer than main headers */
+        }
+
+        .sub-category {
+            margin-top: 15px;
+            margin-bottom: 5px;
+            /* Using var(--text-color) ensures it switches to white in dark mode */
+            color: var(--text-color);
+            opacity: 0.8;
+            /* Makes it slightly lighter than the main headers */
+        }
+
+        /* .highlight {
         background: #332c00;
         color: #ffd54f;
         border: 1px solid #665800;
@@ -120,140 +247,146 @@
         border: 1px solid #c3e6cb;
     } */
 
-    /* dark mode css */
-    :root {
-        --bg-color: #ffffff;
-        --text-color: #333;
-        --container-bg: #ffffff;
-        --link-color: #4A6CD4;
-        --body-bg: #e0e0e0;
+        /* dark mode css */
+        :root {
+            --bg-color: #ffffff;
+            --text-color: #333;
+            --container-bg: #ffffff;
+            --link-color: #4A6CD4;
+            --body-bg: #e0e0e0;
 
-        /* Highlight Colors */
-        --highlight-bg: #fff8e6;
-        --highlight-text: #8c6d1f;
-        --highlight-border: #ffe4b3;
-        
-        /* Award Colors */
-        --award-bg: #e8f5e9;
-        --award-text: #2e7d32;
-        --award-border: #c8e6c9;
-    }
+            /* Highlight Colors */
+            --highlight-bg: #fff8e6;
+            --highlight-text: #8c6d1f;
+            --highlight-border: #ffe4b3;
 
-    [data-theme="dark"] {
-        --bg-color: #1a1a1a;
-        --text-color: #EEE;
-        --container-bg: #2d2d2d;
-        --link-color: #7D9FFF;
-        --body-bg: #121212;
+            /* Award Colors */
+            --award-bg: #e8f5e9;
+            --award-text: #2e7d32;
+            --award-border: #c8e6c9;
+        }
 
-        /* Highlight Colors */
-        --highlight-bg: #332e00;
-        --highlight-text: #ffd95c;
-        --highlight-border: #665800;
-        
-        /* Award Colors */
-        --award-bg: #1a2a1c;
-        --award-text: #66bb6a;
-        --award-border: #2d4a30;
-    }
+        [data-theme="dark"] {
+            --bg-color: #1a1a1a;
+            --text-color: #EEE;
+            --container-bg: #2d2d2d;
+            --link-color: #7D9FFF;
+            --body-bg: #121212;
 
-    .highlight {
-        background: var(--highlight-bg);
-        color: var(--highlight-text);
-        border: 1px solid var(--highlight-border);
-    }
+            /* Highlight Colors */
+            --highlight-bg: #332e00;
+            --highlight-text: #ffd95c;
+            --highlight-border: #665800;
 
-    .award {
-        background: var(--award-bg);
-        color: var(--award-text);
-        border: 1px solid var(--award-border);
-    }
+            /* Award Colors */
+            --award-bg: #1a2a1c;
+            --award-text: #66bb6a;
+            --award-border: #2d4a30;
+        }
 
-    html {
-        background: var(--body-bg);
-        transition: background-color 0.3s ease;
-    }
+        .highlight {
+            background: var(--highlight-bg);
+            color: var(--highlight-text);
+            border: 1px solid var(--highlight-border);
+        }
 
-    body {
-        background-color: var(--body-bg);
-        color: var(--text-color);
-        transition: background-color 0.3s ease, color 0.3s ease;
-    }
+        .award {
+            background: var(--award-bg);
+            color: var(--award-text);
+            border: 1px solid var(--award-border);
+        }
 
-    .container {
-        background-color: var(--container-bg);
-    }
+        html {
+            background: var(--body-bg);
+            transition: background-color 0.3s ease;
+        }
 
-    a, a:visited {
-        color: var(--link-color);
-    }
+        body {
+            background-color: var(--body-bg);
+            color: var(--text-color);
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
 
-    /* a:hover {
+        .container {
+            background-color: var(--container-bg);
+        }
+
+        a,
+        a:visited {
+            color: var(--link-color);
+        }
+
+        /* a:hover {
         color: var(--link-color);
         opacity: 0.8;  
     } */
 
-    .theme-toggle {
-        position: fixed;
-        top: 30px;
-        right: 30px;
-        cursor: pointer;
-        background: var(--container-bg);
-        border: none;
-        width: 44px;
-        height: 44px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        transition: all 0.3s ease;
-        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-        z-index: 1000;
-    }
-</style>
+        .theme-toggle {
+            position: fixed;
+            top: 30px;
+            right: 30px;
+            cursor: pointer;
+            background: var(--container-bg);
+            border: none;
+            width: 44px;
+            height: 44px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+        }
+    </style>
 
 </head>
 
 <body>
 
-<div class="container scroll-animation">
-    <h2>
-        <a href="./index.html">Home</a>&nbsp;&nbsp;&middot;&nbsp;&nbsp;
-        <!-- <a href="./research.html">Research</a>&nbsp;&nbsp;&middot;&nbsp; -->
-        <a href="./publications.html">Publications</a>&nbsp;&nbsp;&middot;&nbsp;&nbsp;
-        <a href="https://www.eee.hku.hk/~yuanwei/6G-HKU.html" target="_blank" rel="noopener noreferrer">6G@HKU</a>&nbsp;&nbsp;
-        <!-- &middot;&nbsp; -->
-        <!-- <a href="./softwares.html">Softwares</a>&nbsp;&nbsp;&middot;&nbsp;
+    <div class="container scroll-animation">
+        <h2>
+            <a href="./index.html">Home</a>&nbsp;&nbsp;&middot;&nbsp;&nbsp;
+            <a href="./research.html">Research</a>&nbsp;&nbsp;&middot;&nbsp;
+            <a href="./publications.html">Publications</a>&nbsp;&nbsp;&middot;&nbsp;&nbsp;
+            <a href="https://www.eee.hku.hk/~yuanwei/6G-HKU.html" target="_blank"
+                rel="noopener noreferrer">6G@HKU</a>&nbsp;&nbsp;
+            <!-- &middot;&nbsp; -->
+            <!-- <a href="./softwares.html">Softwares</a>&nbsp;&nbsp;&middot;&nbsp;
         <a href="./team.html">Team</a>&nbsp;&nbsp;&middot;&nbsp;
         <a href="./services.html">Services</a>&nbsp;&nbsp;&middot;&nbsp;&nbsp;
         <a href="./awards.html">Awards</a> -->
-    </h2>
-</div>
+        </h2>
+    </div>
 
-<div id="publications-container" class="scroll-animation"></div>
+    <div id="publications-container" class="scroll-animation"></div>
 
-<div class="container scroll-animation" style="text-align: center;">
-    <p style="font-size: 14px;">
-        &copy; 2025 Zhaolin Wang. All rights reserved. 
-        <br>
-        Page template inspired by <a href="https://liuziwei7.github.io/" target="_blank">Ziwei Liu</a>.
-    </p>
-</div>
+    <div class="container scroll-animation" style="text-align: center;">
+        <p style="font-size: 14px;">
+            &copy; 2026 Zhaolin Wang. All rights reserved.
+            <br>
+            Page template inspired by <a href="https://liuziwei7.github.io/" target="_blank">Ziwei Liu</a>.
+        </p>
+    </div>
 
-<button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">
-    <svg class="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-    <circle cx="12" cy="12" r="5"></circle>
-    <line x1="12" y1="1" x2="12" y2="3"></line>
-    <line x1="12" y1="21" x2="12" y2="23"></line>
-    <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
-    <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
-    <line x1="1" y1="12" x2="3" y2="12"></line>
-    <line x1="21" y1="12" x2="23" y2="12"></line>
-    <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
-    <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
-    </svg>
-    <svg class="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
-    </svg>
-</button>
+    <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">
+        <svg class="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+        </svg>
+        <svg class="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+        </svg>
+    </button>
 
-</body></html>
+</body>
+
+</html>

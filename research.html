@@ -1,0 +1,523 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-LJH79M478S"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-LJH79M478S');
+    </script>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <script>
+
+        // 即时主题初始化 (需在所有CSS加载前执行)
+        (function () {
+            // 优先使用sessionStorage，其次系统偏好
+            const sessionTheme = sessionStorage.getItem('theme');
+            const systemDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+            document.documentElement.setAttribute('data-theme',
+                sessionTheme || (systemDark ? 'dark' : 'light')
+            );
+
+            // 初始化后添加过渡效果
+            setTimeout(() => {
+                document.documentElement.style.transition = 'background-color 0.3s ease, color 0.3s ease';
+            }, 10);
+        })();
+    </script>
+
+
+    <!-- Meta tags for search engines to crawl -->
+    <meta name="robots" content="index,follow">
+    <meta name="keywords" content="Zhaolin Wang; 王照霖; Queen Mary University of London">
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/scroll_animation.js"></script>
+    <script src="assets/js/dark_mode.js"></script>
+    <link rel="stylesheet" href="assets/css/scroll_animation.css">
+    <link rel="stylesheet" href="assets/css/dark_mode_button.css">
+    <link rel="author" href="https://zhaolin820.github.io/">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap" rel="stylesheet">
+
+    <title>Zhaolin Wang - Research</title>
+    <style>
+        @media screen and (max-device-width: 480px) {
+            body {
+                -webkit-text-size-adjust: none;
+            }
+        }
+
+        p {
+            font-size: 16px;
+        }
+
+        h1 {
+            font-size: 34px;
+            margin: 0;
+            padding: 0;
+        }
+
+        h2 {
+            font-size: 20px;
+            margin: 0;
+            padding: 0;
+        }
+
+        h3 {
+            font-size: 18px;
+            margin: 8;
+            padding: 0;
+        }
+
+        body {
+            padding: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", "Helvetica Neue", Helvetica, Tahoma, Arial, "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+            font-size: 16px;
+            background-color: rgb(224, 224, 224);
+        }
+
+        .title {
+            width: 650px;
+            margin: 20px auto;
+        }
+
+        .container {
+            width: 750px;
+            margin: 20px auto;
+            border-radius: 10px;
+            background-color: #fff;
+            padding: 20px;
+            clear: both;
+        }
+
+        .container_title {
+            width: 750px;
+            margin: 20px auto;
+            border-radius: 10px;
+            padding: 20px;
+            clear: both;
+        }
+
+        .iframe_video {
+            float: left;
+            margin-right: 30px
+        }
+
+        #bio {
+            padding-top: 0px;
+        }
+
+        #me {
+            border: 0 solid black;
+            margin-bottom: 50px;
+            border-radius: 10px;
+        }
+
+        #sidebar {
+            margin-left: 25px;
+            margin-right: 50px;
+            border: 0 solid black;
+            float: left;
+            margin-top: -35px;
+            margin-bottom: 0;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        a,
+        a:visited {
+            color: #0050e7;
+        }
+
+        .research-links ul li {
+            margin-bottom: 5px;
+        }
+
+        .publogo {
+            width: 100 px;
+            margin-right: 20px;
+            float: left;
+            border: 0;
+        }
+
+        .publication {
+            clear: left;
+            padding-bottom: 0px;
+        }
+
+        .publication p {
+            height: 100px;
+            padding-top: 5px;
+        }
+
+        .publication strong a {
+            color: #0000A0;
+        }
+
+        .publication .links {
+            position: relative;
+            top: 15px
+        }
+
+        .publication .links a {
+            margin-right: 20px;
+        }
+
+        .codelogo {
+            margin-right: 10px;
+            float: left;
+            border: 0;
+        }
+
+        .code {
+            clear: left;
+            padding-bottom: 10px;
+            vertical-align: middle;
+        }
+
+        .code .download a {
+            display: block;
+            margin: 0 15px;
+            float: left;
+        }
+
+        .code strong a {
+            color: #000;
+        }
+
+        .external a {
+            margin: 0 10px;
+        }
+
+        .external a.first {
+            margin: 0 10px 0 0;
+        }
+
+        .date {
+            width: 13%;
+            vertical-align: top;
+        }
+
+        .mono_font {
+            font-family: ui-monospace,
+                Menlo, Monaco,
+                "Cascadia Mono", "Segoe UI Mono",
+                "Roboto Mono",
+                "Oxygen Mono",
+                "Ubuntu Mono",
+                "Source Code Pro",
+                "Fira Mono",
+                "Droid Sans Mono",
+                "Consolas", "Courier New", monospace;
+        }
+
+        /* dark mode css */
+        :root {
+            --bg-color: #ffffff;
+            --text-color: #333;
+            --container-bg: #ffffff;
+            --link-color: #4A6CD4;
+            --body-bg: #e0e0e0;
+        }
+
+        [data-theme="dark"] {
+            --bg-color: #1a1a1a;
+            --text-color: #EEE;
+            --container-bg: #2d2d2d;
+            --link-color: #7D9FFF;
+            --body-bg: #121212;
+        }
+
+        html {
+            background: var(--body-bg);
+            transition: background-color 0.3s ease;
+        }
+
+        body {
+            background-color: var(--body-bg);
+            color: var(--text-color);
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        .container {
+            background-color: var(--container-bg);
+        }
+
+        a,
+        a:visited {
+            color: var(--link-color);
+        }
+
+        /* a:hover {
+        color: var(--link-color);
+        opacity: 0.8;  
+    } */
+
+        .pub-note.highlight {
+            background: #332900;
+            color: #ffd700;
+            border-color: #665200;
+        }
+
+        /* .pub-note.award {
+        background: #003311;
+        color: #00cc66;
+        border-color: #006633;
+    } */
+
+
+        .theme-toggle {
+            position: fixed;
+            top: 30px;
+            right: 30px;
+            cursor: pointer;
+            background: var(--container-bg);
+            border: none;
+            width: 44px;
+            height: 44px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+        }
+
+        .research-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 25px;
+            background-color: var(--container-bg);
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+            border: 1px solid rgba(0, 0, 0, 0.05);
+        }
+
+        [data-theme="dark"] .research-item {
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .research-image {
+            width: 95%;
+            height: 300px;
+            /* Adjust height as needed */
+            object-fit: contain;
+            /* Or 'cover' depending on preference */
+            border-radius: 8px;
+            margin-bottom: 20px;
+            background-color: #ffffff;
+            border: 1px dashed var(--text-color);
+            opacity: 0.5;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--text-color);
+            font-size: 16px;
+        }
+
+        .research-content {
+            width: 95%;
+        }
+
+        .research-content h3 {
+            margin-top: 0;
+            margin-bottom: 10px;
+        }
+
+        .research-links {
+            margin-top: 15px;
+            font-size: 14px;
+        }
+
+        .research-links a {
+            font-weight: bold;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="container scroll-animation">
+        <h2>
+            <a href="./index.html">Home</a>&nbsp;&nbsp;&middot;&nbsp;&nbsp;
+            <a href="./research.html">Research</a>&nbsp;&nbsp;&middot;&nbsp;
+            <a href="./publications.html">Publications</a>&nbsp;&nbsp;&middot;&nbsp;&nbsp;
+            <a href="https://www.eee.hku.hk/~yuanwei/6G-HKU.html" target="_blank"
+                rel="noopener noreferrer">6G@HKU</a>&nbsp;&nbsp;
+            <!-- &middot;&nbsp; -->
+            <!-- <a href="./softwares.html">Softwares</a>&nbsp;&nbsp;&middot;&nbsp;
+            <a href="./team.html">Team</a>&nbsp;&nbsp;&middot;&nbsp;
+            <a href="./services.html">Services</a>&nbsp;&nbsp;&middot;&nbsp;&nbsp;
+            <a href="./awards.html">Awards</a> -->
+        </h2>
+    </div>
+
+    <div class="container scroll-animation research-item">
+        <img class="research-image" src="./assets/images/site_specific_learning.svg" alt="Research Direction 1"
+            style="opacity: 1; border: none;">
+        <div class="research-content">
+            <h3><span style="font-family: 'Rock Salt', sans-serif; color: var(--link-color);">Site-Specific</span>
+                Learning for Wireless Networks via Digital Twins</h3>
+            <p style="text-align:justify;">
+                This research direction explores the integration of digital twins with machine learning to enable
+                site-specific optimization in wireless networks. By creating high-fidelity virtual representations of
+                physical environments, we leverage detailed spatial and environmental data to train models tailored to
+                the unique characteristics of specific locations. Our work focuses on developing efficient learning
+                frameworks that utilize these digital twins to improve communication and sensing performance, bridging
+                the gap between theoretical models and real-world performance.
+
+                <br><br>
+                Unlike conventional machine learning approaches that often rely on generalized datasets or statistical
+                channel models, site-specific learning focuses on the unique physical and electromagnetic
+                characteristics of a particular environment. While traditional methods aim for broad applicability
+                across diverse scenarios, site-specific learning prioritizes local accuracy and performance by
+                exploiting the precise site-specific environment properties provided by digital twins, leading to more
+                robust and efficient network configurations.
+
+            </p>
+            <div class="research-links">
+                <b><i>Site-Specific Beamforming</i></b><br>
+                <ul style="margin-top: 5px; margin-bottom: 20px; padding-left: 20px;">
+                    <li><a href="https://arxiv.org/abs/2601.02301">Generative Site-Specific Beamforming for
+                            Next-Generation Spatial Intelligence</a><br>Z. Wang, Z. Zhou, C. J. Zhao, and Y. Liu,
+                        <br><i>arXiv preprint arXiv:2601.02301</i>, 2026.
+                    </li>
+                    <li><a href="https://arxiv.org/abs/2601.02219">Beam-Brainstorm: A Generative Site-Specific
+                            Beamforming Approach</a><br>Z. Zhou, Z. Wang, and Y. Liu, <br><i>arXiv preprint
+                            arXiv:2601.02219</i>, 2026.</li>
+                    <li><a href="https://arxiv.org/abs/2602.12552">Generative Site-Specific Beamforming via
+                            Information-Maximizing Codebook</a><br>C. J. Zhao, Z. Wang, and Y. Liu, <br><i>arXiv
+                            preprint arXiv:2602.12552</i>, 2026.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="container scroll-animation research-item">
+        <img class="research-image" src="./assets/images/ESIT.svg" alt="Research Direction 2"
+            style="opacity: 1; border: none;">
+        <div class="research-content">
+            <h3><span style="font-family: 'Rock Salt', sans-serif; color: var(--link-color);">Electromagnetic</span>
+                Signal and Information Theory</h3>
+            <p style="text-align:justify;">
+                This research direction focuses on unveiling the fundamental limits of communication systems, derived
+                from electromagnetic principles, and developing electromagnetically consistent communication
+                models, signal processing techniques, and optimization algorithms. By bridging classic information
+                theory with advanced electromagnetic wave propagation models, we aim to design new communication and
+                sensing strategies for next-generation wireless networks. A key emphasis of our work is characterizing
+                the degrees of freedom (DoF), capacity limits, and beamforming designs for spatially continuous
+                apertures, i.e., continuous aperture arrays (CAPAs), as well as exploiting near-field spherical wave
+                properties. Through rigorous mathematical modeling and optimization, we strive to unlock unprecedented
+                spatial multiplexing gains, high-resolution sensing capabilities, and enhanced physical layer
+                performance in future wireless systems.
+            </p>
+            <div class="research-links">
+                <b><i>Magazine and Tutorial</i></b><br>
+                <ul style="margin-top: 5px; margin-bottom: 20px; padding-left: 20px;">
+                    <li><a href="https://ieeexplore.ieee.org/abstract/document/10639537">A Primer on Near-Field
+                            Communications for Next-Generation Multiple Access</a><br>C. Ouyang, Z. Wang, Y. Chen, X.
+                        Mu, and P. Zhu <br><i>Proceedings of the IEEE</i>, 2026</li>
+                    <li><a href="https://arxiv.org/abs/2412.00894">CAPA: Continuous-Aperture Arrays for Revolutionizing
+                            6G Wireless Communications</a><br>Y. Liu, C. Ouyang, Z. Wang, J. Xu, X. Mu, and Z. Ding
+                        <br><i>IEEE Wireless Communications</i>, 2025
+                    </li>
+                </ul>
+                <b><i>Communication Systems</i></b><br>
+                <ul style="margin-top: 5px; margin-bottom: 20px; padding-left: 20px;">
+                    <li><a href="https://arxiv.org/abs/2511.11225">Mutual Coupling in Continuous Aperture Arrays:
+                            Physical Modeling and Beamforming Design</a><br>Z. Wang, K. R. R. Ranasinghe, G. T. F. de
+                        Abreu, and Y. Liu <br><i>arXiv preprint arXiv:2511.11225</i>, 2026</li>
+                    <li><a href="https://ieeexplore.ieee.org/document/11122426">Beamforming Design for Continuous
+                            Aperture Array (CAPA)-Based MIMO Systems</a><br>Z. Wang, C. Ouyang, and Y. Liu
+                        <br><i>IEEE Transactions on Wireless Communications</i>, 2026
+                    </li>
+                    <li><a href="https://arxiv.org/abs/2509.00964">Doubly-Dispersive Continuous MIMO Systems: Channel
+                            Modeling and Beamforming Design</a><br>K. R. R. Ranasinghe, Z. Wang, H. S. Rou, G. T. F.
+                        de Abreu, and E. Björnson <br><i>arXiv preprint arXiv:2509.00964</i>, 2025</li>
+                    <li><a href="https://arxiv.org/abs/2511.09244">Flexible Continuous Aperture Arrays</a><br>K. R.
+                        R. Ranasinghe, Z. Wang, G. T. F. de Abreu, and E. Björnson <br><i>arXiv preprint
+                            arXiv:2511.09244</i>, 2025</li>
+                    <li><a href="https://ieeexplore.ieee.org/abstract/document/11087508">Linear Receive Beamforming for
+                            CAPA Systems</a><br>C. Ouyang, Z. Wang, X. Zhang, and Y. Liu <br><i>IEEE Transactions on
+                            Wireless Communications</i>, 2025</li>
+                    <li><a href="https://ieeexplore.ieee.org/document/11005662">Diversity and Multiplexing for
+                            Continuous Aperture Array (CAPA)-Based Communications</a><br>C. Ouyang, Z. Wang, X.
+                        Zhang, and Y. Liu <br><i>IEEE Transactions on Wireless Communications</i>, 2025</li>
+                    <li><a href="https://ieeexplore.ieee.org/document/10938678">Optimal Beamforming for Multi-User
+                            Continuous Aperture Array (CAPA) Systems</a><br>Z. Wang, C. Ouyang, and Y. Liu
+                        <br><i>IEEE Transactions on Communications</i>, 2025
+                    </li>
+                    <li><a href="https://ieeexplore.ieee.org/document/10910020">Beamforming Optimization for Continuous
+                            Aperture Array (CAPA)-based Communications</a><br>Z. Wang, C. Ouyang, and Y. Liu
+                        <br><i>IEEE Transactions on Wireless Communications</i>, 2025
+                    </li>
+                </ul>
+                <b><i>Sensing Systems</i></b><br>
+                <ul style="margin-top: 5px; margin-bottom: 20px; padding-left: 20px;">
+                    <li><a href="https://ieeexplore.ieee.org/document/11241087">Cramér-Rao Bound Optimization for
+                            Near-Field Sensing with Continuous-Aperture Arrays</a><br>H. Jiang, Z. Wang, Y. Liu and
+                        A. Nallanathan <br><i>IEEE Transactions on Wireless Communications</i>, 2026</li>
+                    <li><a href="https://arxiv.org/abs/2511.20203">Optimal Waveform Design for Continuous Aperture
+                            Array (CAPA)-aided ISAC Systems</a><br>J. Ye, Z. Wang, Y. Liu, P. Zhang, L. Huang, and A.
+                        Nallanathan <br><i>arXiv preprint arXiv:2511.20203</i>, 2025</li>
+                    <li><a href="https://arxiv.org/abs/2510.02029">Joint DOA and Attitude Sensing Based on
+                            Tri-Polarized Continuous Aperture Array</a><br>H. Si, Z. Wang, X. Guo, J. Zhang, and Y.
+                        Liu <br><i>arXiv preprint arXiv:2510.02029</i>, 2025</li>
+                    <li><a href="https://arxiv.org/abs/2507.21347">DOA Estimation via Continuous Aperture Arrays: MUSIC
+                            and CRLB</a><br>H. Si, Z. Wang, X. Guo, J. Zhang, and Y. Liu <br><i>arXiv preprint
+                            arXiv:2507.21347</i>, 2025</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="container scroll-animation" style="text-align: center;">
+        <p style="font-size: 14px;">
+            &copy; 2026 Zhaolin Wang. All rights reserved.
+            <br>
+            Page template inspired by <a href="https://liuziwei7.github.io/" target="_blank">Ziwei Liu</a>.
+        </p>
+    </div>
+
+
+    <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">
+        <svg class="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+        </svg>
+        <svg class="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+        </svg>
+    </button>
+</body>
+
+</html>
