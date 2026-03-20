@@ -5,6 +5,13 @@
       "title": "Preprints",
       "items": [
         {
+          "authors": "Z. Zhou, <b>Z. Wang</b>, and Y. Liu",
+          "title": "Fast Beam-Brainstorm: Few-Step Generative Site-Specific Beamforming with Flexible Probing",
+          "date": "Mar. 2026",
+          "main_link": "https://arxiv.org/abs/2603.17622",
+          "links": []
+        },
+        {
           "authors": "C. J. Zhao, <b>Z. Wang</b>, and Y. Liu",
           "title": "Generative Site-Specific Beamforming via Information-Maximizing Codebook",
           "date": "Feb. 2026",
