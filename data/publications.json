@@ -5,6 +5,34 @@
       "title": "Preprints",
       "items": [
         {
+          "authors": "<b>Z. Wang</b>, C. Ouyang, K. R. R. Ranasinghe, S. S. A. Yuan, G. T. F. de Abreu, E. Björnson, and Y. Liu",
+          "title": "Electromagnetic Signal and Information Theory: A Continuous-Aperture Array Perspective",
+          "date": "May 2026",
+          "main_link": "https://arxiv.org/abs/2605.12910",
+          "links": []
+        },
+        {
+          "authors": "C. J. Zhao, <b>Z. Wang</b>, Z. Zhao, and Y. Liu",
+          "title": "SiFo: Wireless Foundation Model for Low-Overhead Site-Specific CSI Feedback",
+          "date": "May 2026",
+          "main_link": "https://arxiv.org/abs/2605.16141",
+          "links": []
+        },
+        {
+          "authors": "C. J. Zhao, <b>Z. Wang</b>, Z. Zhao, and Y. Liu",
+          "title": "Bridging Standardized Codebook and Site-Specific Beamforming: A Unified Limited-Feedback Framework",
+          "date": "May 2026",
+          "main_link": "https://arxiv.org/abs/2604.14524",
+          "links": []
+        },
+        {
+          "authors": "Z. Zhou, <b>Z. Wang</b>, and Y. Liu",
+          "title": "Fidelity Where it Matters: Site-Specific Nonuniform Refinement for Wireless Digital Twins",
+          "date": "May 2026",
+          "main_link": "https://arxiv.org/abs/2605.08772",
+          "links": []
+        },
+        {
           "authors": "Z. Zhou, <b>Z. Wang</b>, and Y. Liu",
           "title": "Fast Beam-Brainstorm: Few-Step Generative Site-Specific Beamforming with Flexible Probing",
           "date": "Mar. 2026",
@@ -53,10 +81,87 @@
       "title": "Journal Articles",
       "items": [
         {
+          "authors": "H. Jiang, C. Ouyang, <b>Z. Wang</b>, Y. Liu, A. Nallanathan, and Z. Ding",
+          "title": "Pinching-Antenna Assisted Sensing: A Bayesian Cramér-Rao Bound Perspective",
+          "journal": "IEEE Transactions on Communications",
+          "status": "early access",
+          "date": "May 2026",
+          "main_link": "https://ieeexplore.ieee.org/abstract/document/11509309",
+          "links": [
+            {"text": "Arxiv", "url": "https://arxiv.org/abs/2510.09137"}
+          ]
+        },
+        {
+          "authors": "H. Jiang, <b>Z. Wang</b>, Y. Liu, H. Shin, A. Nallanathan, and Y. Liu",
+          "title": "Near-Field Sensing Enabled Predictive Beamforming: Fundamentals, Framework, and Opportunities",
+          "journal": "IEEE Communications Magazine",
+          "status": "early access",
+          "date": "May 2026",
+          "main_link": "https://doi.org/10.1109/MCOM.001.2500334",
+          "links": [
+            {"text": "Arxiv", "url": "https://arxiv.org/abs/2506.09225"}
+          ]
+        },
+        {
+          "authors": "Z. Zhou, <b>Z. Wang</b>, and Y. Liu",
+          "title": "Spectral and Energy Efficiency Tradeoff for Pinching-Antenna Systems",
+          "journal": "IEEE Transactions on Communications",
+          "status": "vol. 74, pp. 8283-8299",
+          "date": "Apr. 2026",
+          "main_link": "https://ieeexplore.ieee.org/abstract/document/11493532",
+          "links": [
+            {"text": "Arxiv", "url": "https://arxiv.org/abs/2510.25192"}
+          ]
+        },
+        {
+          "authors": "K. R. R. Ranasinghe, <b>Z. Wang</b>, H. S. Rou, G. T. F. de Abreu, and E. Björnson",
+          "title": "Doubly-Dispersive Continuous MIMO Systems: Channel Modeling and Beamforming Design",
+          "journal": "IEEE Transactions on Wireless Communications",
+          "status": "vol. 25, pp. 15441-15458",
+          "date": "Apr. 2026",
+          "main_link": "https://ieeexplore.ieee.org/abstract/document/11483338",
+          "links": [
+            {"text": "Arxiv", "url": "https://arxiv.org/abs/2509.00964"}
+          ]
+        },
+        {
+          "authors": "H. Jiang, <b>Z. Wang</b>, Y. Liu, A. Nallanathan, and Z. Ding",
+          "title": "Pinching Antenna System (PASS) Enhanced Covert Communications: Against Warden via Sensing",
+          "journal": "IEEE Journal on Selected Areas in Communications",
+          "status": "vol. 44, pp. 4254-4270",
+          "date": "Mar. 2026",
+          "main_link": "https://ieeexplore.ieee.org/abstract/document/11426943",
+          "links": [
+            {"text": "Arxiv", "url": "https://arxiv.org/abs/2509.06170"}
+          ]
+        },
+        {
+          "authors": "C. Ouyang, <b>Z. Wang</b>, Y. Liu, and Z. Ding",
+          "title": "Rate Region of ISAC for Pinching-Antenna Systems",
+          "journal": "IEEE Transactions on Communications",
+          "status": "vol. 74, pp. 5849-5866",
+          "date": "Feb. 2026",
+          "main_link": "https://ieeexplore.ieee.org/abstract/document/11414134",
+          "links": [
+            {"text": "Arxiv", "url": "https://arxiv.org/abs/2505.10179"}
+          ]
+        },
+        {
+          "authors": "Y. Liu, H. Jiang, X. Xu, <b>Z. Wang</b>, J. Guo, C. Ouyang, X. Mu, Z. Ding, A. Nallanathan, G. K. Karagiannidis, and R. Schober",
+          "title": "Pinching-Antenna Systems (PASS): A Tutorial",
+          "journal": "IEEE Transactions on Communications",
+          "status": "vol. 74, pp. 4881-4918",
+          "date": "Jan. 2026",
+          "main_link": "https://ieeexplore.ieee.org/abstract/document/11364174",
+          "links": [
+            {"text": "Arxiv", "url": "https://arxiv.org/abs/2508.07572"}
+          ]
+        },
+        {
           "authors": "M. Sun, C. Ouyang, <b>Z. Wang</b>, S. Wu and Y. Liu",
           "title": "Secure Beamforming for Continuous Aperture Array (CAPA) Systems",
-          "journal": "IEEE Transactions on Wireless Communications,",
-          "status": "early access",
+          "journal": "IEEE Transactions on Wireless Communications",
+          "status": "vol. 25, pp. 8922-8937",
           "date": "Dec. 2025",
           "main_link": "https://ieeexplore.ieee.org/document/11299446",
           "links": [
@@ -66,16 +171,16 @@
         {
           "authors": "H. Ting, <b>Z. Wang</b>, and Y. Liu",
           "title": "Personalized Mobile Edge Generation: a Stable Personalized Training Approach via Scaling Connection",
-          "journal": "IEEE Transactions on Mobile Computing,",
-          "status": "early access",
-          "date": "Nov. 2025",
+          "journal": "IEEE Transactions on Mobile Computing",
+          "status": "vol. 25, no. 5, pp. 6017-6031",
+          "date": "May 2026",
           "main_link": "https://ieeexplore.ieee.org/document/11268972"
         },
         {
           "authors": "H. Jiang, <b>Z. Wang</b>, and Y. Liu",
           "title": "Pinching-Antenna System (PASS) Enhanced Covert Communications",
           "journal": "IEEE Journal on Selected Areas in Communications",
-          "status": "early access",
+          "status": " vol. 44, pp. 1736-1750, 2026",
           "date": "Dec. 2025",
           "main_link": "https://ieeexplore.ieee.org/document/11289518",
           "links": [
@@ -86,7 +191,7 @@
           "authors": "X. Xu, X. Mu, <b>Z. Wang</b>, Y. Liu, and A. Nallanathan",
           "title": "Pinching-Antenna Systems (PASS): Power Radiation Model and Optimal Beamforming Design",
           "journal": "IEEE Transactions on Communications",
-          "status": "early access",
+          "status": "vol. 74, pp. 2160-2175",
           "date": "Nov. 2025",
           "main_link": "https://ieeexplore.ieee.org/document/11263923",
           "links": [
@@ -119,8 +224,8 @@
           "authors": "Z. Zhang, <b>Z. Wang</b>, X. Mu, B. He, J. Chen and Y. Liu",
           "title": "Integrated Sensing and Communications for Pinching-Antenna Systems (PASS)",
           "journal": "IEEE Communications Letters ",
-          "status": "early access",
-          "date": "Oct. 2025",
+          "status": "vol. 29, no. 12, pp. 2929-2933",
+          "date": "Dec. 2025",
           "main_link": "https://ieeexplore.ieee.org/document/11197530",
           "links": [
             {"text": "Arxiv", "url": "https://arxiv.org/abs/2504.07709"}
@@ -138,7 +243,7 @@
           "authors": "H. Jiang, <b>Z. Wang</b>, Y. Liu, A. Nallanathan, and H. Shin",
           "title": "Beam Alignment for MIMO Fluid Antenna Systems",
           "journal": "IEEE Journal on Selected Areas in Communications",
-          "status": "early access",
+          "status": "vol. 44, pp. 1193-1208",
           "date": "Oct. 2025",
           "main_link": "https://ieeexplore.ieee.org/document/11193820"
         },
@@ -146,8 +251,8 @@
           "authors": "Y. Liu, <b>Z. Wang</b>, X. Mu, C. Ouyang, X. Xu, and Z. Ding",
           "title": "Pinching Antenna Systems (PASS): Architecture Designs, Opportunities, and Outlook",
           "journal": "IEEE Communications Magazine",
-          "status": "early access",
-          "date": "Sep. 2025",
+          "status": "vol. 64, no. 1, pp. 190-196",
+          "date": "Jan. 2026",
           "main_link": "https://ieeexplore.ieee.org/document/11169486",
           "links": [
             {"text": "Arxiv", "url": "https://arxiv.org/abs/2501.18409"}
@@ -172,7 +277,7 @@
           "authors": "C. Ouyang, <b>Z. Wang</b>, X. Zhang, and Y. Liu",
           "title": "Linear Receive Beamforming for CAPA Systems",
           "journal": "IEEE Transactions on Wireless Communications",
-          "status": "early access",
+          "status": "vol. 25, pp. 1030-1047",
           "date": "Jul. 2025",
           "main_link": "https://ieeexplore.ieee.org/abstract/document/11087508",
           "links": [
