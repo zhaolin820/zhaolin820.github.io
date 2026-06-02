@@ -256,6 +256,9 @@
           "main_link": "https://ieeexplore.ieee.org/document/11169486",
           "links": [
             {"text": "Arxiv", "url": "https://arxiv.org/abs/2501.18409"}
+          ],
+          "notes": [
+            {"type": "award", "text": "ESI Hot Paper"}
           ]
         },
         {
@@ -356,6 +359,10 @@
           "main_link": "https://ieeexplore.ieee.org/document/10981775",
           "links": [
             {"text": "Arxiv", "url": "https://arxiv.org/abs/2501.05657"}
+          ],
+          "notes": [
+            {"type": "award", "text": "ESI Hot Paper"},
+            {"type": "award", "text": "ESI Highly Cited Paper"}
           ]
         },
         {
@@ -460,6 +467,7 @@
             {"text": "Code", "url": "https://github.com/zhaolin820/near-field-velocity-sensing-and-predictive-beamforming"}
           ],
           "notes": [
+            {"type": "award", "text": "ESI Highly Cited Paper"},
             {"type": "highlight", "text": "Code Available"}
           ]
         },
@@ -503,6 +511,7 @@
             {"text": "Arxiv", "url": "https://arxiv.org/abs/2401.05900"}
           ],
           "notes": [
+            {"type": "award", "text": "ESI Hot Paper"},
             {"type": "award", "text": "ESI Highly Cited Paper"}
           ]
         },
