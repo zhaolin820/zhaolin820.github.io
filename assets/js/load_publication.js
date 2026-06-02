@@ -1,8 +1,25 @@
 document.addEventListener('DOMContentLoaded', function () {
     fetch('data/publications.json')
-        .then(response => response.json())
+        .then(response => {
+            if (!response.ok) {
+                throw new Error(`Failed to load publications: ${response.status}`);
+            }
+
+            return response.json();
+        })
         .then(data => {
             renderPublications(data.categories);
+        })
+        .catch(error => {
+            console.error(error);
+
+            const container = document.getElementById('publications-container');
+            if (container) {
+                const fallback = document.createElement('div');
+                fallback.className = 'container';
+                fallback.textContent = 'Publications could not be loaded.';
+                container.appendChild(fallback);
+            }
         });
 
     function parseDate(dateStr) {
@@ -24,72 +41,173 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     function isFirstAuthor(authorsStr) {
-        return authorsStr.trim().startsWith("<b>Z. Wang</b>");
+        return String(authorsStr || '').trim().startsWith("<b>Z. Wang</b>");
     }
 
-    function generateListHTML(items) {
-        if (items.length === 0) return '';
+    function safeHref(url) {
+        if (!url) return '#';
 
-        return items.map(item => {
-            let entry = `<li>${item.authors}, “<a href="${item.main_link}">${item.title}</a>”`;
+        try {
+            const parsed = new URL(url, window.location.href);
+            if (['http:', 'https:', 'mailto:'].includes(parsed.protocol)) {
+                return parsed.href;
+            }
+        } catch (error) {
+            // Fall through to the disabled fallback below.
+        }
 
-            if (item.journal) {
-                entry += `, <i>${item.journal}</i>`;
-            } else if (item.conference) {
-                entry += `, <i>${item.conference}</i>`;
+        return '#';
+    }
+
+    function appendFormattedAuthors(parent, authorsStr) {
+        let isBold = false;
+        const tokens = String(authorsStr || '').split(/(<\/?b>)/i);
+
+        tokens.forEach(token => {
+            const normalizedToken = token.toLowerCase();
+
+            if (normalizedToken === '<b>') {
+                isBold = true;
+                return;
             }
 
-            if (item.status) entry += `, ${item.status}`;
-            entry += `, ${item.date}`;
+            if (normalizedToken === '</b>') {
+                isBold = false;
+                return;
+            }
 
-            if (item.links?.length > 0) {
-                entry += `. [${item.links.map(link =>
-                    `<a href="${link.url}">${link.text}</a>`
-                ).join('] [')}]`;
+            if (!token) return;
+
+            if (isBold) {
+                const bold = document.createElement('b');
+                bold.textContent = token;
+                parent.appendChild(bold);
             } else {
-                entry += `.`;
+                parent.appendChild(document.createTextNode(token));
             }
+        });
+    }
 
-            if (item.notes && item.notes.length > 0) {
-                entry += item.notes.map(note =>
-                    `<span class="pub-note ${note.type}">${note.text}</span>`
-                ).join(' ');
-            }
+    function appendItalicText(parent, text) {
+        const italic = document.createElement('i');
+        italic.textContent = text;
+        parent.appendChild(italic);
+    }
 
-            return entry + `</li><br>`;
-        }).join('');
+    function createPublicationItem(item) {
+        const listItem = document.createElement('li');
+
+        appendFormattedAuthors(listItem, item.authors);
+        listItem.appendChild(document.createTextNode(', \u201c'));
+
+        const titleLink = document.createElement('a');
+        titleLink.href = safeHref(item.main_link);
+        titleLink.textContent = item.title || 'Untitled';
+        listItem.appendChild(titleLink);
+        listItem.appendChild(document.createTextNode('\u201d'));
+
+        if (item.journal) {
+            listItem.appendChild(document.createTextNode(', '));
+            appendItalicText(listItem, item.journal);
+        } else if (item.conference) {
+            listItem.appendChild(document.createTextNode(', '));
+            appendItalicText(listItem, item.conference);
+        }
+
+        if (item.status) {
+            listItem.appendChild(document.createTextNode(`, ${item.status}`));
+        }
+
+        if (item.date) {
+            listItem.appendChild(document.createTextNode(`, ${item.date}`));
+        }
+
+        const links = Array.isArray(item.links) ? item.links : [];
+        if (links.length > 0) {
+            listItem.appendChild(document.createTextNode('. ['));
+            links.forEach((link, index) => {
+                if (index > 0) {
+                    listItem.appendChild(document.createTextNode('] ['));
+                }
+
+                const anchor = document.createElement('a');
+                anchor.href = safeHref(link.url);
+                anchor.textContent = link.text || 'Link';
+                listItem.appendChild(anchor);
+            });
+            listItem.appendChild(document.createTextNode(']'));
+        }
+
+        listItem.appendChild(document.createTextNode('.'));
+
+        const allowedNoteTypes = new Set(['highlight', 'award']);
+        const notes = Array.isArray(item.notes) ? item.notes : [];
+        notes.forEach(note => {
+            const noteType = allowedNoteTypes.has(note.type) ? note.type : '';
+            const badge = document.createElement('span');
+            badge.className = ['pub-note', noteType].filter(Boolean).join(' ');
+            badge.textContent = note.text || '';
+
+            listItem.appendChild(document.createTextNode(' '));
+            listItem.appendChild(badge);
+        });
+
+        return listItem;
+    }
+
+    function createPublicationList(items) {
+        const list = document.createElement('ol');
+        list.className = 'paper_table';
+
+        items.forEach(item => {
+            list.appendChild(createPublicationItem(item));
+        });
+
+        return list;
+    }
+
+    function appendSubCategory(section, title, items) {
+        const heading = document.createElement('h3');
+        heading.className = 'sub-category';
+        heading.textContent = title;
+        section.appendChild(heading);
+        section.appendChild(createPublicationList(items));
+    }
+
+    function createCategorySection(category) {
+        const sortedItems = [...category.items].sort((a, b) => {
+            return parseDate(b.date) - parseDate(a.date);
+        });
+
+        const firstAuthorItems = sortedItems.filter(item => isFirstAuthor(item.authors));
+        const coAuthorItems = sortedItems.filter(item => !isFirstAuthor(item.authors));
+
+        const section = document.createElement('div');
+        section.className = 'container';
+
+        const heading = document.createElement('h2');
+        heading.className = 'mono_font';
+        heading.textContent = category.title || '';
+        section.appendChild(heading);
+
+        if (firstAuthorItems.length > 0 && coAuthorItems.length > 0) {
+            appendSubCategory(section, 'First Author', firstAuthorItems);
+            appendSubCategory(section, 'Co-Author', coAuthorItems);
+        } else {
+            section.appendChild(createPublicationList(sortedItems));
+        }
+
+        return section;
     }
 
     function renderPublications(categories) {
         const container = document.getElementById('publications-container');
+        if (!container || !Array.isArray(categories)) return;
 
         categories.forEach(category => {
-            const sortedItems = category.items.sort((a, b) => {
-                return parseDate(b.date) - parseDate(a.date);
-            });
+            if (!Array.isArray(category.items)) return;
 
-            const firstAuthorItems = sortedItems.filter(item => isFirstAuthor(item.authors));
-            const coAuthorItems = sortedItems.filter(item => !isFirstAuthor(item.authors));
-
-            const section = document.createElement('div');
-            section.className = 'container';
-
-            let innerHTML = `<h2 class="mono_font">${category.title}</h2>`;
-
-            if (firstAuthorItems.length > 0 && coAuthorItems.length > 0) {
-                innerHTML += `
-                    <h3 class="sub-category">First Author</h3>
-                    <ol class="paper_table">${generateListHTML(firstAuthorItems)}</ol>
-                    
-                    <h3 class="sub-category">Co-Author</h3>
-                    <ol class="paper_table">${generateListHTML(coAuthorItems)}</ol>
-                `;
-            } else {
-                innerHTML += `<ol class="paper_table">${generateListHTML(sortedItems)}</ol>`;
-            }
-
-            section.innerHTML = innerHTML;
-            container.appendChild(section);
+            container.appendChild(createCategorySection(category));
         });
     }
 });

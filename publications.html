@@ -1,8 +1,9 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <script>
         (function () {
@@ -24,8 +25,6 @@
     <!-- Meta tags for search engines to crawl -->
     <meta name="robots" content="index,follow">
     <meta name="keywords" content="Zhaolin Wang; 王照霖; Queen Mary University of London">
-    <script src="assets/js/jquery.scrolly.min.js"></script>
-    <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/load_publication.js"></script>
     <script src="assets/js/scroll_animation.js"></script>
     <script src="assets/js/dark_mode.js"></script>
@@ -59,7 +58,7 @@
 
         h3 {
             font-size: 18px;
-            margin: 8;
+            margin: 8px 0;
             padding: 0;
         }
 
@@ -80,19 +79,23 @@
         }
 
         .container {
-            width: 750px;
+            max-width: 750px;
+            width: calc(100% - 32px);
             margin: 20px auto;
             border-radius: 10px;
             background-color: #fff;
             padding: 20px;
+            box-sizing: border-box;
             clear: both;
         }
 
         .container_title {
-            width: 750px;
+            max-width: 750px;
+            width: calc(100% - 32px);
             margin: 20px auto;
             border-radius: 10px;
             padding: 20px;
+            box-sizing: border-box;
             clear: both;
         }
 
@@ -133,7 +136,7 @@
         }
 
         .publogo {
-            width: 100 px;
+            width: 100px;
             margin-right: 20px;
             float: left;
             border: 0;
@@ -208,7 +211,13 @@
         .paper_table {
             margin-left: -10px;
             font-size: 13px;
-            width: 710px
+            max-width: 710px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        .paper_table li {
+            margin-bottom: 12px;
         }
 
         .pub-note {
@@ -348,7 +357,7 @@
             <a href="./index.html">Home</a>&nbsp;&nbsp;&middot;&nbsp;&nbsp;
             <a href="./research.html">Research</a>&nbsp;&nbsp;&middot;&nbsp;
             <a href="./publications.html">Publications</a>&nbsp;&nbsp;&middot;&nbsp;&nbsp;
-            <a href="https://www.eee.hku.hk/~yuanwei/6G-HKU.html" target="_blank"
+            <a href="https://ece.hku.hk/6ghku/" target="_blank"
                 rel="noopener noreferrer">6G@HKU</a>&nbsp;&nbsp;
             <!-- &middot;&nbsp; -->
             <!-- <a href="./softwares.html">Softwares</a>&nbsp;&nbsp;&middot;&nbsp;
@@ -364,7 +373,7 @@
         <p style="font-size: 14px;">
             &copy; 2026 Zhaolin Wang. All rights reserved.
             <br>
-            Page template inspired by <a href="https://liuziwei7.github.io/" target="_blank">Ziwei Liu</a>.
+            Page template inspired by <a href="https://liuziwei7.github.io/" target="_blank" rel="noopener noreferrer">Ziwei Liu</a>.
         </p>
     </div>
 
