@@ -5,6 +5,13 @@
       "title": "Preprints",
       "items": [
         {
+          "authors": "Y. Tang and <b>Z. Wang</b>",
+          "title": "Generative Site-Specific Beamforming for UPAs via Decoupled Channel Sensing",
+          "date": "Jun. 2026",
+          "main_link": "https://arxiv.org/abs/2606.22522",
+          "links": []
+        },
+        {
           "authors": "<b>Z. Wang</b>, C. Ouyang, K. R. R. Ranasinghe, S. S. A. Yuan, G. T. F. de Abreu, E. Björnson, and Y. Liu",
           "title": "Electromagnetic Signal and Information Theory: A Continuous-Aperture Array Perspective",
           "date": "May 2026",
@@ -47,31 +54,10 @@
           "links": []
         },
         {
-          "authors": "<b>Z. Wang</b>, Z. Zhou, C. J. Zhao, and Y. Liu",
-          "title": "Generative Site-Specific Beamforming for Next-Generation Spatial Intelligence",
-          "date": "Jan. 2026",
-          "main_link": "https://arxiv.org/abs/2601.02301",
-          "links": []
-        },
-        {
           "authors": "Z. Zhou, <b>Z. Wang</b>, and Y. Liu",
           "title": "Beam-Brainstorm: A Generative Site-Specific Beamforming Approach",
           "date": "Jan. 2026",
           "main_link": "https://arxiv.org/abs/2601.02219",
-          "links": []
-        },
-        {
-          "authors": "<b>Z. Wang</b>, K. R. R. Ranasinghe, G. T. F. de Abreu, and Y. Liu",
-          "title": "Mutual Coupling in Continuous Aperture Arrays: Physical Modeling and Beamforming Design",
-          "date": "Nov. 2025",
-          "main_link": "https://arxiv.org/abs/2511.11225",
-          "links": []
-        },
-        {
-          "authors": "<b>Z. Wang</b>, J. Xu, C. Ouyang, X. Mu, and Y. Liu",
-          "title": "Multiport Network Modeling and Optimization for Reconfigurable Pinching-Antenna Systems",
-          "date": "Sep. 2025",
-          "main_link": "https://arxiv.org/abs/2509.05612",
           "links": []
         }
       ]
@@ -80,6 +66,33 @@
       "type": "journal_articles",
       "title": "Journal Articles",
       "items": [
+        {
+          "authors": "<b>Z. Wang</b>, Z. Zhou, C. J. Zhao, and Y. Liu",
+          "title": "Generative Site-Specific Beamforming for Next-Generation Spatial Intelligence",
+          "journal": "IEEE Communications Magazine",
+          "status": "accepted to appear",
+          "date": "Jul. 2026",
+          "main_link": "https://arxiv.org/abs/2601.02301",
+          "links": []
+        },
+        {
+          "authors": "<b>Z. Wang</b>, K. R. R. Ranasinghe, G. T. F. de Abreu, and Y. Liu",
+          "title": "Mutual Coupling in Continuous Aperture Arrays: Physical Modeling and Beamforming Design",
+          "journal": "IEEE Transactions on Wireless Communications",
+          "status": "accepted to appear",
+          "date": "Jul. 2026",
+          "main_link": "https://arxiv.org/abs/2511.11225",
+          "links": []
+        },
+        {
+          "authors": "<b>Z. Wang</b>, J. Xu, C. Ouyang, X. Mu, and Y. Liu",
+          "title": "Multiport Network Modeling and Optimization for Reconfigurable Pinching-Antenna Systems",
+          "journal": "npj Wireless Technology",
+          "status": "accepted to appear",
+          "date": "Jul. 2026",
+          "main_link": "https://arxiv.org/abs/2509.05612",
+          "links": []
+        },
         {
           "authors": "H. Jiang, C. Ouyang, <b>Z. Wang</b>, Y. Liu, A. Nallanathan, and Z. Ding",
           "title": "Pinching-Antenna Assisted Sensing: A Bayesian Cramér-Rao Bound Perspective",
