@@ -1,0 +1,23 @@
+{
+  "url": "https://zhaolin820.github.io",
+  "name": "Zhaolin Wang",
+  "nameZh": "王照霖",
+  "jobTitle": "Research Assistant Professor",
+  "department": "Department of Electrical and Computer Engineering",
+  "institution": "The University of Hong Kong",
+  "email": "zhaolin.wang@hku.hk",
+  "defaultDescription": "Zhaolin Wang is a Research Assistant Professor at The University of Hong Kong working on near-field communications, integrated sensing and communications, and next-generation wireless systems.",
+  "analyticsId": "G-LJH79M478S",
+  "navigation": [
+    { "label": "Home", "url": "/index.html" },
+    { "label": "Research", "url": "/research.html" },
+    { "label": "Publications", "url": "/publications.html" },
+    { "label": "Software", "url": "/software.html" },
+    { "label": "6G@HKU", "url": "https://ece.hku.hk/6ghku/", "external": true }
+  ],
+  "profiles": [
+    { "label": "Google Scholar", "url": "https://scholar.google.com/citations?user=86LiyOsAAAAJ" },
+    { "label": "GitHub", "url": "https://github.com/zhaolin820" },
+    { "label": "ResearchGate", "url": "https://www.researchgate.net/profile/Zhaolin-Wang-7" }
+  ]
+}

@@ -1,0 +1,87 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://zhaolin820.github.io/data/publications.schema.json",
+  "title": "Zhaolin Wang publication data",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["categories"],
+  "properties": {
+    "categories": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["type", "title", "items"],
+        "properties": {
+          "type": { "type": "string", "minLength": 1 },
+          "title": { "type": "string", "minLength": 1 },
+          "items": {
+            "type": "array",
+            "items": { "$ref": "#/$defs/publication" }
+          }
+        }
+      }
+    }
+  },
+  "$defs": {
+    "url": {
+      "type": "string",
+      "pattern": "^(https?://|mailto:)"
+    },
+    "publication": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id", "authors", "title", "date", "date_iso",
+        "is_first_author", "main_link"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$",
+          "maxLength": 120
+        },
+        "authors": { "type": "string", "minLength": 1 },
+        "title": { "type": "string", "minLength": 1 },
+        "date": {
+          "type": "string",
+          "pattern": "^(Jan\\.|Feb\\.|Mar\\.|Apr\\.|May|Jun\\.|Jul\\.|Aug\\.|Sep\\.|Oct\\.|Nov\\.|Dec\\.) [0-9]{4}$"
+        },
+        "date_iso": {
+          "type": "string",
+          "pattern": "^[0-9]{4}-(0[1-9]|1[0-2])$"
+        },
+        "is_first_author": { "type": "boolean" },
+        "main_link": { "$ref": "#/$defs/url" },
+        "journal": { "type": "string", "minLength": 1 },
+        "conference": { "type": "string", "minLength": 1 },
+        "status": { "type": "string", "minLength": 1 },
+        "links": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["text", "url"],
+            "properties": {
+              "text": { "type": "string", "minLength": 1 },
+              "url": { "$ref": "#/$defs/url" }
+            }
+          }
+        },
+        "notes": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["type", "text"],
+            "properties": {
+              "type": { "enum": ["highlight", "award"] },
+              "text": { "type": "string", "minLength": 1 }
+            }
+          }
+        }
+      }
+    }
+  }
+}

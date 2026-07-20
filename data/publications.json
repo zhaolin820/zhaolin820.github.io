@@ -5,60 +5,94 @@
       "title": "Preprints",
       "items": [
         {
+          "authors": "C. J. Zhao, <b>Z. Wang</b>, Z. Zhao, and Y. Liu",
+          "title": "Site-Specific Learning for Low-Overhead Multi-User MIMO Beamforming",
+          "date": "Jul. 2026",
+          "main_link": "https://arxiv.org/abs/2607.10746",
+          "links": [],
+          "id": "site-specific-learning-for-low-overhead-multi-user-mimo-beamforming",
+          "date_iso": "2026-07",
+          "is_first_author": false
+        },
+        {
           "authors": "Y. Tang and <b>Z. Wang</b>",
           "title": "Generative Site-Specific Beamforming for UPAs via Decoupled Channel Sensing",
           "date": "Jun. 2026",
           "main_link": "https://arxiv.org/abs/2606.22522",
-          "links": []
+          "links": [],
+          "id": "generative-site-specific-beamforming-for-upas-via-decoupled-channel-sensing",
+          "date_iso": "2026-06",
+          "is_first_author": false
         },
         {
           "authors": "<b>Z. Wang</b>, C. Ouyang, K. R. R. Ranasinghe, S. S. A. Yuan, G. T. F. de Abreu, E. Björnson, and Y. Liu",
           "title": "Electromagnetic Signal and Information Theory: A Continuous-Aperture Array Perspective",
           "date": "May 2026",
           "main_link": "https://arxiv.org/abs/2605.12910",
-          "links": []
+          "links": [],
+          "id": "electromagnetic-signal-and-information-theory-a-continuous-aperture-array-perspective",
+          "date_iso": "2026-05",
+          "is_first_author": true
         },
         {
           "authors": "C. J. Zhao, <b>Z. Wang</b>, Z. Zhao, and Y. Liu",
           "title": "SiFo: Wireless Foundation Model for Low-Overhead Site-Specific CSI Feedback",
           "date": "May 2026",
           "main_link": "https://arxiv.org/abs/2605.16141",
-          "links": []
+          "links": [],
+          "id": "sifo-wireless-foundation-model-for-low-overhead-site-specific-csi-feedback",
+          "date_iso": "2026-05",
+          "is_first_author": false
         },
         {
           "authors": "C. J. Zhao, <b>Z. Wang</b>, Z. Zhao, and Y. Liu",
           "title": "Bridging Standardized Codebook and Site-Specific Beamforming: A Unified Limited-Feedback Framework",
           "date": "May 2026",
           "main_link": "https://arxiv.org/abs/2604.14524",
-          "links": []
+          "links": [],
+          "id": "bridging-standardized-codebook-and-site-specific-beamforming-a-unified-limited-feedback-framework",
+          "date_iso": "2026-05",
+          "is_first_author": false
         },
         {
           "authors": "Z. Zhou, <b>Z. Wang</b>, and Y. Liu",
           "title": "Fidelity Where it Matters: Site-Specific Nonuniform Refinement for Wireless Digital Twins",
           "date": "May 2026",
           "main_link": "https://arxiv.org/abs/2605.08772",
-          "links": []
+          "links": [],
+          "id": "fidelity-where-it-matters-site-specific-nonuniform-refinement-for-wireless-digital-twins",
+          "date_iso": "2026-05",
+          "is_first_author": false
         },
         {
           "authors": "Z. Zhou, <b>Z. Wang</b>, and Y. Liu",
           "title": "Fast Beam-Brainstorm: Few-Step Generative Site-Specific Beamforming with Flexible Probing",
           "date": "Mar. 2026",
           "main_link": "https://arxiv.org/abs/2603.17622",
-          "links": []
+          "links": [],
+          "id": "fast-beam-brainstorm-few-step-generative-site-specific-beamforming-with-flexible-probing",
+          "date_iso": "2026-03",
+          "is_first_author": false
         },
         {
           "authors": "C. J. Zhao, <b>Z. Wang</b>, and Y. Liu",
           "title": "Generative Site-Specific Beamforming via Information-Maximizing Codebook",
           "date": "Feb. 2026",
           "main_link": "https://arxiv.org/abs/2602.12552",
-          "links": []
+          "links": [],
+          "id": "generative-site-specific-beamforming-via-information-maximizing-codebook",
+          "date_iso": "2026-02",
+          "is_first_author": false
         },
         {
           "authors": "Z. Zhou, <b>Z. Wang</b>, and Y. Liu",
           "title": "Beam-Brainstorm: A Generative Site-Specific Beamforming Approach",
           "date": "Jan. 2026",
           "main_link": "https://arxiv.org/abs/2601.02219",
-          "links": []
+          "links": [],
+          "id": "beam-brainstorm-a-generative-site-specific-beamforming-approach",
+          "date_iso": "2026-01",
+          "is_first_author": false
         }
       ]
     },
@@ -73,7 +107,10 @@
           "status": "accepted to appear",
           "date": "Jul. 2026",
           "main_link": "https://arxiv.org/abs/2601.02301",
-          "links": []
+          "links": [],
+          "id": "generative-site-specific-beamforming-for-next-generation-spatial-intelligence",
+          "date_iso": "2026-07",
+          "is_first_author": true
         },
         {
           "authors": "<b>Z. Wang</b>, K. R. R. Ranasinghe, G. T. F. de Abreu, and Y. Liu",
@@ -82,7 +119,10 @@
           "status": "accepted to appear",
           "date": "Jul. 2026",
           "main_link": "https://arxiv.org/abs/2511.11225",
-          "links": []
+          "links": [],
+          "id": "mutual-coupling-in-continuous-aperture-arrays-physical-modeling-and-beamforming-design",
+          "date_iso": "2026-07",
+          "is_first_author": true
         },
         {
           "authors": "<b>Z. Wang</b>, J. Xu, C. Ouyang, X. Mu, and Y. Liu",
@@ -91,7 +131,10 @@
           "status": "accepted to appear",
           "date": "Jul. 2026",
           "main_link": "https://arxiv.org/abs/2509.05612",
-          "links": []
+          "links": [],
+          "id": "multiport-network-modeling-and-optimization-for-reconfigurable-pinching-antenna-systems",
+          "date_iso": "2026-07",
+          "is_first_author": true
         },
         {
           "authors": "H. Jiang, C. Ouyang, <b>Z. Wang</b>, Y. Liu, A. Nallanathan, and Z. Ding",
@@ -101,8 +144,14 @@
           "date": "May 2026",
           "main_link": "https://ieeexplore.ieee.org/abstract/document/11509309",
           "links": [
-            {"text": "Arxiv", "url": "https://arxiv.org/abs/2510.09137"}
-          ]
+            {
+              "text": "arXiv",
+              "url": "https://arxiv.org/abs/2510.09137"
+            }
+          ],
+          "id": "pinching-antenna-assisted-sensing-a-bayesian-cramer-rao-bound-perspective",
+          "date_iso": "2026-05",
+          "is_first_author": false
         },
         {
           "authors": "H. Jiang, <b>Z. Wang</b>, Y. Liu, H. Shin, A. Nallanathan, and Y. Liu",
@@ -112,8 +161,14 @@
           "date": "May 2026",
           "main_link": "https://doi.org/10.1109/MCOM.001.2500334",
           "links": [
-            {"text": "Arxiv", "url": "https://arxiv.org/abs/2506.09225"}
-          ]
+            {
+              "text": "arXiv",
+              "url": "https://arxiv.org/abs/2506.09225"
+            }
+          ],
+          "id": "near-field-sensing-enabled-predictive-beamforming-fundamentals-framework-and-opportunities",
+          "date_iso": "2026-05",
+          "is_first_author": false
         },
         {
           "authors": "Z. Zhou, <b>Z. Wang</b>, and Y. Liu",
@@ -123,8 +178,14 @@
           "date": "Apr. 2026",
           "main_link": "https://ieeexplore.ieee.org/abstract/document/11493532",
           "links": [
-            {"text": "Arxiv", "url": "https://arxiv.org/abs/2510.25192"}
-          ]
+            {
+              "text": "arXiv",
+              "url": "https://arxiv.org/abs/2510.25192"
+            }
+          ],
+          "id": "spectral-and-energy-efficiency-tradeoff-for-pinching-antenna-systems",
+          "date_iso": "2026-04",
+          "is_first_author": false
         },
         {
           "authors": "K. R. R. Ranasinghe, <b>Z. Wang</b>, H. S. Rou, G. T. F. de Abreu, and E. Björnson",
@@ -134,8 +195,14 @@
           "date": "Apr. 2026",
           "main_link": "https://ieeexplore.ieee.org/abstract/document/11483338",
           "links": [
-            {"text": "Arxiv", "url": "https://arxiv.org/abs/2509.00964"}
-          ]
+            {
+              "text": "arXiv",
+              "url": "https://arxiv.org/abs/2509.00964"
+            }
+          ],
+          "id": "doubly-dispersive-continuous-mimo-systems-channel-modeling-and-beamforming-design",
+          "date_iso": "2026-04",
+          "is_first_author": false
         },
         {
           "authors": "H. Jiang, <b>Z. Wang</b>, Y. Liu, A. Nallanathan, and Z. Ding",
@@ -145,8 +212,14 @@
           "date": "Mar. 2026",
           "main_link": "https://ieeexplore.ieee.org/abstract/document/11426943",
           "links": [
-            {"text": "Arxiv", "url": "https://arxiv.org/abs/2509.06170"}
-          ]
+            {
+              "text": "arXiv",
+              "url": "https://arxiv.org/abs/2509.06170"
+            }
+          ],
+          "id": "pinching-antenna-system-pass-enhanced-covert-communications-against-warden-via-sensing",
+          "date_iso": "2026-03",
+          "is_first_author": false
         },
         {
           "authors": "C. Ouyang, <b>Z. Wang</b>, Y. Liu, and Z. Ding",
@@ -156,8 +229,14 @@
           "date": "Feb. 2026",
           "main_link": "https://ieeexplore.ieee.org/abstract/document/11414134",
           "links": [
-            {"text": "Arxiv", "url": "https://arxiv.org/abs/2505.10179"}
-          ]
+            {
+              "text": "arXiv",
+              "url": "https://arxiv.org/abs/2505.10179"
+            }
+          ],
+          "id": "rate-region-of-isac-for-pinching-antenna-systems",
+          "date_iso": "2026-02",
+          "is_first_author": false
         },
         {
           "authors": "Y. Liu, H. Jiang, X. Xu, <b>Z. Wang</b>, J. Guo, C. Ouyang, X. Mu, Z. Ding, A. Nallanathan, G. K. Karagiannidis, and R. Schober",
@@ -167,8 +246,14 @@
           "date": "Jan. 2026",
           "main_link": "https://ieeexplore.ieee.org/abstract/document/11364174",
           "links": [
-            {"text": "Arxiv", "url": "https://arxiv.org/abs/2508.07572"}
-          ]
+            {
+              "text": "arXiv",
+              "url": "https://arxiv.org/abs/2508.07572"
+            }
+          ],
+          "id": "pinching-antenna-systems-pass-a-tutorial",
+          "date_iso": "2026-01",
+          "is_first_author": false
         },
         {
           "authors": "M. Sun, C. Ouyang, <b>Z. Wang</b>, S. Wu and Y. Liu",
@@ -178,8 +263,14 @@
           "date": "Dec. 2025",
           "main_link": "https://ieeexplore.ieee.org/document/11299446",
           "links": [
-            {"text": "Arxiv", "url": "https://arxiv.org/abs/2501.04924"}
-          ]
+            {
+              "text": "arXiv",
+              "url": "https://arxiv.org/abs/2501.04924"
+            }
+          ],
+          "id": "secure-beamforming-for-continuous-aperture-array-capa-systems",
+          "date_iso": "2025-12",
+          "is_first_author": false
         },
         {
           "authors": "H. Ting, <b>Z. Wang</b>, and Y. Liu",
@@ -187,18 +278,27 @@
           "journal": "IEEE Transactions on Mobile Computing",
           "status": "vol. 25, no. 5, pp. 6017-6031",
           "date": "May 2026",
-          "main_link": "https://ieeexplore.ieee.org/document/11268972"
+          "main_link": "https://ieeexplore.ieee.org/document/11268972",
+          "id": "personalized-mobile-edge-generation-a-stable-personalized-training-approach-via-scaling-connection",
+          "date_iso": "2026-05",
+          "is_first_author": false
         },
         {
           "authors": "H. Jiang, <b>Z. Wang</b>, and Y. Liu",
           "title": "Pinching-Antenna System (PASS) Enhanced Covert Communications",
           "journal": "IEEE Journal on Selected Areas in Communications",
-          "status": " vol. 44, pp. 1736-1750, 2026",
+          "status": "vol. 44, pp. 1736-1750, 2026",
           "date": "Dec. 2025",
           "main_link": "https://ieeexplore.ieee.org/document/11289518",
           "links": [
-            {"text": "Arxiv", "url": "https://arxiv.org/abs/2504.10442"}
-          ]
+            {
+              "text": "arXiv",
+              "url": "https://arxiv.org/abs/2504.10442"
+            }
+          ],
+          "id": "pinching-antenna-system-pass-enhanced-covert-communications",
+          "date_iso": "2025-12",
+          "is_first_author": false
         },
         {
           "authors": "X. Xu, X. Mu, <b>Z. Wang</b>, Y. Liu, and A. Nallanathan",
@@ -208,8 +308,14 @@
           "date": "Nov. 2025",
           "main_link": "https://ieeexplore.ieee.org/document/11263923",
           "links": [
-            {"text": "Arxiv", "url": "https://arxiv.org/abs/2505.00218"}
-          ]
+            {
+              "text": "arXiv",
+              "url": "https://arxiv.org/abs/2505.00218"
+            }
+          ],
+          "id": "pinching-antenna-systems-pass-power-radiation-model-and-optimal-beamforming-design",
+          "date_iso": "2025-11",
+          "is_first_author": false
         },
         {
           "authors": "<b>Z. Wang</b>, C. Ouyang, X. Mu, Y. Liu, and Z. Ding",
@@ -219,8 +325,14 @@
           "date": "Dec. 2025",
           "main_link": "https://ieeexplore.ieee.org/document/11202577",
           "links": [
-            {"text": "Arxiv", "url": "https://arxiv.org/abs/2502.05917"}
-          ]
+            {
+              "text": "arXiv",
+              "url": "https://arxiv.org/abs/2502.05917"
+            }
+          ],
+          "id": "modeling-and-beamforming-optimization-for-pinching-antenna-systems",
+          "date_iso": "2025-12",
+          "is_first_author": true
         },
         {
           "authors": "H. Jiang, <b>Z. Wang</b>, Y. Liu and A. Nallanathan",
@@ -230,19 +342,31 @@
           "date": "Jan. 2026",
           "main_link": "https://ieeexplore.ieee.org/document/11241087",
           "links": [
-            {"text": "Arxiv", "url": "https://arxiv.org/abs/2412.15007"}
-          ]
+            {
+              "text": "arXiv",
+              "url": "https://arxiv.org/abs/2412.15007"
+            }
+          ],
+          "id": "cramer-rao-bound-optimization-for-near-field-sensing-with-continuous-aperture-arrays",
+          "date_iso": "2026-01",
+          "is_first_author": false
         },
         {
           "authors": "Z. Zhang, <b>Z. Wang</b>, X. Mu, B. He, J. Chen and Y. Liu",
           "title": "Integrated Sensing and Communications for Pinching-Antenna Systems (PASS)",
-          "journal": "IEEE Communications Letters ",
+          "journal": "IEEE Communications Letters",
           "status": "vol. 29, no. 12, pp. 2929-2933",
           "date": "Dec. 2025",
           "main_link": "https://ieeexplore.ieee.org/document/11197530",
           "links": [
-            {"text": "Arxiv", "url": "https://arxiv.org/abs/2504.07709"}
-          ]
+            {
+              "text": "arXiv",
+              "url": "https://arxiv.org/abs/2504.07709"
+            }
+          ],
+          "id": "integrated-sensing-and-communications-for-pinching-antenna-systems-pass",
+          "date_iso": "2025-12",
+          "is_first_author": false
         },
         {
           "authors": "Q. Wang, X. Chen, Q. Qi, <b>Z. Wang</b>, and Y. Liu",
@@ -250,7 +374,10 @@
           "journal": "IEEE Transactions on Communications",
           "status": "vol. 74, pp. 581-597",
           "date": "Jan. 2026",
-          "main_link": "https://ieeexplore.ieee.org/document/11224933"
+          "main_link": "https://ieeexplore.ieee.org/document/11224933",
+          "id": "integration-of-navigation-and-remote-sensing-in-leo-satellite-constellations",
+          "date_iso": "2026-01",
+          "is_first_author": false
         },
         {
           "authors": "H. Jiang, <b>Z. Wang</b>, Y. Liu, A. Nallanathan, and H. Shin",
@@ -258,7 +385,10 @@
           "journal": "IEEE Journal on Selected Areas in Communications",
           "status": "vol. 44, pp. 1193-1208",
           "date": "Oct. 2025",
-          "main_link": "https://ieeexplore.ieee.org/document/11193820"
+          "main_link": "https://ieeexplore.ieee.org/document/11193820",
+          "id": "beam-alignment-for-mimo-fluid-antenna-systems",
+          "date_iso": "2025-10",
+          "is_first_author": false
         },
         {
           "authors": "Y. Liu, <b>Z. Wang</b>, X. Mu, C. Ouyang, X. Xu, and Z. Ding",
@@ -268,11 +398,20 @@
           "date": "Jan. 2026",
           "main_link": "https://ieeexplore.ieee.org/document/11169486",
           "links": [
-            {"text": "Arxiv", "url": "https://arxiv.org/abs/2501.18409"}
+            {
+              "text": "arXiv",
+              "url": "https://arxiv.org/abs/2501.18409"
+            }
           ],
           "notes": [
-            {"type": "award", "text": "ESI Hot Paper"}
-          ]
+            {
+              "type": "award",
+              "text": "ESI Hot Paper"
+            }
+          ],
+          "id": "pinching-antenna-systems-pass-architecture-designs-opportunities-and-outlook",
+          "date_iso": "2026-01",
+          "is_first_author": false
         },
         {
           "authors": "<b>Z. Wang</b>, C. Ouyang, and Y. Liu",
@@ -282,12 +421,24 @@
           "date": "Jan. 2026",
           "main_link": "https://ieeexplore.ieee.org/document/11122426",
           "links": [
-            {"text": "Arxiv", "url": "https://arxiv.org/abs/2504.00181"},
-            {"text": "Code", "url": "https://github.com/zhaolin820/beamforming-design-for-continuous-aperture-array-based-MIMO-systems/tree/main"}
+            {
+              "text": "arXiv",
+              "url": "https://arxiv.org/abs/2504.00181"
+            },
+            {
+              "text": "Code",
+              "url": "https://github.com/zhaolin820/beamforming-design-for-continuous-aperture-array-based-MIMO-systems/tree/main"
+            }
           ],
           "notes": [
-            {"type": "highlight", "text": "Code Available"}
-          ]
+            {
+              "type": "highlight",
+              "text": "Code Available"
+            }
+          ],
+          "id": "beamforming-design-for-continuous-aperture-array-capa-based-mimo-systems",
+          "date_iso": "2026-01",
+          "is_first_author": true
         },
         {
           "authors": "C. Ouyang, <b>Z. Wang</b>, X. Zhang, and Y. Liu",
@@ -297,8 +448,14 @@
           "date": "Jul. 2025",
           "main_link": "https://ieeexplore.ieee.org/abstract/document/11087508",
           "links": [
-            {"text": "Arxiv", "url": "https://arxiv.org/abs/2411.06620"}
-          ]
+            {
+              "text": "arXiv",
+              "url": "https://arxiv.org/abs/2411.06620"
+            }
+          ],
+          "id": "linear-receive-beamforming-for-capa-systems",
+          "date_iso": "2025-07",
+          "is_first_author": false
         },
         {
           "authors": "<b>Z. Wang</b>, C. Ouyang, Y. Liu, and A. Nallanathan",
@@ -308,8 +465,14 @@
           "date": "Nov. 2025",
           "main_link": "https://ieeexplore.ieee.org/document/11111701",
           "links": [
-            {"text": "Arxiv", "url": "https://arxiv.org/abs/2505.15430"}
-          ]
+            {
+              "text": "arXiv",
+              "url": "https://arxiv.org/abs/2505.15430"
+            }
+          ],
+          "id": "wireless-sensing-via-pinching-antenna-systems",
+          "date_iso": "2025-11",
+          "is_first_author": true
         },
         {
           "authors": "C. Meng, <b>Z. Wang</b>, Z. Wei, Y. Liu, and Z. Feng",
@@ -319,16 +482,25 @@
           "date": "Jan. 2026",
           "main_link": "https://ieeexplore.ieee.org/abstract/document/11082451",
           "links": [
-            {"text": "Arxiv", "url": "https://arxiv.org/abs/2502.14193"}
-          ]
+            {
+              "text": "arXiv",
+              "url": "https://arxiv.org/abs/2502.14193"
+            }
+          ],
+          "id": "near-field-motion-parameter-estimation-a-variational-bayesian-approach",
+          "date_iso": "2026-01",
+          "is_first_author": false
         },
         {
           "authors": "Y. Guo, Y. Zhang, <b>Z. Wang</b>, M. Shang, Y. Chen, and Y. Liu",
           "title": "Impact of Array Orientations on Degrees of Freedom for Continuous Aperture Arrays",
           "journal": "IEEE Wireless Communications Letters",
-          "status": "vol. 14, no. 8, pp. 2476-2480 ",
+          "status": "vol. 14, no. 8, pp. 2476-2480",
           "date": "Aug. 2025",
-          "main_link": "https://ieeexplore.ieee.org/abstract/document/11015930"
+          "main_link": "https://ieeexplore.ieee.org/abstract/document/11015930",
+          "id": "impact-of-array-orientations-on-degrees-of-freedom-for-continuous-aperture-arrays",
+          "date_iso": "2025-08",
+          "is_first_author": false
         },
         {
           "authors": "C. Meng, D. Ma, <b>Z. Wang</b>, Y. Liu, Z. Wei, and Z. Feng",
@@ -338,8 +510,14 @@
           "date": "Nov. 2025",
           "main_link": "https://ieeexplore.ieee.org/abstract/document/11015468",
           "links": [
-            {"text": "Arxiv", "url": "https://arxiv.org/abs/2406.12323"}
-          ]
+            {
+              "text": "arXiv",
+              "url": "https://arxiv.org/abs/2406.12323"
+            }
+          ],
+          "id": "near-field-hybrid-beamforming-design-for-modular-xl-mimo-isac-systems",
+          "date_iso": "2025-11",
+          "is_first_author": false
         },
         {
           "authors": "Y. Liu, C. Ouyang, <b>Z. Wang</b>, J. Xu, X. Mu, and Z. Ding",
@@ -349,8 +527,14 @@
           "date": "Aug. 2025",
           "main_link": "https://arxiv.org/abs/2412.00894",
           "links": [
-            {"text": "Arxiv", "url": "https://arxiv.org/abs/2412.00894"}
-          ]
+            {
+              "text": "arXiv",
+              "url": "https://arxiv.org/abs/2412.00894"
+            }
+          ],
+          "id": "capa-continuous-aperture-arrays-for-revolutionizing-6g-wireless-communications",
+          "date_iso": "2025-08",
+          "is_first_author": false
         },
         {
           "authors": "C. Ouyang, <b>Z. Wang</b>, X. Zhang, and Y. Liu",
@@ -360,8 +544,14 @@
           "date": "Oct. 2025",
           "main_link": "https://ieeexplore.ieee.org/document/11005662",
           "links": [
-            {"text": "Arxiv", "url": "https://arxiv.org/abs/2408.13948"}
-          ]
+            {
+              "text": "arXiv",
+              "url": "https://arxiv.org/abs/2408.13948"
+            }
+          ],
+          "id": "diversity-and-multiplexing-for-continuous-aperture-array-capa-based-communications",
+          "date_iso": "2025-10",
+          "is_first_author": false
         },
         {
           "authors": "C. Ouyang, <b>Z. Wang</b>, Y. Liu, and Z. Ding",
@@ -371,12 +561,24 @@
           "date": "Jun. 2025",
           "main_link": "https://ieeexplore.ieee.org/document/10981775",
           "links": [
-            {"text": "Arxiv", "url": "https://arxiv.org/abs/2501.05657"}
+            {
+              "text": "arXiv",
+              "url": "https://arxiv.org/abs/2501.05657"
+            }
           ],
           "notes": [
-            {"type": "award", "text": "ESI Hot Paper"},
-            {"type": "award", "text": "ESI Highly Cited Paper"}
-          ]
+            {
+              "type": "award",
+              "text": "ESI Hot Paper"
+            },
+            {
+              "type": "award",
+              "text": "ESI Highly Cited Paper"
+            }
+          ],
+          "id": "array-gain-for-pinching-antenna-systems-pass",
+          "date_iso": "2025-06",
+          "is_first_author": false
         },
         {
           "authors": "<b>Z. Wang</b>, X. Mu, and Y. Liu",
@@ -386,19 +588,31 @@
           "date": "Oct. 2025",
           "main_link": "https://ieeexplore.ieee.org/document/10988576",
           "links": [
-            {"text": "Arxiv", "url": "https://arxiv.org/abs/2404.05076"}
-          ]
+            {
+              "text": "arXiv",
+              "url": "https://arxiv.org/abs/2404.05076"
+            }
+          ],
+          "id": "performance-analysis-of-near-field-sensing-in-wideband-mimo-systems",
+          "date_iso": "2025-10",
+          "is_first_author": true
         },
         {
           "authors": "<b>Z. Wang</b>, C. Ouyang, and Y. Liu",
           "title": "Optimal Beamforming for Multi-User Continuous Aperture Array (CAPA) Systems",
           "journal": "IEEE Transactions on Communications",
           "status": "vol. 73, no. 10, pp. 9207-9221",
-          "date": "Oct, 2025",
+          "date": "Oct. 2025",
           "main_link": "https://ieeexplore.ieee.org/document/10938678",
           "links": [
-            {"text": "Arxiv", "url": "https://arxiv.org/abs/2411.14919"}
-          ]
+            {
+              "text": "arXiv",
+              "url": "https://arxiv.org/abs/2411.14919"
+            }
+          ],
+          "id": "optimal-beamforming-for-multi-user-continuous-aperture-array-capa-systems",
+          "date_iso": "2025-10",
+          "is_first_author": true
         },
         {
           "authors": "<b>Z. Wang</b>, C Ouyang, and Y. Liu",
@@ -408,12 +622,24 @@
           "date": "Jun. 2025",
           "main_link": "https://ieeexplore.ieee.org/document/10910020",
           "links": [
-            {"text": "Arxiv", "url": "https://arxiv.org/abs/2410.13677"},
-            {"text": "Code", "url": "https://github.com/zhaolin820/beamforming-optimization-for-continuous-aperture-array-based-communications"}
+            {
+              "text": "arXiv",
+              "url": "https://arxiv.org/abs/2410.13677"
+            },
+            {
+              "text": "Code",
+              "url": "https://github.com/zhaolin820/beamforming-optimization-for-continuous-aperture-array-based-communications"
+            }
           ],
           "notes": [
-            {"type": "highlight", "text": "Code Available"}
-          ]
+            {
+              "type": "highlight",
+              "text": "Code Available"
+            }
+          ],
+          "id": "beamforming-optimization-for-continuous-aperture-array-capa-based-communications",
+          "date_iso": "2025-06",
+          "is_first_author": true
         },
         {
           "authors": "Y. Liu, J. Xu, <b>Z. Wang</b>, X. Mu, and L. Hanzo",
@@ -423,8 +649,14 @@
           "date": "Apr. 2025",
           "main_link": "https://ieeexplore.ieee.org/abstract/document/10944643",
           "links": [
-            {"text": "Arxiv", "url": "https://arxiv.org/abs/2303.04003"}
-          ]
+            {
+              "text": "arXiv",
+              "url": "https://arxiv.org/abs/2303.04003"
+            }
+          ],
+          "id": "near-field-communications-what-will-be-different",
+          "date_iso": "2025-04",
+          "is_first_author": false
         },
         {
           "authors": "<b>Z. Wang</b>, P Ramezani, Y Liu, and E Björnson",
@@ -434,8 +666,14 @@
           "date": "Jan. 2025",
           "main_link": "https://ieeexplore.ieee.org/document/10934790",
           "links": [
-            {"text": "Arxiv", "url": "https://arxiv.org/abs/2406.10941"}
-          ]
+            {
+              "text": "arXiv",
+              "url": "https://arxiv.org/abs/2406.10941"
+            }
+          ],
+          "id": "near-field-localization-and-sensing-with-large-aperture-arrays-from-signal-modeling-to-processing",
+          "date_iso": "2025-01",
+          "is_first_author": true
         },
         {
           "authors": "H. Jiang <b>Z. Wang</b>, and Y. Liu",
@@ -445,12 +683,24 @@
           "date": "Apr. 2025",
           "main_link": "https://ieeexplore.ieee.org/document/10841363",
           "links": [
-            {"text": "Arxiv", "url": "https://arxiv.org/abs/2408.09592"},
-            {"text": "Code", "url": "https://github.com/Dr-Evil-Jiang/Near-Field-Sensing-A-Low-Complexity-Wavenumber-Domain-Positioning-Method"}
+            {
+              "text": "arXiv",
+              "url": "https://arxiv.org/abs/2408.09592"
+            },
+            {
+              "text": "Code",
+              "url": "https://github.com/Dr-Evil-Jiang/Near-Field-Sensing-A-Low-Complexity-Wavenumber-Domain-Positioning-Method"
+            }
           ],
           "notes": [
-            {"type": "highlight", "text": "Code Available"}
-          ]
+            {
+              "type": "highlight",
+              "text": "Code Available"
+            }
+          ],
+          "id": "near-field-sensing-a-low-complexity-wavenumber-domain-positioning-method",
+          "date_iso": "2025-04",
+          "is_first_author": false
         },
         {
           "authors": "<b>Z. Wang</b>, X. Mu, and Y. Liu",
@@ -460,13 +710,28 @@
           "date": "Jan. 2025",
           "main_link": "https://ieeexplore.ieee.org/document/10587118",
           "links": [
-            {"text": "Arxiv", "url": "https://arxiv.org/abs/2306.16861"},
-            {"text": "Code", "url": "https://github.com/zhaolin820/beamfocusing-optimization-for-near-field-wideband-multi-user-communications"}
+            {
+              "text": "arXiv",
+              "url": "https://arxiv.org/abs/2306.16861"
+            },
+            {
+              "text": "Code",
+              "url": "https://github.com/zhaolin820/beamfocusing-optimization-for-near-field-wideband-multi-user-communications"
+            }
           ],
           "notes": [
-            {"type": "award", "text": "ESI Highly Cited Paper"},
-            {"type": "highlight", "text": "Code Available"}
-          ]
+            {
+              "type": "award",
+              "text": "ESI Highly Cited Paper"
+            },
+            {
+              "type": "highlight",
+              "text": "Code Available"
+            }
+          ],
+          "id": "beamfocusing-optimization-for-near-field-wideband-multi-user-communications",
+          "date_iso": "2025-01",
+          "is_first_author": true
         },
         {
           "authors": "<b>Z. Wang</b>, X. Mu, and Y. Liu",
@@ -476,13 +741,28 @@
           "date": "Jan. 2025",
           "main_link": "https://ieeexplore.ieee.org/document/10664591",
           "links": [
-            {"text": "Arxiv", "url": "https://arxiv.org/abs/2311.09888"},
-            {"text": "Code", "url": "https://github.com/zhaolin820/near-field-velocity-sensing-and-predictive-beamforming"}
+            {
+              "text": "arXiv",
+              "url": "https://arxiv.org/abs/2311.09888"
+            },
+            {
+              "text": "Code",
+              "url": "https://github.com/zhaolin820/near-field-velocity-sensing-and-predictive-beamforming"
+            }
           ],
           "notes": [
-            {"type": "award", "text": "ESI Highly Cited Paper"},
-            {"type": "highlight", "text": "Code Available"}
-          ]
+            {
+              "type": "award",
+              "text": "ESI Highly Cited Paper"
+            },
+            {
+              "type": "highlight",
+              "text": "Code Available"
+            }
+          ],
+          "id": "near-field-velocity-sensing-and-predictive-beamforming",
+          "date_iso": "2025-01",
+          "is_first_author": true
         },
         {
           "authors": "H. Ting, <b>Z. Wang</b>, and Y. Liu",
@@ -492,8 +772,14 @@
           "date": "Jan. 2025",
           "main_link": "https://ieeexplore.ieee.org/document/10751783",
           "links": [
-            {"text": "Arxiv", "url": "https://arxiv.org/abs/2403.18146"}
-          ]
+            {
+              "text": "arXiv",
+              "url": "https://arxiv.org/abs/2403.18146"
+            }
+          ],
+          "id": "adaptive-ttd-configurations-for-near-field-communications-an-unsupervised-transformer-approach",
+          "date_iso": "2025-01",
+          "is_first_author": false
         },
         {
           "authors": "X. Mu, <b>Z. Wang</b>, and Y. Liu",
@@ -502,7 +788,10 @@
           "status": "vol. 39, no. 1, pp. 47-55",
           "date": "Jan. 2025",
           "main_link": "https://ieeexplore.ieee.org/document/10718344",
-          "links": []
+          "links": [],
+          "id": "simultaneously-transmitting-and-reflecting-surfaces-stars-for-multi-functional-6g",
+          "date_iso": "2025-01",
+          "is_first_author": false
         },
         {
           "authors": "R. Zhang, <b>Z. Wang</b>, Z. Wei, Y. Liu, Z. Xiong and Z. Feng",
@@ -511,7 +800,10 @@
           "status": "vol. 11, no. 5, pp. 3292-3305",
           "date": "Oct. 2025",
           "main_link": "https://ieeexplore.ieee.org/document/10851319",
-          "links": []
+          "links": [],
+          "id": "isar-sensing-based-on-music-algorithm-in-integrated-sensing-and-communications",
+          "date_iso": "2025-10",
+          "is_first_author": false
         },
         {
           "authors": "Y. Liu, C. Ouyang, <b>Z. Wang</b>, J. Xu, X. Mu, and A. L. Swindlehurst",
@@ -521,12 +813,24 @@
           "date": "Jun. 2024",
           "main_link": "https://ieeexplore.ieee.org/document/10716601",
           "links": [
-            {"text": "Arxiv", "url": "https://arxiv.org/abs/2401.05900"}
+            {
+              "text": "arXiv",
+              "url": "https://arxiv.org/abs/2401.05900"
+            }
           ],
           "notes": [
-            {"type": "award", "text": "ESI Hot Paper"},
-            {"type": "award", "text": "ESI Highly Cited Paper"}
-          ]
+            {
+              "type": "award",
+              "text": "ESI Hot Paper"
+            },
+            {
+              "type": "award",
+              "text": "ESI Highly Cited Paper"
+            }
+          ],
+          "id": "near-field-communications-a-comprehensive-survey",
+          "date_iso": "2024-06",
+          "is_first_author": false
         },
         {
           "authors": "Y. Guo, Y. Zhang, <b>Z. Wang</b>, and Y. Liu",
@@ -536,8 +840,14 @@
           "date": "Dec. 2024",
           "main_link": "https://ieeexplore.ieee.org/document/10723247",
           "links": [
-            {"text": "Arxiv", "url": "https://arxiv.org/abs/2404.02811"}
-          ]
+            {
+              "text": "arXiv",
+              "url": "https://arxiv.org/abs/2404.02811"
+            }
+          ],
+          "id": "wideband-beamforming-for-near-field-communications-with-circular-arrays",
+          "date_iso": "2024-12",
+          "is_first_author": false
         },
         {
           "authors": "H. Jiang, <b>Z. Wang</b>, and Y. Liu",
@@ -547,8 +857,14 @@
           "date": "Oct. 2024",
           "main_link": "https://ieeexplore.ieee.org/document/10609801",
           "links": [
-            {"text": "Arxiv", "url": "https://arxiv.org/abs/2402.15634"}
-          ]
+            {
+              "text": "arXiv",
+              "url": "https://arxiv.org/abs/2402.15634"
+            }
+          ],
+          "id": "sense-then-train-an-active-sensing-based-beam-training-design-for-near-field-mimo-systems",
+          "date_iso": "2024-10",
+          "is_first_author": false
         },
         {
           "authors": "C. Ouyang, <b>Z. Wang</b>, B. Zhao, X. Zhang, and Y. Liu",
@@ -558,8 +874,14 @@
           "date": "Oct. 2024",
           "main_link": "https://ieeexplore.ieee.org/document/10614327",
           "links": [
-            {"text": "Arxiv", "url": "https://arxiv.org/abs/2404.08343"}
-          ]
+            {
+              "text": "arXiv",
+              "url": "https://arxiv.org/abs/2404.08343"
+            }
+          ],
+          "id": "on-the-impact-of-reactive-region-on-the-near-field-channel-gain",
+          "date_iso": "2024-10",
+          "is_first_author": false
         },
         {
           "authors": "Z. Zheng, Y. Liu, <b>Z. Wang</b>, J. Chen, and T. Quek",
@@ -569,8 +891,14 @@
           "date": "Oct. 2024",
           "main_link": "https://ieeexplore.ieee.org/document/10577546",
           "links": [
-            {"text": "Arxiv", "url": "https://arxiv.org/abs/2312.15757"}
-          ]
+            {
+              "text": "arXiv",
+              "url": "https://arxiv.org/abs/2312.15757"
+            }
+          ],
+          "id": "dynamic-mimo-architecture-design-for-near-field-communications",
+          "date_iso": "2024-10",
+          "is_first_author": false
         },
         {
           "authors": "<b>Z. Wang</b>, X. Mu, and Y. Liu",
@@ -580,8 +908,14 @@
           "date": "Sep. 2024",
           "main_link": "https://ieeexplore.ieee.org/document/10663786",
           "links": [
-            {"text": "Arxiv", "url": "https://arxiv.org/abs/2311.11416"}
-          ]
+            {
+              "text": "arXiv",
+              "url": "https://arxiv.org/abs/2311.11416"
+            }
+          ],
+          "id": "rethinking-integrated-sensing-and-communication-when-near-field-meets-wideband",
+          "date_iso": "2024-09",
+          "is_first_author": true
         },
         {
           "authors": "H. Li, <b>Z. Wang</b>, X. Mu, Z. Pan, and Y. Liu",
@@ -591,8 +925,14 @@
           "date": "Sep. 2024",
           "main_link": "https://ieeexplore.ieee.org/document/10579914",
           "links": [
-            {"text": "Arxiv", "url": "https://arxiv.org/abs/2311.07722"}
-          ]
+            {
+              "text": "arXiv",
+              "url": "https://arxiv.org/abs/2311.07722"
+            }
+          ],
+          "id": "near-field-integrated-sensing-positioning-and-communication-a-downlink-and-uplink-framework",
+          "date_iso": "2024-09",
+          "is_first_author": false
         },
         {
           "authors": "C. Ouyang, <b>Z. Wang</b>, Y. Chen, X. Mu, and P. Zhu",
@@ -602,8 +942,14 @@
           "date": "Sep. 2024",
           "main_link": "https://ieeexplore.ieee.org/document/10639537",
           "links": [
-            {"text": "Arxiv", "url": "https://www.arxiv.org/abs/2408.00952"}
-          ]
+            {
+              "text": "arXiv",
+              "url": "https://www.arxiv.org/abs/2408.00952"
+            }
+          ],
+          "id": "a-primer-on-near-field-communications-for-next-generation-multiple-access",
+          "date_iso": "2024-09",
+          "is_first_author": false
         },
         {
           "authors": "<b>Z. Wang</b>, X. Mu, and Y. Liu",
@@ -613,8 +959,14 @@
           "date": "Aug. 2024",
           "main_link": "https://ieeexplore.ieee.org/document/10375302",
           "links": [
-            {"text": "Arxiv", "url": "https://arxiv.org/abs/2210.14112"}
-          ]
+            {
+              "text": "arXiv",
+              "url": "https://arxiv.org/abs/2210.14112"
+            }
+          ],
+          "id": "bidirectional-integrated-sensing-and-communication-full-duplex-or-half-duplex",
+          "date_iso": "2024-08",
+          "is_first_author": true
         },
         {
           "authors": "Z. Zhang, Y. Liu, <b>Z. Wang</b>, X. Mu, and J. Chen",
@@ -624,8 +976,14 @@
           "date": "Aug. 2024",
           "main_link": "https://ieeexplore.ieee.org/document/10559261",
           "links": [
-            {"text": "Arxiv", "url": "https://arxiv.org/abs/2305.03775"}
-          ]
+            {
+              "text": "arXiv",
+              "url": "https://arxiv.org/abs/2305.03775"
+            }
+          ],
+          "id": "simultaneous-wireless-information-and-power-transfer-in-near-field-communications",
+          "date_iso": "2024-08",
+          "is_first_author": false
         },
         {
           "authors": "Z. Zhang, Y. Liu, <b>Z. Wang</b>, X. Mu, and J. Chen",
@@ -635,8 +993,14 @@
           "date": "Jul. 2024",
           "main_link": "https://ieeexplore.ieee.org/document/10436390",
           "links": [
-            {"text": "Arxiv", "url": "https://arxiv.org/abs/2302.04189"}
-          ]
+            {
+              "text": "arXiv",
+              "url": "https://arxiv.org/abs/2302.04189"
+            }
+          ],
+          "id": "physical-layer-security-in-near-field-communications",
+          "date_iso": "2024-07",
+          "is_first_author": false
         },
         {
           "authors": "X. Mu, <b>Z. Wang</b>, and Y. Liu",
@@ -646,11 +1010,20 @@
           "date": "Jun. 2024",
           "main_link": "https://ieeexplore.ieee.org/document/10024901",
           "links": [
-            {"text": "Arxiv", "url": "https://arxiv.org/abs/2206.00377"}
+            {
+              "text": "arXiv",
+              "url": "https://arxiv.org/abs/2206.00377"
+            }
           ],
           "notes": [
-                {"type": "award", "text": "ESI Highly Cited Paper"}
-          ]
+            {
+              "type": "award",
+              "text": "ESI Highly Cited Paper"
+            }
+          ],
+          "id": "noma-for-integrating-sensing-and-communications-towards-6g-a-multiple-access-perspective",
+          "date_iso": "2024-06",
+          "is_first_author": false
         },
         {
           "authors": "Z. Zhang, Y. Liu, <b>Z. Wang</b>, J. Chen, and D. I. Kim",
@@ -660,8 +1033,14 @@
           "date": "Jun. 2024",
           "main_link": "https://ieeexplore.ieee.org/document/10566874",
           "links": [
-            {"text": "Arxiv", "url": "https://arxiv.org/abs/2403.04925"}
-          ]
+            {
+              "text": "arXiv",
+              "url": "https://arxiv.org/abs/2403.04925"
+            }
+          ],
+          "id": "near-field-communications-for-dma-noma-networks",
+          "date_iso": "2024-06",
+          "is_first_author": false
         },
         {
           "authors": "X. Mu, J. Xu, <b>Z. Wang</b>, and N. Al-Dhahir",
@@ -670,7 +1049,10 @@
           "status": "vol. 112, no. 9, pp. 1346-1371",
           "date": "Sep. 2024",
           "main_link": "https://ieeexplore.ieee.org/document/10550177",
-          "links": []
+          "links": [],
+          "id": "simultaneously-transmitting-and-reflecting-surfaces-for-ubiquitous-next-generation-multiple-access-in-6g-and-beyond",
+          "date_iso": "2024-09",
+          "is_first_author": false
         },
         {
           "authors": "<b>Z. Wang</b>, X. Mu, Y. Liu, and R. Schober",
@@ -680,12 +1062,24 @@
           "date": "Jun. 2024",
           "main_link": "https://ieeexplore.ieee.org/document/10458958",
           "links": [
-            {"text": "Arxiv", "url": "https://arxiv.org/abs/2309.06861"},
-            {"text": "Code", "url": "https://github.com/zhaolin820/TTD-configurations-for-near-field-beamforming-parallel-serial-or-hybrid"}
+            {
+              "text": "arXiv",
+              "url": "https://arxiv.org/abs/2309.06861"
+            },
+            {
+              "text": "Code",
+              "url": "https://github.com/zhaolin820/TTD-configurations-for-near-field-beamforming-parallel-serial-or-hybrid"
+            }
           ],
           "notes": [
-            {"type": "highlight", "text": "Code Available"}
-          ]
+            {
+              "type": "highlight",
+              "text": "Code Available"
+            }
+          ],
+          "id": "ttd-configurations-for-near-field-beamforming-parallel-serial-or-hybrid",
+          "date_iso": "2024-06",
+          "is_first_author": true
         },
         {
           "authors": "Y. Liu, J. Xu, <b>Z. Wang</b>, X. Mu, J. Zhang and P. Zhang",
@@ -695,8 +1089,14 @@
           "date": "Jan. 2024",
           "main_link": "https://link.springer.com/article/10.1631/FITEE.2300490",
           "links": [
-            {"text": "Arxiv", "url": "https://arxiv.org/abs/2304.14180"}
-          ]
+            {
+              "text": "arXiv",
+              "url": "https://arxiv.org/abs/2304.14180"
+            }
+          ],
+          "id": "simultaneously-transmitting-and-reflecting-star-riss-for-6g-fundamentals-recent-advances-and-future-directions",
+          "date_iso": "2024-01",
+          "is_first_author": false
         },
         {
           "authors": "J. Chen, K. Zhai, <b>Z. Wang</b>, Y. Liu, J. Jia, and X. Wang",
@@ -705,7 +1105,10 @@
           "status": "vol. 72, no. 6, pp. 3602-3617",
           "date": "Jun. 2024",
           "main_link": "https://ieeexplore.ieee.org/document/10411934",
-          "links": []
+          "links": [],
+          "id": "comp-and-ris-assisted-multicast-transmission-in-a-multi-uav-communication-system",
+          "date_iso": "2024-06",
+          "is_first_author": false
         },
         {
           "authors": "J. Xiao, J. Wang, <b>Z. Wang</b>, W. Xie, Y. Liu",
@@ -715,11 +1118,20 @@
           "date": "Jun. 2024",
           "main_link": "https://ieeexplore.ieee.org/document/10313112",
           "links": [
-            {"text": "Code", "url": "https://github.com/WiCi-Lab/LPAN"}
+            {
+              "text": "Code",
+              "url": "https://github.com/WiCi-Lab/LPAN"
+            }
           ],
           "notes": [
-            {"type": "highlight", "text": "Code Available"}
-          ]
+            {
+              "type": "highlight",
+              "text": "Code Available"
+            }
+          ],
+          "id": "multi-scale-attention-based-channel-estimation-for-ris-aided-massive-mimo-systems",
+          "date_iso": "2024-06",
+          "is_first_author": false
         },
         {
           "authors": "Z. Zhang, Y. Liu, <b>Z. Wang</b>, and J. Chen",
@@ -729,8 +1141,14 @@
           "date": "Feb. 2024",
           "main_link": "https://ieeexplore.ieee.org/document/10155669",
           "links": [
-            {"text": "Arxiv", "url": "https://arxiv.org/abs/2301.03436"}
-          ]
+            {
+              "text": "arXiv",
+              "url": "https://arxiv.org/abs/2301.03436"
+            }
+          ],
+          "id": "stars-isac-how-many-sensors-do-we-need",
+          "date_iso": "2024-02",
+          "is_first_author": false
         },
         {
           "authors": "Y. Liu, <b>Z. Wang</b>, J. Xu, C. Ouyang, X. Mu, and R. Schober",
@@ -740,8 +1158,14 @@
           "date": "Aug. 2023",
           "main_link": "https://ieeexplore.ieee.org/document/10220205",
           "links": [
-            {"text": "Arxiv", "url": "https://arxiv.org/abs/2305.17751"}
-          ]
+            {
+              "text": "arXiv",
+              "url": "https://arxiv.org/abs/2305.17751"
+            }
+          ],
+          "id": "near-field-communications-a-tutorial-review",
+          "date_iso": "2023-08",
+          "is_first_author": false
         },
         {
           "authors": "<b>Z. Wang</b>, X. Mu, J. Xu, and Y. Liu",
@@ -751,29 +1175,59 @@
           "date": "Jul. 2023",
           "main_link": "https://ieeexplore.ieee.org/document/10133914",
           "links": [
-            {"text": "Arxiv", "url": "https://arxiv.org/abs/2212.00497"},
-            {"text": "Code", "url": "https://github.com/zhaolin820/STAR-RIS-for-terahertz-communications"}
+            {
+              "text": "arXiv",
+              "url": "https://arxiv.org/abs/2212.00497"
+            },
+            {
+              "text": "Code",
+              "url": "https://github.com/zhaolin820/STAR-RIS-for-terahertz-communications"
+            }
           ],
           "notes": [
-            {"type": "highlight", "text": "Code Available"}
-          ]
+            {
+              "type": "highlight",
+              "text": "Code Available"
+            }
+          ],
+          "id": "simultaneously-transmitting-and-reflecting-surface-stars-for-terahertz-communications",
+          "date_iso": "2023-07",
+          "is_first_author": true
         },
         {
           "authors": "<b>Z. Wang</b>, X. Mu, and Y. Liu",
           "title": "Near-Field Integrated Sensing and Communications",
-          "journal": "IEEE Communication Letters",
+          "journal": "IEEE Communications Letters",
           "status": "vol. 27, no. 8, pp. 2048-2052",
           "date": "Aug. 2023",
           "main_link": "https://ieeexplore.ieee.org/document/10135096",
           "links": [
-            {"text": "Arxiv", "url": "https://arxiv.org/abs/2302.01153"},
-            {"text": "Code", "url": "https://github.com/zhaolin820/near-field-integrated-sensing-and-communications"}
+            {
+              "text": "arXiv",
+              "url": "https://arxiv.org/abs/2302.01153"
+            },
+            {
+              "text": "Code",
+              "url": "https://github.com/zhaolin820/near-field-integrated-sensing-and-communications"
+            }
           ],
           "notes": [
-            {"type": "award", "text": "ESI Hot Paper"},
-            {"type": "award", "text": "ESI Highly Cited Paper"},
-            {"type": "highlight", "text": "Code Available"}
-          ]
+            {
+              "type": "award",
+              "text": "ESI Hot Paper"
+            },
+            {
+              "type": "award",
+              "text": "ESI Highly Cited Paper"
+            },
+            {
+              "type": "highlight",
+              "text": "Code Available"
+            }
+          ],
+          "id": "near-field-integrated-sensing-and-communications",
+          "date_iso": "2023-08",
+          "is_first_author": true
         },
         {
           "authors": "<b>Z. Wang</b>, X. Mu, and Y. Liu",
@@ -783,13 +1237,28 @@
           "date": "Oct. 2023",
           "main_link": "https://ieeexplore.ieee.org/document/10050406",
           "links": [
-            {"text": "Arxiv", "url": "https://arxiv.org/abs/2207.10748"},
-            {"text": "Code", "url": "https://github.com/zhaolin820/stars-enabled-integrated-sensing-and-communications"}
+            {
+              "text": "arXiv",
+              "url": "https://arxiv.org/abs/2207.10748"
+            },
+            {
+              "text": "Code",
+              "url": "https://github.com/zhaolin820/stars-enabled-integrated-sensing-and-communications"
+            }
           ],
           "notes": [
-                {"type": "award", "text": "ESI Highly Cited Paper"},
-                {"type": "highlight", "text": "Code Available"}
-          ]
+            {
+              "type": "award",
+              "text": "ESI Highly Cited Paper"
+            },
+            {
+              "type": "highlight",
+              "text": "Code Available"
+            }
+          ],
+          "id": "stars-enabled-integrated-sensing-and-communications",
+          "date_iso": "2023-10",
+          "is_first_author": true
         },
         {
           "authors": "Z. Zhang, <b>Z. Wang</b>, Y. Liu, B. He, L. Lv, and J. Chen",
@@ -799,8 +1268,14 @@
           "date": "Jun. 2023",
           "main_link": "https://ieeexplore.ieee.org/document/10040906",
           "links": [
-            {"text": "Arxiv", "url": "https://arxiv.org/abs/2208.10382"}
-          ]
+            {
+              "text": "arXiv",
+              "url": "https://arxiv.org/abs/2208.10382"
+            }
+          ],
+          "id": "security-enhancement-for-coupled-phase-shift-star-ris-networks",
+          "date_iso": "2023-06",
+          "is_first_author": false
         },
         {
           "authors": "<b>Z. Wang</b>, X. Mu, Y. Liu, X. Xu, and P. Zhang",
@@ -810,44 +1285,82 @@
           "date": "Mar. 2023",
           "main_link": "https://ieeexplore.ieee.org/document/9996408",
           "links": [
-            {"text": "Arxiv", "url": "https://arxiv.org/abs/2205.08272"},
-            {"text": "Code", "url": "https://github.com/zhaolin820/noma-aided-joint-communication-sensing-and-multi-tier-computing-systems"}
+            {
+              "text": "arXiv",
+              "url": "https://arxiv.org/abs/2205.08272"
+            },
+            {
+              "text": "Code",
+              "url": "https://github.com/zhaolin820/noma-aided-joint-communication-sensing-and-multi-tier-computing-systems"
+            }
           ],
           "notes": [
-                {"type": "highlight", "text": "Code Available"}
-          ]
-          
+            {
+              "type": "highlight",
+              "text": "Code Available"
+            }
+          ],
+          "id": "noma-aided-joint-communication-sensing-and-multi-tier-computing-systems",
+          "date_iso": "2023-03",
+          "is_first_author": true
         },
         {
           "authors": "<b>Z. Wang</b>, X. Mu, Y. Liu, and R. Schober",
           "title": "Coupled Phase-Shift STAR-RISs: A General Optimization Framework",
-          "journal": "IEEE Wireless Communication Letters",
+          "journal": "IEEE Wireless Communications Letters",
           "status": "vol. 12, no. 2, pp. 207-211",
           "date": "Nov. 2022",
           "main_link": "https://ieeexplore.ieee.org/document/9935266",
           "links": [
-            {"text": "Arxiv", "url": "https://arxiv.org/abs/2208.01942"},
-            {"text": "Code", "url": "https://github.com/zhaolin820/coupled-phase-shift-STAR-RIS"}
+            {
+              "text": "arXiv",
+              "url": "https://arxiv.org/abs/2208.01942"
+            },
+            {
+              "text": "Code",
+              "url": "https://github.com/zhaolin820/coupled-phase-shift-STAR-RIS"
+            }
           ],
           "notes": [
-                {"type": "highlight", "text": "Code Available"}
-          ]
+            {
+              "type": "highlight",
+              "text": "Code Available"
+            }
+          ],
+          "id": "coupled-phase-shift-star-riss-a-general-optimization-framework",
+          "date_iso": "2022-11",
+          "is_first_author": true
         },
         {
           "authors": "<b>Z. Wang</b>, Y. Liu, X. Mu, Z. Ding, and O. A. Dobre",
           "title": "NOMA Empowered Integrated Sensing and Communication",
-          "journal": "IEEE Communication Letters",
+          "journal": "IEEE Communications Letters",
           "status": "vol. 26, no. 3, pp. 677-681",
           "date": "Mar. 2022",
           "main_link": "https://ieeexplore.ieee.org/document/9668964",
           "links": [
-            {"text": "Arxiv", "url": "https://arxiv.org/abs/2112.04550"},
-            {"text": "Code", "url": "https://github.com/zhaolin820/noma-empowered-integrated-sensing-and-communication"}
+            {
+              "text": "arXiv",
+              "url": "https://arxiv.org/abs/2112.04550"
+            },
+            {
+              "text": "Code",
+              "url": "https://github.com/zhaolin820/noma-empowered-integrated-sensing-and-communication"
+            }
           ],
           "notes": [
-                {"type": "award", "text": "ESI Highly Cited Paper"},
-                {"type": "highlight", "text": "Code Available"}
-          ]
+            {
+              "type": "award",
+              "text": "ESI Highly Cited Paper"
+            },
+            {
+              "type": "highlight",
+              "text": "Code Available"
+            }
+          ],
+          "id": "noma-empowered-integrated-sensing-and-communication",
+          "date_iso": "2022-03",
+          "is_first_author": true
         }
       ]
     }

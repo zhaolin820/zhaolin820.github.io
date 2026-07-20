@@ -1,0 +1,75 @@
+{
+  "directions": [
+    {
+      "id": "site-specific-learning",
+      "accent": "Site-Specific",
+      "title": "Learning for Wireless Networks via Digital Twins",
+      "image": "/assets/images/site_specific_learning.svg",
+      "image_alt": "Site-specific learning for wireless networks via digital twins",
+      "summary": "This research explores the integration of digital twins with machine learning to enable site-specific optimization in wireless networks. By leveraging high-fidelity virtual representations of physical spaces, we develop efficient learning frameworks that significantly improve communication and sensing performance. Unlike conventional machine learning approaches that rely on generalized datasets or statistical channel models for broad applicability, our models exploit the precise spatial and electromagnetic characteristics of a given environment. By prioritizing local accuracy over generic solutions, these digital twin-driven, site-specific models generate highly tailored, robust, and efficient network configurations, bridging the gap between theoretical models and real-world deployment.",
+      "groups": [
+        {
+          "title": "Wireless Digital Twins",
+          "publication_ids": [
+            "fidelity-where-it-matters-site-specific-nonuniform-refinement-for-wireless-digital-twins"
+          ]
+        },
+        {
+          "title": "Site-Specific Beamforming",
+          "publication_ids": [
+            "generative-site-specific-beamforming-for-next-generation-spatial-intelligence",
+            "beam-brainstorm-a-generative-site-specific-beamforming-approach",
+            "generative-site-specific-beamforming-via-information-maximizing-codebook",
+            "fast-beam-brainstorm-few-step-generative-site-specific-beamforming-with-flexible-probing",
+            "bridging-standardized-codebook-and-site-specific-beamforming-a-unified-limited-feedback-framework",
+            "sifo-wireless-foundation-model-for-low-overhead-site-specific-csi-feedback",
+            "generative-site-specific-beamforming-for-upas-via-decoupled-channel-sensing",
+            "site-specific-learning-for-low-overhead-multi-user-mimo-beamforming"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "electromagnetic-signal-information-theory",
+      "accent": "Electromagnetic",
+      "title": "Signal and Information Theory",
+      "image": "/assets/images/ESIT.svg",
+      "image_alt": "Electromagnetic signal and information theory for continuous-aperture arrays",
+      "summary": "This research direction focuses on unveiling the fundamental limits of communication systems derived from electromagnetic principles and developing electromagnetically consistent communication models, signal processing techniques, and optimization algorithms. By bridging classic information theory with advanced electromagnetic wave propagation models, we aim to design new communication and sensing strategies for next-generation wireless networks. A key emphasis is characterizing the degrees of freedom, capacity limits, and beamforming designs for spatially continuous apertures, as well as exploiting near-field spherical-wave properties.",
+      "groups": [
+        {
+          "title": "Magazine and Tutorial",
+          "publication_ids": [
+            "electromagnetic-signal-and-information-theory-a-continuous-aperture-array-perspective",
+            "a-primer-on-near-field-communications-for-next-generation-multiple-access",
+            "capa-continuous-aperture-arrays-for-revolutionizing-6g-wireless-communications"
+          ]
+        },
+        {
+          "title": "Communication Systems",
+          "publication_ids": [
+            "1-bit-quantized-continuous-aperture-arrays",
+            "mutual-coupling-in-continuous-aperture-arrays-physical-modeling-and-beamforming-design",
+            "beamforming-design-for-continuous-aperture-array-capa-based-mimo-systems",
+            "doubly-dispersive-continuous-mimo-systems-channel-modeling-and-beamforming-design",
+            "flexible-continuous-aperture-arrays",
+            "linear-receive-beamforming-for-capa-systems",
+            "diversity-and-multiplexing-for-continuous-aperture-array-capa-based-communications",
+            "optimal-beamforming-for-multi-user-continuous-aperture-array-capa-systems",
+            "beamforming-optimization-for-continuous-aperture-array-capa-based-communications"
+          ]
+        },
+        {
+          "title": "Sensing Systems",
+          "publication_ids": [
+            "extended-target-classification-and-localization-for-near-field-isac",
+            "cramer-rao-bound-optimization-for-near-field-sensing-with-continuous-aperture-arrays",
+            "optimal-waveform-design-for-continuous-aperture-array-capa-aided-isac-systems",
+            "joint-doa-and-attitude-sensing-based-on-tri-polarized-continuous-aperture-array",
+            "doa-estimation-via-continuous-aperture-arrays-music-and-crlb"
+          ]
+        }
+      ]
+    }
+  ]
+}

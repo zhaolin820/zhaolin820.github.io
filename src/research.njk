@@ -1,0 +1,37 @@
+---
+layout: layouts/base.njk
+permalink: research.html
+title: Research — Zhaolin Wang
+description: Research directions of Zhaolin Wang in site-specific wireless learning, digital twins, electromagnetic signal theory, continuous-aperture arrays, communications, and sensing.
+canonicalPath: /research.html
+currentNav: Research
+socialImage: /assets/images/site_specific_learning.png
+useRockSalt: true
+---
+{% from "components/publication.njk" import researchCitation %}
+
+<h1 class="visually-hidden">Research</h1>
+
+{% for direction in research.directions %}
+<article class="site-shell card research-direction scroll-reveal" aria-labelledby="{{ direction.id }}-title">
+  <img class="research-image" src="{{ direction.image }}" alt="{{ direction.image_alt }}">
+  <div class="research-content">
+    <h2 id="{{ direction.id }}-title"><span class="research-accent">{{ direction.accent }}</span> {{ direction.title }}</h2>
+    <p>{{ direction.summary }}</p>
+
+    <div class="research-groups">
+      {% for group in direction.groups %}
+      <section aria-labelledby="{{ direction.id }}-group-{{ loop.index }}">
+        <h3 id="{{ direction.id }}-group-{{ loop.index }}">{{ group.title }}</h3>
+        <ul class="research-paper-list">
+          {% for publicationId in group.publication_ids %}
+            {% set item = publications | findPublication(publicationId, researchExtras) %}
+            {{ researchCitation(item) }}
+          {% endfor %}
+        </ul>
+      </section>
+      {% endfor %}
+    </div>
+  </div>
+</article>
+{% endfor %}

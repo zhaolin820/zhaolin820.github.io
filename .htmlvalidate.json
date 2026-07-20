@@ -1,0 +1,13 @@
+{
+  "extends": ["html-validate:recommended"],
+  "rules": {
+    "attr-quotes": ["error", { "style": "double" }],
+    "doctype-style": ["error", { "style": "lowercase" }],
+    "element-required-attributes": "error",
+    "no-inline-style": "error",
+    "no-trailing-whitespace": "off",
+    "prefer-native-element": "off",
+    "require-sri": "off",
+    "svg-focusable": "off"
+  }
+}

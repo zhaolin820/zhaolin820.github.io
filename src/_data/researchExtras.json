@@ -1,0 +1,62 @@
+[
+  {
+    "id": "1-bit-quantized-continuous-aperture-arrays",
+    "authors": "K. R. R. Ranasinghe, G. Rexhepi, <b>Z. Wang</b>, and G. T. F. de Abreu",
+    "title": "1-bit Quantized Continuous Aperture Arrays",
+    "date": "Apr. 2026",
+    "date_iso": "2026-04",
+    "is_first_author": false,
+    "main_link": "https://arxiv.org/abs/2604.01780",
+    "status": "arXiv preprint"
+  },
+  {
+    "id": "flexible-continuous-aperture-arrays",
+    "authors": "K. R. R. Ranasinghe, <b>Z. Wang</b>, G. T. F. de Abreu, and E. Björnson",
+    "title": "Flexible Continuous Aperture Arrays",
+    "date": "Nov. 2025",
+    "date_iso": "2025-11",
+    "is_first_author": false,
+    "main_link": "https://arxiv.org/abs/2511.09244",
+    "status": "arXiv preprint"
+  },
+  {
+    "id": "extended-target-classification-and-localization-for-near-field-isac",
+    "authors": "Z. Zhao, <b>Z. Wang</b>, L. Han, J. Jin, Y. Liu, and K. Huang",
+    "title": "Extended-Target Classification and Localization for Near-Field ISAC",
+    "date": "Mar. 2026",
+    "date_iso": "2026-03",
+    "is_first_author": false,
+    "main_link": "https://arxiv.org/abs/2603.23093",
+    "status": "arXiv preprint"
+  },
+  {
+    "id": "optimal-waveform-design-for-continuous-aperture-array-capa-aided-isac-systems",
+    "authors": "J. Ye, <b>Z. Wang</b>, Y. Liu, P. Zhang, L. Huang, and A. Nallanathan",
+    "title": "Optimal Waveform Design for Continuous Aperture Array (CAPA)-aided ISAC Systems",
+    "date": "Nov. 2025",
+    "date_iso": "2025-11",
+    "is_first_author": false,
+    "main_link": "https://arxiv.org/abs/2511.20203",
+    "status": "arXiv preprint"
+  },
+  {
+    "id": "joint-doa-and-attitude-sensing-based-on-tri-polarized-continuous-aperture-array",
+    "authors": "H. Si, <b>Z. Wang</b>, X. Guo, J. Zhang, and Y. Liu",
+    "title": "Joint DOA and Attitude Sensing Based on Tri-Polarized Continuous Aperture Array",
+    "date": "Oct. 2025",
+    "date_iso": "2025-10",
+    "is_first_author": false,
+    "main_link": "https://arxiv.org/abs/2510.02029",
+    "status": "arXiv preprint"
+  },
+  {
+    "id": "doa-estimation-via-continuous-aperture-arrays-music-and-crlb",
+    "authors": "H. Si, <b>Z. Wang</b>, X. Guo, J. Zhang, and Y. Liu",
+    "title": "DOA Estimation via Continuous Aperture Arrays: MUSIC and CRLB",
+    "date": "Jul. 2025",
+    "date_iso": "2025-07",
+    "is_first_author": false,
+    "main_link": "https://arxiv.org/abs/2507.21347",
+    "status": "arXiv preprint"
+  }
+]

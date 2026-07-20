@@ -1,0 +1,160 @@
+[
+  {
+    "date_iso": "2025-07",
+    "display_date": "2025-07",
+    "segments": [
+      { "text": "I join The University of Hong Kong as a Research Assistant Professor. [" },
+      { "label": "HKU page", "url": "https://www.eee.hku.hk/people/zhaolinw" },
+      { "text": "]" }
+    ]
+  },
+  {
+    "date_iso": "2025-02",
+    "display_date": "2025-02",
+    "segments": [
+      { "text": "I am awarded the 2025 " },
+      { "label": "Andrea Goldsmith Young Scholar Award", "url": "https://comt.committees.comsoc.org/awards/andrea-goldsmith-young-scholars-award" },
+      { "text": "." }
+    ]
+  },
+  {
+    "date_iso": "2025-01",
+    "display_date": "2025-01",
+    "segments": [{ "text": "I join the editorial board of the IEEE Transactions on Communications." }]
+  },
+  {
+    "date_iso": "2024-12",
+    "display_date": "2024-12",
+    "segments": [{ "text": "I am awarded Exemplary Reviewer of IEEE Communications Letters." }]
+  },
+  {
+    "date_iso": "2024-08",
+    "display_date": "2024-08",
+    "segments": [
+      { "text": "I pass my PhD viva with minor corrections. Many thanks to both examiners " },
+      { "label": "Prof. Wei Liu", "url": "https://sites.google.com/site/liuweipage" },
+      { "text": " and " },
+      { "label": "Prof. Michalis Matthaiou", "url": "https://sites.google.com/site/micmatthaiou/home" },
+      { "text": "." }
+    ]
+  },
+  {
+    "date_iso": "2024-06",
+    "display_date": "2024-06",
+    "segments": [
+      { "text": "I am awarded Exemplary Reviewer of IEEE Wireless Communications Letters [" },
+      { "label": "Certificate", "url": "/assets/pdfs/WCL_2023_Exemplary_Reviewer.pdf" },
+      { "text": "]." }
+    ]
+  },
+  {
+    "date_iso": "2023-10",
+    "display_date": "2023-10",
+    "segments": [
+      { "text": "I am awarded the 2023 " },
+      { "label": "IEEE Daniel E. Noble Fellowship Award", "url": "https://vtsociety.org/award/fellowship/ieee-daniel-e-noble-fellowship-award" },
+      { "text": " [" },
+      { "label": "Certificate", "url": "/assets/images/Daniel_E_Noble_Fellowship.jpg" },
+      { "text": "]." }
+    ]
+  },
+  {
+    "date_iso": "2022-11",
+    "display_date": "2022-11",
+    "segments": [
+      { "text": "I am awarded the Student Travel Grant of " },
+      { "label": "IEEE GLOBECOM 2022", "url": "https://globecom2022.ieee-globecom.org/" },
+      { "text": " [" },
+      { "label": "Certificate", "url": "/assets/pdfs/GLOBECOM_STG_2022.pdf" },
+      { "text": "]." }
+    ]
+  },
+  {
+    "date_iso": "2022-09",
+    "display_date": "2022-09",
+    "segments": [
+      { "text": "We are awarded the Best Student Paper of " },
+      { "label": "IEEE VTC2022-Fall", "url": "https://events.vtsociety.org/vtc2022-fall/" },
+      { "text": " [" },
+      { "label": "Certificate", "url": "/assets/pdfs/VTC2022-fall_best_paper.pdf" },
+      { "text": "]." }
+    ]
+  },
+  {
+    "date_iso": "2022-04",
+    "display_date": "2022-04",
+    "segments": [
+      { "text": "I am awarded the Student Travel Grant of " },
+      { "label": "IEEE ICC 2022", "url": "https://icc2022.ieee-icc.org/index.html" },
+      { "text": " [" },
+      { "label": "Certificate", "url": "/assets/pdfs/ICC_STG_2022.pdf" },
+      { "text": "]." }
+    ]
+  },
+  {
+    "date_iso": "2021-11",
+    "display_date": "2021-11",
+    "segments": [
+      { "text": "I am awarded an M.Sc. degree with Distinction from " },
+      { "label": "Imperial College London", "url": "https://www.imperial.ac.uk/" },
+      { "text": " [" },
+      { "label": "Certificate", "url": "/assets/pdfs/Imperial_certificate.pdf" },
+      { "text": "]." }
+    ]
+  },
+  {
+    "date_iso": "2021-09",
+    "display_date": "2021-09",
+    "segments": [
+      { "text": "I join the " },
+      { "label": "Communication Systems Research Group", "url": "https://csr.eecs.qmul.ac.uk/" },
+      { "text": " at " },
+      { "label": "QMUL", "url": "https://www.qmul.ac.uk/" },
+      { "text": " as a PhD student." }
+    ]
+  },
+  {
+    "date_iso": "2021-08",
+    "display_date": "2021-08",
+    "segments": [
+      { "text": "I am awarded the EECS Fee Waiver from " },
+      { "label": "Queen Mary University of London", "url": "https://www.qmul.ac.uk/" },
+      { "text": "." }
+    ]
+  },
+  {
+    "date_iso": "2020-07",
+    "display_date": "2020-07",
+    "segments": [
+      { "text": "I am awarded B.Eng. degrees with First Class Honours from " },
+      { "label": "QMUL", "url": "https://www.qmul.ac.uk/" },
+      { "text": " and " },
+      { "label": "BUPT", "url": "https://www.bupt.edu.cn" },
+      { "text": "." }
+    ]
+  },
+  {
+    "date_iso": "2020-06",
+    "display_date": "2020-06",
+    "segments": [
+      { "text": "I am awarded the Undergraduate College Prize of " },
+      { "label": "Queen Mary University of London", "url": "https://www.qmul.ac.uk/" },
+      { "text": "." }
+    ]
+  },
+  {
+    "date_iso": "2020-06",
+    "display_date": "2020-06",
+    "segments": [{ "text": "I am awarded the Outstanding Graduate of Beijing." }]
+  },
+  {
+    "date_iso": "2020-06",
+    "display_date": "2020-06",
+    "segments": [
+      { "text": "I am awarded the Outstanding Final Project of " },
+      { "label": "BUPT", "url": "https://www.bupt.edu.cn" },
+      { "text": "." }
+    ]
+  }
+]
+

@@ -1,0 +1,66 @@
+---
+layout: layouts/base.njk
+permalink: software.html
+title: Software — Zhaolin Wang
+description: Open-source research software developed by Zhaolin Wang for wireless communications, digital twins, and reproducible wireless studies.
+canonicalPath: /software.html
+currentNav: Software
+socialImage: /assets/images/software/openairtwin-showcase.png
+---
+<h1 class="visually-hidden">Software</h1>
+
+{% for project in software.projects %}
+<article class="site-shell card software-project scroll-reveal" aria-labelledby="{{ project.id }}-title">
+  <div class="software-heading">
+    <div>
+      <h2 class="software-logo-title" id="{{ project.id }}-title">
+        <span class="visually-hidden">{{ project.name }}</span>
+        <img class="software-logo software-logo-light"
+             src="{{ project.logo_light }}"
+             width="{{ project.logo_width }}"
+             height="{{ project.logo_height }}"
+             alt=""
+             aria-hidden="true">
+        <img class="software-logo software-logo-dark"
+             src="{{ project.logo_dark }}"
+             width="{{ project.logo_width }}"
+             height="{{ project.logo_height }}"
+             alt=""
+             aria-hidden="true">
+      </h2>
+      <p class="software-tagline">{{ project.tagline }}</p>
+    </div>
+  </div>
+
+  <nav class="software-actions" aria-label="{{ project.name }} resources">
+    <ul>
+      <li><a class="button-link" href="{{ project.repository }}">GitHub Repository</a></li>
+      <li><a class="software-action-link" href="{{ project.tutorial }}">Tutorial</a></li>
+      <li><a class="software-action-link" href="{{ project.architecture }}">Architecture</a></li>
+      <li><a class="software-action-link" href="{{ project.release }}">Latest Release</a></li>
+    </ul>
+  </nav>
+
+  <figure class="software-hero">
+    <img src="{{ project.image }}"
+         width="{{ project.image_width }}"
+         height="{{ project.image_height }}"
+         loading="lazy"
+         alt="{{ project.image_alt }}">
+  </figure>
+</article>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareSourceCode",
+  "name": "{{ project.name }}",
+  "description": "{{ project.description }}",
+  "codeRepository": "{{ project.repository }}",
+  "url": "{{ project.tutorial }}",
+  "license": "https://www.apache.org/licenses/LICENSE-2.0",
+  "version": "1.0.0",
+  "programmingLanguage": ["Python", "JavaScript"]
+}
+</script>
+{% endfor %}

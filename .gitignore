@@ -1,0 +1,8 @@
+node_modules/
+_site/
+coverage/
+playwright-report/
+test-results/
+.DS_Store
+.codegraph/
+

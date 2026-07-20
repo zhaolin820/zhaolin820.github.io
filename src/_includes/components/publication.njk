@@ -1,0 +1,20 @@
+{% macro publicationItem(item) %}
+<li id="{{ item.id }}">
+  {{ item.authors | formatAuthors }},
+  “<a href="{{ item.main_link }}">{{ item.title }}</a>”{% if item.journal %}, <cite>{{ item.journal }}</cite>{% elif item.conference %}, <cite>{{ item.conference }}</cite>{% endif %}{% if item.status %}, {{ item.status }}{% endif %}{% if item.date %}, <time datetime="{{ item.date_iso }}">{{ item.date }}</time>{% endif %}.{% if item.links and item.links.length %}
+  <span class="publication-links">[
+    {% for link in item.links %}<a href="{{ link.url }}">{{ link.text }}</a>{% if not loop.last %}] [{% endif %}{% endfor %}
+  ]</span>{% endif %}{% if item.notes %}
+    {% for note in item.notes %}<span class="pub-note {{ note.type }}">{{ note.text }}</span>{% endfor %}
+  {% endif %}
+</li>
+{% endmacro %}
+
+{% macro researchCitation(item) %}
+{% set arxivIdentifier = item.main_link | arxivId %}
+<li>
+  <a class="research-paper-title" href="{{ item.main_link }}">{{ item.title }}</a><br>
+  <span class="research-authors">{{ item.authors | formatAuthors }}{% if item.journal or item.conference or arxivIdentifier or item.status %},{% endif %}</span><br>
+  {% if item.journal %}<cite>{{ item.journal }}</cite>, {% elif item.conference %}<cite>{{ item.conference }}</cite>, {% elif arxivIdentifier %}<cite>arXiv preprint arXiv:{{ arxivIdentifier }}</cite>, {% elif item.status %}<cite>{{ item.status }}</cite>, {% endif %}<time datetime="{{ item.date_iso }}">{{ item.date_iso | publicationYear }}</time>.
+</li>
+{% endmacro %}

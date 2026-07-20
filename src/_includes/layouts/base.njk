@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en" class="no-js" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script>
+    (function () {
+      var root = document.documentElement;
+      root.classList.remove('no-js');
+      root.classList.add('js');
+      var storedTheme = null;
+      try { storedTheme = localStorage.getItem('theme'); } catch (error) { storedTheme = null; }
+      var systemTheme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      root.setAttribute('data-theme', storedTheme === 'dark' || storedTheme === 'light' ? storedTheme : systemTheme);
+    })();
+  </script>
+
+  <title>{{ title }}</title>
+  <meta name="description" content="{{ description or site.defaultDescription }}">
+  <meta name="robots" content="{{ robots or 'index,follow' }}">
+  <meta name="author" content="{{ site.name }}">
+  <link rel="canonical" href="{{ site.url }}{{ canonicalPath }}">
+  <link rel="icon" href="/assets/images/favicon.svg" type="image/svg+xml">
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="{{ site.name }}">
+  <meta property="og:title" content="{{ title }}">
+  <meta property="og:description" content="{{ description or site.defaultDescription }}">
+  <meta property="og:url" content="{{ site.url }}{{ canonicalPath }}">
+  <meta property="og:image" content="{{ site.url }}{{ socialImage or '/assets/images/me.jpg' }}">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{{ title }}">
+  <meta name="twitter:description" content="{{ description or site.defaultDescription }}">
+  <meta name="twitter:image" content="{{ site.url }}{{ socialImage or '/assets/images/me.jpg' }}">
+
+  {% if useRockSalt %}
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rock+Salt&amp;display=swap" rel="stylesheet">
+  {% endif %}
+  <link rel="stylesheet" href="/assets/css/site.css">
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.analyticsId }}"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', '{{ site.analyticsId }}');
+  </script>
+  <script src="/assets/js/site.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header class="site-header site-shell card scroll-reveal">
+    <nav class="site-nav" aria-label="Primary navigation">
+      <div class="nav-links">
+        {% for item in site.navigation %}
+          <a href="{{ item.url }}"
+             {% if currentNav == item.label %}aria-current="page"{% endif %}
+             {% if item.external %}target="_blank" rel="noopener noreferrer"{% endif %}>{{ item.label }}{% if item.external %}<span class="visually-hidden"> (opens in a new tab)</span>{% endif %}</a>
+        {% endfor %}
+      </div>
+      <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Switch to dark mode" aria-pressed="false">
+        <svg class="theme-icon sun" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="12" cy="12" r="5"></circle>
+          <path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"></path>
+        </svg>
+        <svg class="theme-icon moon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+        </svg>
+      </button>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    {{ content | safe }}
+  </main>
+
+  <footer class="site-footer site-shell card scroll-reveal">
+    <p>&copy; {{ currentYear }} {{ site.name }}. All rights reserved.</p>
+    <p>Page template inspired by <a href="https://liuziwei7.github.io/" target="_blank" rel="noopener noreferrer">Ziwei Liu<span class="visually-hidden"> (opens in a new tab)</span></a>.</p>
+  </footer>
+</body>
+</html>

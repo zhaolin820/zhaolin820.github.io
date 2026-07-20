@@ -1,0 +1,28 @@
+{
+  "name": "zhaolin820.github.io",
+  "version": "2.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Zhaolin Wang's academic website, built with Eleventy.",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "dev": "eleventy --serve",
+    "build": "eleventy",
+    "normalize:data": "node scripts/normalize-publications.mjs",
+    "test:data": "node scripts/validate-data.mjs",
+    "test:html": "html-validate \"_site/**/*.html\"",
+    "test:links": "node scripts/check-internal-links.mjs",
+    "test:e2e": "playwright test",
+    "test": "npm run test:data && npm run build && npm run test:html && npm run test:links && npm run test:e2e"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^3.1.6",
+    "@axe-core/playwright": "^4.12.1",
+    "@playwright/test": "^1.61.1",
+    "ajv": "^8.20.0",
+    "html-validate": "^11.5.6",
+    "nunjucks": "^3.2.4"
+  }
+}

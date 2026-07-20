@@ -1,0 +1,44 @@
+{
+  "projects": [
+    {
+      "id": "openairtwin",
+      "name": "OpenAirTwin",
+      "tagline": "An open-source digital twin platform for interactive wireless research.",
+      "description": "OpenAirTwin combines a Python backend, a browser-based 3D frontend, tile-based city scenes, and Sionna RT workflows to support interactive wireless research.",
+      "logo_light": "/assets/images/software/openairtwin-logo-light.png",
+      "logo_dark": "/assets/images/software/openairtwin-logo-dark.png",
+      "logo_width": 2457,
+      "logo_height": 375,
+      "image": "/assets/images/software/openairtwin-showcase.png",
+      "image_alt": "OpenAirTwin browser interface showing a three-dimensional Hong Kong city scene and wireless analysis controls",
+      "image_width": 1600,
+      "image_height": 946,
+      "version": "v1.0.0",
+      "license": "Apache-2.0",
+      "requirement": "Python 3.11+",
+      "repository": "https://github.com/HKUOpenSource/OpenAirTwin",
+      "tutorial": "https://hkuopensource.github.io/OpenAirTwin/",
+      "architecture": "https://hkuopensource.github.io/OpenAirTwin/architecture/",
+      "release": "https://github.com/HKUOpenSource/OpenAirTwin/releases/tag/v1.0.0",
+      "features": [
+        {
+          "title": "Link Analysis",
+          "description": "Place transmitter and receiver points, solve propagation paths, and inspect received power, channel taps, CIR, and frequency response."
+        },
+        {
+          "title": "Mobility Simulation",
+          "description": "Define receiver waypoints, speed, and sampling parameters to generate trajectories and time-varying channel results."
+        },
+        {
+          "title": "Radio Maps",
+          "description": "Configure a receiver patch and resolution, then render a scalar coverage heatmap over the three-dimensional scene."
+        },
+        {
+          "title": "DeepMIMO Export",
+          "description": "Draw a receiver region of interest, configure the grid, and export a DeepMIMO-compatible wireless dataset."
+        }
+      ],
+      "citation": "Wang, Z., Zhou, Z., & Zhao, Z. (2026). OpenAirTwin (Version 1.0.0) [Computer software]."
+    }
+  ]
+}

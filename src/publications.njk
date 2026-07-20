@@ -1,0 +1,34 @@
+---
+layout: layouts/base.njk
+permalink: publications.html
+title: Publications — Zhaolin Wang
+description: Journal articles and preprints by Zhaolin Wang in wireless communications, sensing, continuous-aperture arrays, and optimization.
+canonicalPath: /publications.html
+currentNav: Publications
+---
+{% from "components/publication.njk" import publicationItem %}
+
+<h1 class="visually-hidden">Publications</h1>
+
+{% for category in publications.categories %}
+  {% set sortedItems = category.items | sortPublications %}
+  {% set firstAuthorItems = sortedItems | authorGroup(true) %}
+  {% set coAuthorItems = sortedItems | authorGroup(false) %}
+<section class="site-shell card publication-section scroll-reveal" aria-labelledby="category-{{ category.type }}">
+  <h2 id="category-{{ category.type }}" class="mono-font">{{ category.title }}</h2>
+  {% if firstAuthorItems.length and coAuthorItems.length %}
+    <h3>First Author</h3>
+    <ol class="publication-list">
+      {% for item in firstAuthorItems %}{{ publicationItem(item) }}{% endfor %}
+    </ol>
+    <h3>Co-Author</h3>
+    <ol class="publication-list">
+      {% for item in coAuthorItems %}{{ publicationItem(item) }}{% endfor %}
+    </ol>
+  {% else %}
+    <ol class="publication-list">
+      {% for item in sortedItems %}{{ publicationItem(item) }}{% endfor %}
+    </ol>
+  {% endif %}
+</section>
+{% endfor %}
