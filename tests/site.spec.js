@@ -136,6 +136,7 @@ test("reduced motion keeps all content visible", async ({ page }) => {
 
 for (const route of pages) {
   test(`${route} has no serious accessibility violations`, async ({ page }) => {
+    await page.emulateMedia({ reducedMotion: "reduce" });
     await page.goto(route);
     const results = await new AxeBuilder({ page }).analyze();
     const blocking = results.violations.filter((violation) => ["serious", "critical"].includes(violation.impact));
