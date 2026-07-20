@@ -359,6 +359,11 @@ h3 {
   color: inherit;
 }
 
+.short-bio p {
+  text-align: justify;
+  text-justify: inter-word;
+}
+
 .software-project {
   padding: 20px;
 }
@@ -605,6 +610,10 @@ h3 {
   }
 
   .research-content > p {
+    text-align: left;
+  }
+
+  .short-bio p {
     text-align: left;
   }
 
