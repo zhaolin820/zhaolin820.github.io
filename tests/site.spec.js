@@ -80,7 +80,7 @@ test("all public publications are rendered without JavaScript", async ({ browser
   const context = await browser.newContext({ javaScriptEnabled: false });
   const page = await context.newPage();
   await page.goto("http://127.0.0.1:4173/publications.html");
-  await expect(page.locator(".publication-list > li")).toHaveCount(76);
+  await expect(page.locator(".publication-list > li")).toHaveCount(80);
   await expect(page.getByText("First Author", { exact: true })).toHaveCount(2);
   await expect(page.getByText("Co-Author", { exact: true })).toHaveCount(2);
   await context.close();
@@ -92,7 +92,7 @@ test("research citations preserve full arXiv preprint labels", async ({ page }) 
     items.map((item) => item.textContent.trim()).filter((text) => text.startsWith("arXiv preprint arXiv:"))
   );
 
-  expect(labels).toHaveLength(15);
+  expect(labels).toHaveLength(13);
   expect(labels).toContain("arXiv preprint arXiv:2605.08772");
   expect(labels).toContain("arXiv preprint arXiv:2607.10746");
   expect(labels.every((label) => /^arXiv preprint arXiv:\d{4}\.\d{4,5}(?:v\d+)?$/.test(label))).toBe(true);

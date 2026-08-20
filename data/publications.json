@@ -116,31 +116,92 @@
           "authors": "<b>Z. Wang</b>, K. R. R. Ranasinghe, G. T. F. de Abreu, and Y. Liu",
           "title": "Mutual Coupling in Continuous Aperture Arrays: Physical Modeling and Beamforming Design",
           "journal": "IEEE Transactions on Wireless Communications",
-          "status": "accepted to appear",
+          "status": "vol. 25, pp. 20320-20335",
           "date": "Jul. 2026",
-          "main_link": "https://arxiv.org/abs/2511.11225",
-          "links": [],
+          "main_link": "https://ieeexplore.ieee.org/abstract/document/11613016",
+          "links": [
+            {
+              "text": "arXiv",
+              "url": "https://arxiv.org/abs/2511.11225"
+            }
+          ],
           "id": "mutual-coupling-in-continuous-aperture-arrays-physical-modeling-and-beamforming-design",
           "date_iso": "2026-07",
           "is_first_author": true
         },
         {
+          "authors": "H. Si, <b>Z. Wang</b>, X. Guo, J. Zhang, and Y. Liu",
+          "title": "DOA Estimation via Continuous Aperture Arrays: MUSIC and CRLB",
+          "journal": "IEEE Transactions on Wireless Communications",
+          "status": "vol. 25, pp. 19291-19306",
+          "date": "Jul. 2026",
+          "main_link": "https://ieeexplore.ieee.org/abstract/document/11592786",
+          "links": [
+            {
+              "text": "arXiv",
+              "url": "https://arxiv.org/abs/2507.21347"
+            }
+          ],
+          "id": "doa-estimation-via-continuous-aperture-arrays-music-and-crlb",
+          "date_iso": "2026-07",
+          "is_first_author": false
+        },
+        {
           "authors": "<b>Z. Wang</b>, J. Xu, C. Ouyang, X. Mu, and Y. Liu",
           "title": "Multiport Network Modeling and Optimization for Reconfigurable Pinching-Antenna Systems",
           "journal": "npj Wireless Technology",
-          "status": "accepted to appear",
-          "date": "Jul. 2026",
-          "main_link": "https://arxiv.org/abs/2509.05612",
-          "links": [],
+          "status": "vol. 2, Art. no. 62",
+          "date": "Aug. 2026",
+          "main_link": "https://www.nature.com/articles/s44459-026-00071-w",
+          "links": [
+            {
+              "text": "arXiv",
+              "url": "https://arxiv.org/abs/2509.05612"
+            }
+          ],
           "id": "multiport-network-modeling-and-optimization-for-reconfigurable-pinching-antenna-systems",
-          "date_iso": "2026-07",
+          "date_iso": "2026-08",
           "is_first_author": true
         },
         {
-          "authors": "H. Jiang, C. Ouyang, <b>Z. Wang</b>, Y. Liu, A. Nallanathan, and Z. Ding",
-          "title": "Pinching-Antenna Assisted Sensing: A Bayesian Cramér-Rao Bound Perspective",
+          "authors": "X. Gan, <b>Z. Wang</b>, and Y. Liu",
+          "title": "Dual-Scale Antenna Deployment for Pinching-Antenna Systems",
           "journal": "IEEE Transactions on Communications",
-          "status": "early access",
+          "status": "vol. 74, pp. 9772-9786",
+          "date": "Jun. 2026",
+          "main_link": "https://ieeexplore.ieee.org/abstract/document/11543316",
+          "links": [
+            {
+              "text": "arXiv",
+              "url": "https://arxiv.org/abs/2510.27185"
+            }
+          ],
+          "id": "dual-scale-antenna-deployment-for-pinching-antenna-systems",
+          "date_iso": "2026-06",
+          "is_first_author": false
+        },
+        {
+          "authors": "J. Ye, <b>Z. Wang</b>, Y. Liu, P. Zhang, L. Huang, and A. Nallanathan",
+          "title": "Optimal Waveform Design for Continuous Aperture Array (CAPA)-Aided ISAC Systems",
+          "journal": "IEEE Transactions on Wireless Communications",
+          "status": "vol. 25, pp. 19082-19098",
+          "date": "Jun. 2026",
+          "main_link": "https://ieeexplore.ieee.org/abstract/document/11570845",
+          "links": [
+            {
+              "text": "arXiv",
+              "url": "https://arxiv.org/abs/2511.20203"
+            }
+          ],
+          "id": "optimal-waveform-design-for-continuous-aperture-array-capa-aided-isac-systems",
+          "date_iso": "2026-06",
+          "is_first_author": false
+        },
+        {
+          "authors": "H. Jiang, C. Ouyang, <b>Z. Wang</b>, Y. Liu, A. Nallanathan, and Z. Ding",
+          "title": "Pinching-Antenna-Assisted Sensing: A Bayesian Cramér-Rao Bound Perspective",
+          "journal": "IEEE Transactions on Communications",
+          "status": "vol. 74, pp. 9075-9092",
           "date": "May 2026",
           "main_link": "https://ieeexplore.ieee.org/abstract/document/11509309",
           "links": [
@@ -1361,6 +1422,23 @@
           "id": "noma-empowered-integrated-sensing-and-communication",
           "date_iso": "2022-03",
           "is_first_author": true
+        }
+      ]
+    },
+    {
+      "type": "conference_papers",
+      "title": "Conference Papers",
+      "items": [
+        {
+          "authors": "C. J. Zhao, <b>Z. Wang</b>, Z. Zhao, and Y. Liu",
+          "title": "Beyond Type-II: Site-Specific Subspace Inference for Efficient CSI Feedback",
+          "conference": "The 2nd Workshop of AI4NextG: AI and ML for Next-Generation Wireless at ICML",
+          "date": "Jul. 2026",
+          "main_link": "https://openreview.net/forum?id=IO4dkCEfwR",
+          "links": [],
+          "id": "beyond-type-ii-site-specific-subspace-inference-for-efficient-csi-feedback",
+          "date_iso": "2026-07",
+          "is_first_author": false
         }
       ]
     }

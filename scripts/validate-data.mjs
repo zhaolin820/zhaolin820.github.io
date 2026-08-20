@@ -31,9 +31,9 @@ const allItems = [...publicItems, ...researchExtras];
 const ids = new Set();
 const urlPattern = /^(https?:\/\/|mailto:)/;
 
-if (publicItems.length !== 76) errors.push(`Expected 76 public publications, found ${publicItems.length}.`);
+if (publicItems.length !== 80) errors.push(`Expected 80 public publications, found ${publicItems.length}.`);
 if (publicItems.filter((item) => item.is_first_author).length !== 22) errors.push("Expected 22 first-author publications.");
-if (publicItems.filter((item) => !item.is_first_author).length !== 54) errors.push("Expected 54 co-author publications.");
+if (publicItems.filter((item) => !item.is_first_author).length !== 58) errors.push("Expected 58 co-author publications.");
 
 for (const item of allItems) {
   if (ids.has(item.id)) errors.push(`Duplicate publication id across catalogs: ${item.id}`);
