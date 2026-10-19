@@ -6,32 +6,38 @@ description: Research directions of Zhaolin Wang in site-specific wireless learn
 canonicalPath: /research.html
 currentNav: Research
 socialImage: /assets/images/site_specific_learning.png
-useRockSalt: true
 ---
 {% from "components/publication.njk" import researchCitation %}
 
-<h1 class="visually-hidden">Research</h1>
+<header class="page-header scroll-reveal">
+  <h1 class="page-title">research</h1>
+</header>
 
 {% for direction in research.directions %}
-<article class="site-shell card research-direction scroll-reveal" aria-labelledby="{{ direction.id }}-title">
-  <img class="research-image" src="{{ direction.image }}" alt="{{ direction.image_alt }}">
-  <div class="research-content">
-    <h2 id="{{ direction.id }}-title"><span class="research-accent">{{ direction.accent }}</span> {{ direction.title }}</h2>
-    <p>{{ direction.summary }}</p>
+<article class="content-section research-direction scroll-reveal" aria-labelledby="{{ direction.id }}-title">
+  <div class="research-header">
+    <span class="research-index">0{{ loop.index }}</span>
+    <h2 id="{{ direction.id }}-title" class="research-title"><span class="research-accent">{{ direction.accent }}</span> {{ direction.title }}</h2>
+  </div>
 
-    <div class="research-groups">
-      {% for group in direction.groups %}
-      <section aria-labelledby="{{ direction.id }}-group-{{ loop.index }}">
-        <h3 id="{{ direction.id }}-group-{{ loop.index }}">{{ group.title }}</h3>
-        <ul class="research-paper-list">
-          {% for publicationId in group.publication_ids %}
-            {% set item = publications | findPublication(publicationId, researchExtras) %}
-            {{ researchCitation(item) }}
-          {% endfor %}
-        </ul>
-      </section>
-      {% endfor %}
-    </div>
+  <p class="research-summary">{{ direction.summary }}</p>
+
+  <figure class="research-figure">
+    <img class="research-image" src="{{ direction.image }}" alt="{{ direction.image_alt }}">
+  </figure>
+
+  <div class="research-groups">
+    {% for group in direction.groups %}
+    <section class="research-group" aria-labelledby="{{ direction.id }}-group-{{ loop.index }}">
+      <h3 id="{{ direction.id }}-group-{{ loop.index }}" class="research-group-title">{{ group.title }}</h3>
+      <ul class="research-paper-list">
+        {% for publicationId in group.publication_ids %}
+          {% set item = publications | findPublication(publicationId, researchExtras) %}
+          {{ researchCitation(item) }}
+        {% endfor %}
+      </ul>
+    </section>
+    {% endfor %}
   </div>
 </article>
 {% endfor %}

@@ -28,15 +28,5 @@
     "is_first_author": false,
     "main_link": "https://arxiv.org/abs/2603.23093",
     "status": "arXiv preprint"
-  },
-  {
-    "id": "joint-doa-and-attitude-sensing-based-on-tri-polarized-continuous-aperture-array",
-    "authors": "H. Si, <b>Z. Wang</b>, X. Guo, J. Zhang, and Y. Liu",
-    "title": "Joint DOA and Attitude Sensing Based on Tri-Polarized Continuous Aperture Array",
-    "date": "Oct. 2025",
-    "date_iso": "2025-10",
-    "is_first_author": false,
-    "main_link": "https://arxiv.org/abs/2510.02029",
-    "status": "arXiv preprint"
   }
 ]

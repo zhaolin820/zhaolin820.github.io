@@ -7,12 +7,14 @@ canonicalPath: /software.html
 currentNav: Software
 socialImage: /assets/images/software/openairtwin-showcase.png
 ---
-<h1 class="visually-hidden">Software</h1>
+<header class="page-header scroll-reveal">
+  <h1 class="page-title">software</h1>
+</header>
 
 {% for project in software.projects %}
-<article class="site-shell card software-project scroll-reveal" aria-labelledby="{{ project.id }}-title">
+<article class="content-section software-project scroll-reveal" aria-labelledby="{{ project.id }}-title">
   <div class="software-heading">
-    <div>
+    <div class="software-title-group">
       <h2 class="software-logo-title" id="{{ project.id }}-title">
         <span class="visually-hidden">{{ project.name }}</span>
         <img class="software-logo software-logo-light"

@@ -1,20 +1,29 @@
 {% macro publicationItem(item) %}
-<li id="{{ item.id }}">
-  {{ item.authors | formatAuthors }},
-  “<a href="{{ item.main_link }}">{{ item.title }}</a>”{% if item.journal %}, <cite>{{ item.journal }}</cite>{% elif item.conference %}, <cite>{{ item.conference }}</cite>{% endif %}{% if item.status %}, {{ item.status }}{% endif %}{% if item.date %}, <time datetime="{{ item.date_iso }}">{{ item.date }}</time>{% endif %}.{% if item.links and item.links.length %}
-  <span class="publication-links">[
-    {% for link in item.links %}<a href="{{ link.url }}">{{ link.text }}</a>{% if not loop.last %}] [{% endif %}{% endfor %}
-  ]</span>{% endif %}{% if item.notes %}
+{% set arxivIdentifier = item.main_link | arxivId %}
+<li id="{{ item.id }}" class="pub-item">
+  <div class="pub-title-line">
+    <a class="pub-title" href="{{ item.main_link }}">{{ item.title }}</a>
+  </div>
+  <div class="pub-authors-line">
+    {{ item.authors | formatAuthors }}
+  </div>
+  <div class="pub-venue-line">
+    {% if item.journal %}<cite>{{ item.journal }}</cite>{% elif item.conference %}<cite>{{ item.conference }}</cite>{% elif arxivIdentifier %}<cite>arXiv preprint arXiv:{{ arxivIdentifier }}</cite>{% endif %}{% if item.status %}{% if item.journal or item.conference or arxivIdentifier %}, {% endif %}{{ item.status }}{% endif %}{% if item.date %}{% if item.journal or item.conference or arxivIdentifier or item.status %}, {% endif %}<time datetime="{{ item.date_iso }}">{{ item.date }}</time>{% endif %}
+  </div>
+  {% if (item.links and item.links.length) or (item.notes and item.notes.length) %}
+  <div class="pub-badges">
+    {% for link in item.links %}<a class="pub-btn" href="{{ link.url }}">{{ link.text }}</a>{% endfor %}
     {% for note in item.notes %}<span class="pub-note {{ note.type }}">{{ note.text }}</span>{% endfor %}
+  </div>
   {% endif %}
 </li>
 {% endmacro %}
 
 {% macro researchCitation(item) %}
 {% set arxivIdentifier = item.main_link | arxivId %}
-<li>
-  <a class="research-paper-title" href="{{ item.main_link }}">{{ item.title }}</a><br>
-  <span class="research-authors">{{ item.authors | formatAuthors }}{% if item.journal or item.conference or arxivIdentifier or item.status %},{% endif %}</span><br>
-  {% if item.journal %}<cite>{{ item.journal }}</cite>, {% elif item.conference %}<cite>{{ item.conference }}</cite>, {% elif arxivIdentifier %}<cite>arXiv preprint arXiv:{{ arxivIdentifier }}</cite>, {% elif item.status %}<cite>{{ item.status }}</cite>, {% endif %}<time datetime="{{ item.date_iso }}">{{ item.date_iso | publicationYear }}</time>.
+<li class="research-paper-item">
+  <a class="research-paper-title" href="{{ item.main_link }}">{{ item.title }}</a>
+  <span class="research-authors">{{ item.authors | formatAuthors }}</span>
+  <span class="research-venue">{% if item.journal %}<cite>{{ item.journal }}</cite>, {% elif item.conference %}<cite>{{ item.conference }}</cite>, {% elif arxivIdentifier %}<cite>arXiv preprint arXiv:{{ arxivIdentifier }}</cite>, {% elif item.status %}<cite>{{ item.status }}</cite>, {% endif %}<time datetime="{{ item.date_iso }}">{{ item.date_iso | publicationYear }}</time></span>
 </li>
 {% endmacro %}

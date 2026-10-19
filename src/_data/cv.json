@@ -1,0 +1,203 @@
+{
+  "appointments": [
+    {
+      "period": "2025–Present",
+      "role": "Research Assistant Professor",
+      "organization": "The University of Hong Kong",
+      "organization_url": "https://www.hku.hk/",
+      "location": "Hong Kong SAR, China"
+    },
+    {
+      "period": "2024–2025",
+      "role": "Postdoctoral Research Assistant",
+      "organization": "Queen Mary University of London",
+      "organization_url": "https://www.qmul.ac.uk/",
+      "location": "London, U.K."
+    },
+    {
+      "period": "2024",
+      "role": "Research Assistant",
+      "organization": "Queen Mary University of London",
+      "organization_url": "https://www.qmul.ac.uk/",
+      "location": "London, U.K."
+    }
+  ],
+  "education": [
+    {
+      "period": "2021–2024",
+      "degree": "Ph.D. in Electronic Engineering",
+      "institution": "Queen Mary University of London",
+      "institution_url": "https://www.qmul.ac.uk/",
+      "location": "London, U.K."
+    },
+    {
+      "period": "2020–2021",
+      "degree": "M.Sc. in Communications and Signal Processing",
+      "honor": "Distinction",
+      "institution": "Imperial College London",
+      "institution_url": "https://www.imperial.ac.uk/",
+      "location": "London, U.K."
+    },
+    {
+      "period": "2016–2020",
+      "degree": "B.Eng. (Hons.) in Telecommunications Engineering (Dual Degree)",
+      "honor": "First Class Honours",
+      "institutions": [
+        {
+          "name": "Beijing University of Posts and Telecommunications",
+          "url": "https://www.bupt.edu.cn/"
+        },
+        {
+          "name": "Queen Mary University of London",
+          "url": "https://www.qmul.ac.uk/"
+        }
+      ],
+      "location": "Beijing, China & London, U.K."
+    }
+  ],
+  "awards": [
+    {
+      "year": "2025",
+      "title": "IEEE CTTC Andrea Goldsmith Young Scholar Award",
+      "title_url": "https://comt.committees.comsoc.org/awards/andrea-goldsmith-young-scholars-award",
+      "issuer": "IEEE ComSoc Communication Theory Technical Committee"
+    },
+    {
+      "year": "2024",
+      "title": "Exemplary Reviewer",
+      "issuer": "IEEE Communications Letters"
+    },
+    {
+      "year": "2023",
+      "title": "IEEE VTS Daniel E. Noble Fellowship Award",
+      "title_url": "https://vtsociety.org/award/fellowship/ieee-daniel-e-noble-fellowship-award",
+      "issuer": "IEEE Vehicular Technology Society"
+    },
+    {
+      "year": "2023",
+      "title": "Exemplary Reviewer",
+      "issuer": "IEEE Wireless Communications Letters"
+    },
+    {
+      "year": "2022",
+      "title": "Best Student Paper Award",
+      "issuer": "IEEE Vehicular Technology Conference (VTC2022-Fall)"
+    },
+    {
+      "year": "2022",
+      "title": "Student Travel Grant",
+      "issuer": "IEEE Global Communications Conference (GLOBECOM 2022)"
+    },
+    {
+      "year": "2022",
+      "title": "Student Travel Grant",
+      "issuer": "IEEE International Conference on Communications (ICC 2022)"
+    }
+  ],
+  "teaching": [
+    {
+      "year": "2026",
+      "course": "LATX7518: Fundamentals of Wireless Communications",
+      "institution": "The University of Hong Kong"
+    },
+    {
+      "year": "2026",
+      "course": "HKU Summer Programmes: 6G and Artificial Intelligence of Things (AIoT)",
+      "institution": "The University of Hong Kong"
+    }
+  ],
+  "talks": [
+    {
+      "year": "2026",
+      "title": "Site-Specific Learning via Digital Twins: The Next-Generation AI for Wireless",
+      "venue": "IEEE SPCC-TC Meeting @ ICC, Glasgow, U.K."
+    },
+    {
+      "year": "2026",
+      "title": "Digital Twins for Site-Specific Communications and Sensing in Low-Altitude Networks",
+      "venue": "The 2nd Low-Altitude Summit, Hong Kong SAR, China"
+    },
+    {
+      "year": "2025",
+      "title": "Next-Generation MIMO: Three Promising Directions",
+      "venue": "IEEE Communication Theory Workshop (CTW), Venice, Italy"
+    },
+    {
+      "year": "2025",
+      "title": "Electromagnetic Information Theory and Signal Processing for Continuous-Aperture Arrays",
+      "venue": "IEEE/CIC International Conference on Communications in China (ICCC), Shanghai, China"
+    }
+  ],
+  "service_groups": [
+    {
+      "heading": "Editorial Positions",
+      "items": [
+        {
+          "period": "2025–Present",
+          "primary": "Editor",
+          "secondary": "IEEE Transactions on Communications"
+        }
+      ]
+    },
+    {
+      "heading": "Conference Organizing Committees",
+      "items": [
+        {
+          "period": "2026",
+          "primary": "Workshop Co-organizer, IEEE Global Communications Conference (GLOBECOM)",
+          "secondary": "Workshop on Pinching Antenna Systems (PASS) for Next-Generation Wireless Communications"
+        },
+        {
+          "period": "2026",
+          "primary": "Workshop Co-organizer, IEEE Wireless Communications and Networking Conference (WCNC)",
+          "secondary": "Workshop on Pinching Antenna Systems (PASS) for Next-Generation Wireless Communications"
+        }
+      ]
+    },
+    {
+      "heading": "Technical Program Committees",
+      "items": [
+        {
+          "period": "2025",
+          "primary": "IEEE Global Communications Conference (GLOBECOM)",
+          "secondary": "Mobile and Wireless Networks Symposium"
+        },
+        {
+          "period": "2025",
+          "primary": "IEEE International Conference on Communications (ICC)",
+          "secondary": "Communication Theory Symposium, Wireless Communications Symposium, Machine Learning for Communications & Networking Track, and Integrated Sensing and Communication (ISAC) Track"
+        },
+        {
+          "period": "2024",
+          "primary": "IEEE International Conference on Communications (ICC)",
+          "secondary": "Integrated Sensing and Communication (ISAC) Track"
+        },
+        {
+          "period": "2024",
+          "primary": "IEEE International Symposium on Personal, Indoor and Mobile Radio Communications (PIMRC)",
+          "secondary": "PHY & Fundamentals Track"
+        },
+        {
+          "period": "2023",
+          "primary": "IEEE International Conference on Communications (ICC)",
+          "secondary": "Integrated Sensing and Communication (ISAC) Workshop"
+        },
+        {
+          "period": "2022",
+          "primary": "IEEE Vehicular Technology Conference (VTC2022-Fall)",
+          "secondary": "Next Generation Multiple Access (NGMA) for Future Wireless Communications Workshop"
+        }
+      ]
+    },
+    {
+      "heading": "Standardization",
+      "items": [
+        {
+          "period": "Contributor",
+          "primary": "European Telecommunications Standards Institute (ETSI)",
+          "secondary": "Industry Specification Group (ISG) on Reconfigurable Intelligent Surface (RIS)"
+        }
+      ]
+    }
+  ]
+}

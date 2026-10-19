@@ -1,0 +1,121 @@
+---
+layout: layouts/base.njk
+permalink: cv.html
+title: Curriculum Vitae — Zhaolin Wang
+description: Academic curriculum vitae of Zhaolin Wang, including academic appointments, education, honors and awards, teaching, invited talks, and professional service.
+canonicalPath: /cv.html
+currentNav: CV
+---
+<header class="page-header scroll-reveal">
+  <h1 class="page-title">curriculum vitae</h1>
+</header>
+
+<section class="content-section cv-section scroll-reveal" aria-labelledby="cv-appointments">
+  <h2 id="cv-appointments" class="section-heading">Academic Positions</h2>
+  <ol class="cv-list">
+    {% for item in cv.appointments %}
+    <li class="cv-item">
+      <div class="cv-period">{{ item.period }}</div>
+      <div class="cv-body">
+        <div class="cv-primary">{{ item.role }}</div>
+        <div class="cv-secondary">
+          {% if item.organization_url %}<a href="{{ item.organization_url }}">{{ item.organization }}</a>{% else %}{{ item.organization }}{% endif %}{% if item.location %}, {{ item.location }}{% endif %}
+        </div>
+      </div>
+    </li>
+    {% endfor %}
+  </ol>
+</section>
+
+<section class="content-section cv-section scroll-reveal" aria-labelledby="cv-education">
+  <h2 id="cv-education" class="section-heading">Education</h2>
+  <ol class="cv-list">
+    {% for item in cv.education %}
+    <li class="cv-item">
+      <div class="cv-period">{{ item.period }}</div>
+      <div class="cv-body">
+        <div class="cv-primary">
+          {{ item.degree }}{% if item.honor %} <span class="cv-honor">({{ item.honor }})</span>{% endif %}
+        </div>
+        <div class="cv-secondary">
+          {% if item.institutions %}{% for inst in item.institutions %}{% if not loop.first %} &amp; {% endif %}<a href="{{ inst.url }}">{{ inst.name }}</a>{% endfor %}{% elif item.institution_url %}<a href="{{ item.institution_url }}">{{ item.institution }}</a>{% else %}{{ item.institution }}{% endif %}{% if item.location %}, {{ item.location }}{% endif %}
+        </div>
+        {% if item.detail %}
+        <div class="cv-meta">
+          <span>{% if item.detail_url %}<a href="{{ item.detail_url }}">{{ item.detail }}</a>{% else %}{{ item.detail }}{% endif %}</span>
+        </div>
+        {% endif %}
+      </div>
+    </li>
+    {% endfor %}
+  </ol>
+</section>
+
+<section class="content-section cv-section scroll-reveal" aria-labelledby="cv-awards">
+  <h2 id="cv-awards" class="section-heading">Honors &amp; Awards</h2>
+  <ol class="cv-list">
+    {% for item in cv.awards %}
+    <li class="cv-item">
+      <div class="cv-period">{{ item.year }}</div>
+      <div class="cv-body">
+        <div class="cv-primary">
+          {% if item.title_url %}<a href="{{ item.title_url }}">{{ item.title }}</a>{% else %}{{ item.title }}{% endif %}
+        </div>
+        <div class="cv-secondary">{{ item.issuer }}</div>
+      </div>
+    </li>
+    {% endfor %}
+  </ol>
+</section>
+
+<section class="content-section cv-section scroll-reveal" aria-labelledby="cv-talks">
+  <h2 id="cv-talks" class="section-heading">Talks &amp; Tutorials</h2>
+  <ol class="cv-list">
+    {% for item in cv.talks %}
+    <li class="cv-item">
+      <div class="cv-period">{{ item.year }}</div>
+      <div class="cv-body">
+        <div class="cv-primary">{{ item.title }}</div>
+        <div class="cv-secondary">{{ item.venue }}</div>
+      </div>
+    </li>
+    {% endfor %}
+  </ol>
+</section>
+
+<section class="content-section cv-section scroll-reveal" aria-labelledby="cv-service">
+  <h2 id="cv-service" class="section-heading">Professional Service</h2>
+  <div class="cv-subsections">
+    {% for group in cv.service_groups %}
+    <div class="cv-subsection">
+      <h3 class="cv-subheading">{{ group.heading }}</h3>
+      <ol class="cv-list">
+        {% for item in group.items %}
+        <li class="cv-item">
+          <div class="cv-period">{{ item.period }}</div>
+          <div class="cv-body">
+            <div class="cv-primary">{{ item.primary }}</div>
+            {% if item.secondary %}<div class="cv-secondary">{{ item.secondary }}</div>{% endif %}
+          </div>
+        </li>
+        {% endfor %}
+      </ol>
+    </div>
+    {% endfor %}
+  </div>
+</section>
+
+<section class="content-section cv-section scroll-reveal" aria-labelledby="cv-teaching">
+  <h2 id="cv-teaching" class="section-heading">Teaching</h2>
+  <ol class="cv-list">
+    {% for item in cv.teaching %}
+    <li class="cv-item">
+      <div class="cv-period">{{ item.year }}</div>
+      <div class="cv-body">
+        <div class="cv-primary">{{ item.course }}</div>
+        <div class="cv-secondary">{{ item.institution }}</div>
+      </div>
+    </li>
+    {% endfor %}
+  </ol>
+</section>

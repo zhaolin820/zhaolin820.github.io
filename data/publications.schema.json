@@ -46,7 +46,7 @@
         "title": { "type": "string", "minLength": 1 },
         "date": {
           "type": "string",
-          "pattern": "^(Jan\\.|Feb\\.|Mar\\.|Apr\\.|May|Jun\\.|Jul\\.|Aug\\.|Sep\\.|Oct\\.|Nov\\.|Dec\\.) [0-9]{4}$"
+          "pattern": "^(?:(Jan\\.|Feb\\.|Mar\\.|Apr\\.|May|Jun\\.|Jul\\.|Aug\\.|Sep\\.|Oct\\.|Nov\\.|Dec\\.) )?[0-9]{4}$"
         },
         "date_iso": {
           "type": "string",

@@ -11,6 +11,7 @@
         {
           "title": "Wireless Digital Twins",
           "publication_ids": [
+            "agents-in-the-scene-an-agentic-framework-for-resource-efficient-site-specific-base-station-deployment",
             "fidelity-where-it-matters-site-specific-nonuniform-refinement-for-wireless-digital-twins"
           ]
         },
@@ -18,6 +19,8 @@
           "title": "Site-Specific Beamforming",
           "publication_ids": [
             "generative-site-specific-beamforming-for-next-generation-spatial-intelligence",
+            "beam-step-generative-site-specific-beam-prediction-with-spatio-temporal-priors",
+            "kdgen-bf-a-generative-site-specific-multi-user-beamforming-approach",
             "beam-brainstorm-a-generative-site-specific-beamforming-approach",
             "generative-site-specific-beamforming-via-information-maximizing-codebook",
             "fast-beam-brainstorm-few-step-generative-site-specific-beamforming-with-flexible-probing",

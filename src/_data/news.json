@@ -1,37 +1,77 @@
 [
   {
+    "date_iso": "2026-05",
+    "display_date": "2026-05",
+    "segments": [
+      { "text": "Delivered an invited talk on " },
+      { "text": "Site-Specific Learning via Digital Twins: The Next-Generation AI for Wireless", "italic": true },
+      { "text": " at the IEEE SPCC-TC Meeting @ ICC 2026, Glasgow, U.K." }
+    ]
+  },
+  {
+    "date_iso": "2026-02",
+    "display_date": "2026-02",
+    "segments": [
+      { "text": "Delivered an invited talk on " },
+      { "text": "Digital Twins for Site-Specific Communications and Sensing in Low-Altitude Networks", "italic": true },
+      { "text": " at The 2nd Low-Altitude Summit, Hong Kong SAR, China." }
+    ]
+  },
+  {
+    "date_iso": "2025-08",
+    "display_date": "2025-08",
+    "segments": [
+      { "text": "Delivered a tutorial on " },
+      { "text": "Electromagnetic Information Theory and Signal Processing for Continuous-Aperture Arrays", "italic": true },
+      { "text": " at IEEE/CIC ICCC 2025, Shanghai, China." }
+    ]
+  },
+  {
     "date_iso": "2025-07",
     "display_date": "2025-07",
     "segments": [
-      { "text": "I join The University of Hong Kong as a Research Assistant Professor. [" },
-      { "label": "HKU page", "url": "https://www.eee.hku.hk/people/zhaolinw" },
-      { "text": "]" }
+      { "text": "Joined " },
+      { "label": "The University of Hong Kong", "url": "https://www.eee.hku.hk/people/zhaolinw" },
+      { "text": " as a Research Assistant Professor." }
+    ]
+  },
+  {
+    "date_iso": "2025-05",
+    "display_date": "2025-05",
+    "segments": [
+      { "text": "Delivered an invited talk on " },
+      { "text": "Next-Generation MIMO: Three Promising Directions", "italic": true },
+      { "text": " at the IEEE Communication Theory Workshop (CTW 2025), Venice, Italy." }
     ]
   },
   {
     "date_iso": "2025-02",
     "display_date": "2025-02",
     "segments": [
-      { "text": "I am awarded the 2025 " },
-      { "label": "Andrea Goldsmith Young Scholar Award", "url": "https://comt.committees.comsoc.org/awards/andrea-goldsmith-young-scholars-award" },
+      { "text": "Received the 2025 " },
+      { "label": "IEEE CTTC Andrea Goldsmith Young Scholar Award", "url": "https://comt.committees.comsoc.org/awards/andrea-goldsmith-young-scholars-award" },
       { "text": "." }
     ]
   },
   {
     "date_iso": "2025-01",
     "display_date": "2025-01",
-    "segments": [{ "text": "I join the editorial board of the IEEE Transactions on Communications." }]
+    "segments": [
+      { "text": "Appointed as an Editor for IEEE Transactions on Communications." }
+    ]
   },
   {
     "date_iso": "2024-12",
     "display_date": "2024-12",
-    "segments": [{ "text": "I am awarded Exemplary Reviewer of IEEE Communications Letters." }]
+    "segments": [
+      { "text": "Named an Exemplary Reviewer for IEEE Communications Letters." }
+    ]
   },
   {
     "date_iso": "2024-08",
     "display_date": "2024-08",
     "segments": [
-      { "text": "I pass my PhD viva with minor corrections. Many thanks to both examiners " },
+      { "text": "Successfully defended my Ph.D. thesis at Queen Mary University of London. Sincere thanks to my examiners " },
       { "label": "Prof. Wei Liu", "url": "https://sites.google.com/site/liuweipage" },
       { "text": " and " },
       { "label": "Prof. Michalis Matthaiou", "url": "https://sites.google.com/site/micmatthaiou/home" },
@@ -42,82 +82,70 @@
     "date_iso": "2024-06",
     "display_date": "2024-06",
     "segments": [
-      { "text": "I am awarded Exemplary Reviewer of IEEE Wireless Communications Letters [" },
-      { "label": "Certificate", "url": "/assets/pdfs/WCL_2023_Exemplary_Reviewer.pdf" },
-      { "text": "]." }
+      { "text": "Named an Exemplary Reviewer for IEEE Wireless Communications Letters." }
     ]
   },
   {
     "date_iso": "2023-10",
     "display_date": "2023-10",
     "segments": [
-      { "text": "I am awarded the 2023 " },
-      { "label": "IEEE Daniel E. Noble Fellowship Award", "url": "https://vtsociety.org/award/fellowship/ieee-daniel-e-noble-fellowship-award" },
-      { "text": " [" },
-      { "label": "Certificate", "url": "/assets/images/Daniel_E_Noble_Fellowship.jpg" },
-      { "text": "]." }
+      { "text": "Received the 2023 " },
+      { "label": "IEEE VTS Daniel E. Noble Fellowship Award", "url": "https://vtsociety.org/award/fellowship/ieee-daniel-e-noble-fellowship-award" },
+      { "text": "." }
     ]
   },
   {
     "date_iso": "2022-11",
     "display_date": "2022-11",
     "segments": [
-      { "text": "I am awarded the Student Travel Grant of " },
+      { "text": "Received the Student Travel Grant for " },
       { "label": "IEEE GLOBECOM 2022", "url": "https://globecom2022.ieee-globecom.org/" },
-      { "text": " [" },
-      { "label": "Certificate", "url": "/assets/pdfs/GLOBECOM_STG_2022.pdf" },
-      { "text": "]." }
+      { "text": "." }
     ]
   },
   {
     "date_iso": "2022-09",
     "display_date": "2022-09",
     "segments": [
-      { "text": "We are awarded the Best Student Paper of " },
+      { "text": "Received the Best Student Paper Award at " },
       { "label": "IEEE VTC2022-Fall", "url": "https://events.vtsociety.org/vtc2022-fall/" },
-      { "text": " [" },
-      { "label": "Certificate", "url": "/assets/pdfs/VTC2022-fall_best_paper.pdf" },
-      { "text": "]." }
+      { "text": "." }
     ]
   },
   {
     "date_iso": "2022-04",
     "display_date": "2022-04",
     "segments": [
-      { "text": "I am awarded the Student Travel Grant of " },
+      { "text": "Received the Student Travel Grant for " },
       { "label": "IEEE ICC 2022", "url": "https://icc2022.ieee-icc.org/index.html" },
-      { "text": " [" },
-      { "label": "Certificate", "url": "/assets/pdfs/ICC_STG_2022.pdf" },
-      { "text": "]." }
+      { "text": "." }
     ]
   },
   {
     "date_iso": "2021-11",
     "display_date": "2021-11",
     "segments": [
-      { "text": "I am awarded an M.Sc. degree with Distinction from " },
+      { "text": "Received the M.Sc. degree with Distinction from " },
       { "label": "Imperial College London", "url": "https://www.imperial.ac.uk/" },
-      { "text": " [" },
-      { "label": "Certificate", "url": "/assets/pdfs/Imperial_certificate.pdf" },
-      { "text": "]." }
+      { "text": "." }
     ]
   },
   {
     "date_iso": "2021-09",
     "display_date": "2021-09",
     "segments": [
-      { "text": "I join the " },
+      { "text": "Joined the " },
       { "label": "Communication Systems Research Group", "url": "https://csr.eecs.qmul.ac.uk/" },
       { "text": " at " },
-      { "label": "QMUL", "url": "https://www.qmul.ac.uk/" },
-      { "text": " as a PhD student." }
+      { "label": "Queen Mary University of London", "url": "https://www.qmul.ac.uk/" },
+      { "text": " as a Ph.D. student." }
     ]
   },
   {
     "date_iso": "2021-08",
     "display_date": "2021-08",
     "segments": [
-      { "text": "I am awarded the EECS Fee Waiver from " },
+      { "text": "Received the EECS Ph.D. Studentship and Fee Waiver from " },
       { "label": "Queen Mary University of London", "url": "https://www.qmul.ac.uk/" },
       { "text": "." }
     ]
@@ -126,7 +154,7 @@
     "date_iso": "2020-07",
     "display_date": "2020-07",
     "segments": [
-      { "text": "I am awarded B.Eng. degrees with First Class Honours from " },
+      { "text": "Received B.Eng. (Hons.) degrees with First Class Honours from " },
       { "label": "QMUL", "url": "https://www.qmul.ac.uk/" },
       { "text": " and " },
       { "label": "BUPT", "url": "https://www.bupt.edu.cn" },
@@ -137,7 +165,7 @@
     "date_iso": "2020-06",
     "display_date": "2020-06",
     "segments": [
-      { "text": "I am awarded the Undergraduate College Prize of " },
+      { "text": "Received the Undergraduate College Prize from " },
       { "label": "Queen Mary University of London", "url": "https://www.qmul.ac.uk/" },
       { "text": "." }
     ]
@@ -145,16 +173,17 @@
   {
     "date_iso": "2020-06",
     "display_date": "2020-06",
-    "segments": [{ "text": "I am awarded the Outstanding Graduate of Beijing." }]
+    "segments": [
+      { "text": "Named an Outstanding Graduate of Beijing." }
+    ]
   },
   {
     "date_iso": "2020-06",
     "display_date": "2020-06",
     "segments": [
-      { "text": "I am awarded the Outstanding Final Project of " },
+      { "text": "Received the Outstanding Final Year Project Award at " },
       { "label": "BUPT", "url": "https://www.bupt.edu.cn" },
       { "text": "." }
     ]
   }
 ]
-

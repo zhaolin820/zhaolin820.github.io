@@ -9,6 +9,7 @@ const researchExtras = await readJson("../src/_data/researchExtras.json");
 const news = await readJson("../src/_data/news.json");
 const site = await readJson("../src/_data/site.json");
 const software = await readJson("../src/_data/software.json");
+const cv = await readJson("../src/_data/cv.json");
 
 const ajv = new Ajv2020({ allErrors: true });
 ajv.addSchema(schema);
@@ -31,9 +32,9 @@ const allItems = [...publicItems, ...researchExtras];
 const ids = new Set();
 const urlPattern = /^(https?:\/\/|mailto:)/;
 
-if (publicItems.length !== 80) errors.push(`Expected 80 public publications, found ${publicItems.length}.`);
+if (publicItems.length !== 88) errors.push(`Expected 88 public publications, found ${publicItems.length}.`);
 if (publicItems.filter((item) => item.is_first_author).length !== 22) errors.push("Expected 22 first-author publications.");
-if (publicItems.filter((item) => !item.is_first_author).length !== 58) errors.push("Expected 58 co-author publications.");
+if (publicItems.filter((item) => !item.is_first_author).length !== 66) errors.push("Expected 66 co-author publications.");
 
 for (const item of allItems) {
   if (ids.has(item.id)) errors.push(`Duplicate publication id across catalogs: ${item.id}`);
@@ -83,11 +84,14 @@ for (const project of software.projects ?? []) {
   if (!project.id || !project.name || !project.tagline || !project.description || !project.image || !project.logo_light || !project.logo_dark) {
     errors.push(`Software project ${project.id || "(missing id)"} is incomplete.`);
   }
-  if (!Array.isArray(project.features) || project.features.length === 0) {
-    errors.push(`Software project ${project.id || "(missing id)"} has no features.`);
-  }
   for (const field of ["repository", "tutorial", "architecture", "release"]) {
     if (!urlPattern.test(project[field] ?? "")) errors.push(`Software project ${project.id || "(missing id)"} has an invalid ${field} URL.`);
+  }
+}
+
+for (const section of ["appointments", "education", "awards", "teaching", "talks", "service_groups"]) {
+  if (!Array.isArray(cv[section]) || cv[section].length === 0) {
+    errors.push(`CV section ${section} must be a non-empty array.`);
   }
 }
 
@@ -104,6 +108,7 @@ findUntrimmedStrings(research, "research");
 findUntrimmedStrings(researchExtras, "researchExtras");
 findUntrimmedStrings(site, "site");
 findUntrimmedStrings(software, "software");
+findUntrimmedStrings(cv, "cv");
 
 if (errors.length > 0) {
   console.error(errors.join("\n"));

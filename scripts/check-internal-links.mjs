@@ -4,7 +4,7 @@ import { fileURLToPath } from "node:url";
 
 const root = fileURLToPath(new URL("../_site/", import.meta.url));
 const expectedArtifacts = [
-  "index.html", "research.html", "publications.html", "software.html", "404.html",
+  "index.html", "cv.html", "research.html", "publications.html", "software.html", "404.html",
   "robots.txt", "sitemap.xml", "data/publications.json",
   "data/publications.schema.json",
   "assets/images/software/openairtwin-showcase.png"

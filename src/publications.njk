@@ -8,20 +8,22 @@ currentNav: Publications
 ---
 {% from "components/publication.njk" import publicationItem %}
 
-<h1 class="visually-hidden">Publications</h1>
+<header class="page-header scroll-reveal">
+  <h1 class="page-title">publications</h1>
+</header>
 
 {% for category in publications.categories %}
   {% set sortedItems = category.items | sortPublications %}
   {% set firstAuthorItems = sortedItems | authorGroup(true) %}
   {% set coAuthorItems = sortedItems | authorGroup(false) %}
-<section class="site-shell card publication-section scroll-reveal" aria-labelledby="category-{{ category.type }}">
-  <h2 id="category-{{ category.type }}" class="mono-font">{{ category.title }}</h2>
+<section class="content-section publication-section scroll-reveal" aria-labelledby="category-{{ category.type }}">
+  <h2 id="category-{{ category.type }}" class="section-heading">{{ category.title }}</h2>
   {% if firstAuthorItems.length and coAuthorItems.length %}
-    <h3>First Author</h3>
+    <h3 class="author-group-heading">First Author</h3>
     <ol class="publication-list">
       {% for item in firstAuthorItems %}{{ publicationItem(item) }}{% endfor %}
     </ol>
-    <h3>Co-Author</h3>
+    <h3 class="author-group-heading">Co-Author</h3>
     <ol class="publication-list">
       {% for item in coAuthorItems %}{{ publicationItem(item) }}{% endfor %}
     </ol>

@@ -29,6 +29,10 @@
 
   function applyTheme(theme, persist) {
     root.setAttribute("data-theme", theme);
+    const schemeMeta = document.querySelector('meta[name="color-scheme"]');
+    if (schemeMeta) {
+      schemeMeta.setAttribute("content", persist ? theme : "light dark");
+    }
     updateThemeControl(theme);
     if (persist) storeTheme(theme);
   }
