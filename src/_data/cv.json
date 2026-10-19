@@ -158,24 +158,39 @@
       "heading": "Technical Program Committees",
       "items": [
         {
-          "period": "2025",
+          "period": "2026",
           "primary": "IEEE Global Communications Conference (GLOBECOM)",
           "secondary": "Mobile and Wireless Networks Symposium"
         },
         {
+          "period": "2026",
+          "primary": "IEEE International Symposium on Personal, Indoor and Mobile Radio Communications (PIMRC)",
+          "secondary": "Track 1: Fundamentals and PHY"
+        },
+        {
+          "period": "2026",
+          "primary": "IEEE International Conference on Communications (ICC)",
+          "secondary": "Communication Theory Symposium, Wireless Communications Symposium, SAC - Next Generation Multiple Access, SAC - Machine Learning for Communications, and SAC - Integrated Sensing and Communications"
+        },
+        {
+          "period": "2025",
+          "primary": "IEEE Global Communications Conference (GLOBECOM)",
+          "secondary": "Communication Theory Symposium and Mobile and Wireless Networks Symposium"
+        },
+        {
           "period": "2025",
           "primary": "IEEE International Conference on Communications (ICC)",
-          "secondary": "Communication Theory Symposium, Wireless Communications Symposium, Machine Learning for Communications & Networking Track, and Integrated Sensing and Communication (ISAC) Track"
+          "secondary": "Communication Theory Symposium, Wireless Communications Symposium, SAC - Machine Learning for Communications, and SAC - Integrated Sensing and Communications"
         },
         {
           "period": "2024",
           "primary": "IEEE International Conference on Communications (ICC)",
-          "secondary": "Integrated Sensing and Communication (ISAC) Track"
+          "secondary": "SAC - Integrated Sensing and Communications"
         },
         {
           "period": "2024",
           "primary": "IEEE International Symposium on Personal, Indoor and Mobile Radio Communications (PIMRC)",
-          "secondary": "PHY & Fundamentals Track"
+          "secondary": "Track 1: Fundamentals and PHY"
         },
         {
           "period": "2023",

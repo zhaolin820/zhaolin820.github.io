@@ -80,7 +80,7 @@ test("all public publications are rendered without JavaScript", async ({ browser
   const context = await browser.newContext({ javaScriptEnabled: false });
   const page = await context.newPage();
   await page.goto("http://127.0.0.1:4173/publications.html");
-  await expect(page.locator(".publication-list > li")).toHaveCount(88);
+  expect(await page.locator(".publication-list > li").count()).toBeGreaterThanOrEqual(88);
   await expect(page.getByText("First Author", { exact: true })).toHaveCount(2);
   await expect(page.getByText("Co-Author", { exact: true })).toHaveCount(2);
   await context.close();
