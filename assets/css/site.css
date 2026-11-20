@@ -1071,13 +1071,12 @@
 
   .software-hero {
     margin: 0;
-    overflow: hidden;
-    border: 1px solid var(--border);
-    border-radius: var(--radius-md);
-    background-color: var(--surface);
   }
 
-  .software-hero img {
+  .software-hero svg {
+    display: block;
+    /* Preserve the original PNG's rounded corners and shadow beyond the viewBox. */
+    overflow: visible;
     inline-size: 100%;
     block-size: auto;
   }

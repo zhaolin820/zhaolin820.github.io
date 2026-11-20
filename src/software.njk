@@ -44,11 +44,12 @@ socialImage: /assets/images/software/openairtwin-showcase.png
   </nav>
 
   <figure class="software-hero">
-    <img src="{{ project.image }}"
-         width="{{ project.image_width }}"
-         height="{{ project.image_height }}"
-         loading="lazy"
-         alt="{{ project.image_alt }}">
+    {# Fit the screenshot window to the content width, excluding transparent padding. #}
+    <svg viewBox="{{ project.image_viewbox }}" role="img" aria-label="{{ project.image_alt }}">
+      <image href="{{ project.image }}"
+             width="{{ project.image_width }}"
+             height="{{ project.image_height }}" />
+    </svg>
   </figure>
 </article>
 
