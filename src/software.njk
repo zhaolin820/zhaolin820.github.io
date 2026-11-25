@@ -37,7 +37,7 @@ socialImage: /assets/images/software/openairtwin-showcase.png
   <nav class="software-actions" aria-label="{{ project.name }} resources">
     <ul>
       <li><a class="button-link" href="{{ project.repository }}">GitHub Repository</a></li>
-      <li><a class="software-action-link" href="{{ project.tutorial }}">Tutorial</a></li>
+      <li><a class="software-action-link" href="{{ project.website }}">Website</a></li>
       <li><a class="software-action-link" href="{{ project.architecture }}">Architecture</a></li>
       <li><a class="software-action-link" href="{{ project.release }}">Latest Release</a></li>
     </ul>
@@ -60,10 +60,10 @@ socialImage: /assets/images/software/openairtwin-showcase.png
   "name": "{{ project.name }}",
   "description": "{{ project.description }}",
   "codeRepository": "{{ project.repository }}",
-  "url": "{{ project.tutorial }}",
+  "url": "{{ project.website }}",
   "license": "https://www.apache.org/licenses/LICENSE-2.0",
-  "version": "1.0.0",
-  "programmingLanguage": ["Python", "JavaScript"]
+  "version": "{{ project.version | replace('v', '') }}",
+  "programmingLanguage": ["Python", "TypeScript", "JavaScript"]
 }
 </script>
 {% endfor %}

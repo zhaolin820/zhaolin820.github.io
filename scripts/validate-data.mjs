@@ -84,7 +84,7 @@ for (const project of software.projects ?? []) {
   if (!project.id || !project.name || !project.tagline || !project.description || !project.image || !project.logo_light || !project.logo_dark) {
     errors.push(`Software project ${project.id || "(missing id)"} is incomplete.`);
   }
-  for (const field of ["repository", "tutorial", "architecture", "release"]) {
+  for (const field of ["repository", "website", "architecture", "release"]) {
     if (!urlPattern.test(project[field] ?? "")) errors.push(`Software project ${project.id || "(missing id)"} has an invalid ${field} URL.`);
   }
 }

@@ -3,43 +3,51 @@
     {
       "id": "openairtwin",
       "name": "OpenAirTwin",
-      "tagline": "An open-source digital twin platform for interactive wireless research.",
-      "description": "OpenAirTwin combines a Python backend, a browser-based 3D frontend, tile-based city scenes, and Sionna RT workflows to support interactive wireless research.",
+      "tagline": "An open-source 3D digital twin platform for wireless communication, sensing, and AI research.",
+      "description": "OpenAirTwin is an open-source 3D digital twin platform for physics-based wireless communication, sensing, and AI research. Built on Sionna RT 2.2.0, Three.js, and a React web workstation, it pairs real-world 3D city geometry with GPU- and CPU-accelerated ray tracing for propagation analysis, mobility, coverage mapping, DeepMIMO dataset generation, and OFDM radar sensing.",
       "logo_light": "/assets/images/software/openairtwin-logo-light.png",
       "logo_dark": "/assets/images/software/openairtwin-logo-dark.png",
       "logo_width": 2457,
       "logo_height": 375,
       "image": "/assets/images/software/openairtwin-showcase.png",
-      "image_alt": "OpenAirTwin browser interface showing a three-dimensional Hong Kong city scene and wireless analysis controls",
-      "image_width": 2902,
-      "image_height": 1872,
-      "image_viewbox": "112 76 2678 1648",
-      "version": "v1.0.0",
+      "image_alt": "OpenAirTwin workbench interface showing a three-dimensional Hong Kong city scene, multipath propagation rays, and wireless analysis controls",
+      "image_width": 1024,
+      "image_height": 660,
+      "image_viewbox": "40 27 944 581",
+      "version": "v1.2.0",
       "license": "Apache-2.0",
       "requirement": "Python 3.11+",
       "repository": "https://github.com/HKUOpenSource/OpenAirTwin",
-      "tutorial": "https://hkuopensource.github.io/OpenAirTwin/",
+      "website": "https://hkuopensource.github.io/OpenAirTwin/",
       "architecture": "https://hkuopensource.github.io/OpenAirTwin/architecture/",
-      "release": "https://github.com/HKUOpenSource/OpenAirTwin/releases/tag/v1.0.0",
+      "release": "https://github.com/HKUOpenSource/OpenAirTwin/releases/tag/v1.2.0",
       "features": [
         {
+          "title": "3D City Digital Twin",
+          "description": "Load real-world 3D urban tiles on demand, including buildings, terrain, infrastructure, and vegetation, for site-specific ray tracing."
+        },
+        {
           "title": "Link Analysis",
-          "description": "Place transmitter and receiver points, solve propagation paths, and inspect received power, channel taps, CIR, and frequency response."
+          "description": "Compute 3D multipath propagation between configurable Tx/Rx antenna arrays, and inspect ray geometry, received power, CIR, and power delay profiles."
         },
         {
           "title": "Mobility Simulation",
-          "description": "Define receiver waypoints, speed, and sampling parameters to generate trajectories and time-varying channel results."
+          "description": "Evaluate time-varying multipath channels along 3D trajectories with synchronized per-step metrics and interactive path playback."
         },
         {
-          "title": "Radio Maps",
-          "description": "Configure a receiver patch and resolution, then render a scalar coverage heatmap over the three-dimensional scene."
+          "title": "Radio Map",
+          "description": "Generate terrain-following coverage and path-gain heatmaps across dense urban scenes for blockage and deployment analysis."
         },
         {
-          "title": "DeepMIMO Export",
-          "description": "Draw a receiver region of interest, configure the grid, and export a DeepMIMO-compatible wireless dataset."
+          "title": "DeepMIMO Dataset Export",
+          "description": "Export site-specific, ray-traced channel datasets over custom 3D regions of interest in standard DeepMIMO format for wireless AI research."
+        },
+        {
+          "title": "OFDM Radar Sensing",
+          "description": "Simulate monostatic and bistatic urban radar with moving 3D UAV targets, physical RCS and clutter modeling, range–Doppler processing, and CA-CFAR detection."
         }
       ],
-      "citation": "Wang, Z., Zhou, Z., & Zhao, Z. (2026). OpenAirTwin (Version 1.0.0) [Computer software]."
+      "citation": "Wang, Z., Zhou, Z., & Zhao, Z. (2026). OpenAirTwin (Version 1.2.0) [Computer software]. https://github.com/HKUOpenSource/OpenAirTwin/releases/tag/v1.2.0"
     }
   ]
 }
