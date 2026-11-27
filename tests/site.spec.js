@@ -103,11 +103,23 @@ test("software projects render as static, structured content", async ({ browser 
   const page = await context.newPage();
   await page.goto("http://127.0.0.1:4173/software.html");
 
-  await expect(page.getByRole("heading", { name: "OpenAirTwin" })).toBeVisible();
-  await expect(page.locator(".software-actions a")).toHaveCount(4);
-  await expect(page.getByRole("link", { name: "GitHub Repository" })).toHaveAttribute("href", "https://github.com/HKUOpenSource/OpenAirTwin");
-  const structuredData = await page.locator('script[type="application/ld+json"]').textContent();
-  expect(structuredData).toContain("SoftwareSourceCode");
+  const openAirTwin = page.locator('article[aria-labelledby="openairtwin-title"]');
+  await expect(openAirTwin.getByRole("heading", { name: "OpenAirTwin" })).toBeVisible();
+  await expect(openAirTwin.locator(".software-actions a")).toHaveCount(4);
+  await expect(openAirTwin.getByRole("link", { name: "GitHub Repository" })).toHaveAttribute("href", "https://github.com/HKUOpenSource/OpenAirTwin");
+
+  const openAirKit = page.locator('article[aria-labelledby="openairkit-title"]');
+  await expect(openAirKit.getByRole("heading", { name: "OpenAirKit" })).toBeVisible();
+  await expect(openAirKit.locator(".software-actions a")).toHaveCount(4);
+  await expect(openAirKit.getByRole("link", { name: "GitHub Repository" })).toHaveAttribute("href", "https://github.com/HKUOpenSource/OpenAirKit");
+
+  const ldScripts = page.locator('script[type="application/ld+json"]');
+  await expect(ldScripts).toHaveCount(2);
+  const structuredItems = await ldScripts.evaluateAll((scripts) =>
+    scripts.map((script) => JSON.parse(script.textContent))
+  );
+  expect(structuredItems.every((item) => item["@type"] === "SoftwareSourceCode")).toBe(true);
+  expect(structuredItems.map((item) => item.name)).toEqual(["OpenAirTwin", "OpenAirKit"]);
   await context.close();
 });
 
@@ -117,12 +129,21 @@ test("software logo follows the selected theme", async ({ page }) => {
   await page.reload();
 
   await expect(page.locator("html")).toHaveAttribute("data-theme", "light");
-  await expect(page.locator(".software-logo-light")).toBeVisible();
-  await expect(page.locator(".software-logo-dark")).toBeHidden();
+  const lightLogos = page.locator(".software-logo-light");
+  const darkLogos = page.locator(".software-logo-dark");
+  await expect(lightLogos).toHaveCount(2);
+  await expect(darkLogos).toHaveCount(2);
+
+  for (let i = 0; i < 2; i += 1) {
+    await expect(lightLogos.nth(i)).toBeVisible();
+    await expect(darkLogos.nth(i)).toBeHidden();
+  }
 
   await page.getByRole("button", { name: "Switch to dark mode" }).click();
-  await expect(page.locator(".software-logo-light")).toBeHidden();
-  await expect(page.locator(".software-logo-dark")).toBeVisible();
+  for (let i = 0; i < 2; i += 1) {
+    await expect(lightLogos.nth(i)).toBeHidden();
+    await expect(darkLogos.nth(i)).toBeVisible();
+  }
 });
 
 test("reduced motion keeps all content visible", async ({ page }) => {

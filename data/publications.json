@@ -5,6 +5,26 @@
       "title": "Preprints",
       "items": [
         {
+          "authors": "Z. Zhou, <b>Z. Wang</b>, and Y. Liu",
+          "title": "Strategic Beam Brainstorming for Generative Site-Specific Beamforming",
+          "date": "Nov. 2026",
+          "main_link": "https://arxiv.org/abs/2611.32164",
+          "links": [],
+          "id": "strategic-beam-brainstorming-for-generative-site-specific-beamforming",
+          "date_iso": "2026-11",
+          "is_first_author": false
+        },
+        {
+          "authors": "Z. Xu, <b>Z. Wang</b>, and Y. Liu",
+          "title": "Site-Specific Cell Shaping: An Agentic Framework",
+          "date": "Nov. 2026",
+          "main_link": "https://arxiv.org/abs/2611.19212",
+          "links": [],
+          "id": "site-specific-cell-shaping-an-agentic-framework",
+          "date_iso": "2026-11",
+          "is_first_author": false
+        },
+        {
           "authors": "Z. Wang, Z. Zhao, <b>Z. Wang</b>, and Y. Liu",
           "title": "Beam-STeP: Generative Site-Specific Beam Prediction with Spatio-Temporal Priors",
           "date": "Oct. 2026",
@@ -120,6 +140,18 @@
       "type": "journal_articles",
       "title": "Journal Articles",
       "items": [
+        {
+          "authors": "Y. Zhou, <b>Z. Wang</b>, J. Jin, H. Qin, and Y. Liu",
+          "title": "CA-ONet: A Deep Operator Network for Continuous Aperture Beamforming",
+          "journal": "IEEE Wireless Communications Letters",
+          "status": "early access",
+          "date": "2026",
+          "main_link": "https://ieeexplore.ieee.org/abstract/document/11804326/",
+          "links": [],
+          "id": "ca-onet-a-deep-operator-network-for-continuous-aperture-beamforming",
+          "date_iso": "2026-11",
+          "is_first_author": false
+        },
         {
           "authors": "<b>Z. Wang</b>, Z. Zhou, C. J. Zhao, and Y. Liu",
           "title": "Generative Site-Specific Beamforming for Next-Generation Spatial Intelligence",

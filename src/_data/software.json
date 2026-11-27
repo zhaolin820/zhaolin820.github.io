@@ -21,6 +21,21 @@
       "website": "https://hkuopensource.github.io/OpenAirTwin/",
       "architecture": "https://hkuopensource.github.io/OpenAirTwin/architecture/",
       "release": "https://github.com/HKUOpenSource/OpenAirTwin/releases/tag/v1.2.0",
+      "programming_languages": ["Python", "TypeScript", "JavaScript"],
+      "links": [
+        {
+          "label": "Website",
+          "url": "https://hkuopensource.github.io/OpenAirTwin/"
+        },
+        {
+          "label": "Architecture",
+          "url": "https://hkuopensource.github.io/OpenAirTwin/architecture/"
+        },
+        {
+          "label": "Latest Release",
+          "url": "https://github.com/HKUOpenSource/OpenAirTwin/releases/tag/v1.2.0"
+        }
+      ],
       "features": [
         {
           "title": "3D City Digital Twin",
@@ -48,6 +63,56 @@
         }
       ],
       "citation": "Wang, Z., Zhou, Z., & Zhao, Z. (2026). OpenAirTwin (Version 1.2.0) [Computer software]. https://github.com/HKUOpenSource/OpenAirTwin/releases/tag/v1.2.0"
+    },
+    {
+      "id": "openairkit",
+      "name": "OpenAirKit",
+      "tagline": "An open-source end-to-end 5G SA and AI-RAN hardware testbed powered by OCUDU and Open5GS.",
+      "description": "OpenAirKit integrates a standardized ARM64 hardware testbed—DGX Spark, USRP B210, Jetson Orin, Waveshare M.2 5G Carrier, and Quectel RM520N-GL—into a reproducible 5G Standalone (SA) IPv4 data network powered by OCUDU (RAN) and Open5GS (5GC), paired with decoupled local management consoles at both endpoints.",
+      "logo_light": "/assets/images/software/openairkit-logo-light.png",
+      "logo_dark": "/assets/images/software/openairkit-logo-dark.png",
+      "logo_width": 855,
+      "logo_height": 148,
+      "image": "/assets/images/software/openairkit-showcase.png",
+      "image_alt": "OpenAirKit 5G SA and AI-RAN hardware testbed showing Jetson Orin UE, DGX Spark and USRP B210 base station, and local management console",
+      "image_width": 1024,
+      "image_height": 617,
+      "image_viewbox": "48 33 928 521",
+      "version": "v1.0.0",
+      "license": "Apache-2.0",
+      "requirement": "Python 3.10–3.12, Node.js 22",
+      "repository": "https://github.com/HKUOpenSource/OpenAirKit",
+      "architecture": "https://github.com/HKUOpenSource/OpenAirKit/blob/main/docs/architecture.md",
+      "release": "https://github.com/HKUOpenSource/OpenAirKit/releases/tag/v1.0.0",
+      "programming_languages": ["Python", "TypeScript", "JavaScript"],
+      "links": [
+        {
+          "label": "Quickstart",
+          "url": "https://github.com/HKUOpenSource/OpenAirKit/blob/main/docs/quickstart.md"
+        },
+        {
+          "label": "Architecture",
+          "url": "https://github.com/HKUOpenSource/OpenAirKit/blob/main/docs/architecture.md"
+        },
+        {
+          "label": "Latest Release",
+          "url": "https://github.com/HKUOpenSource/OpenAirKit/releases/tag/v1.0.0"
+        }
+      ],
+      "features": [
+        {
+          "title": "Reproducible End-to-End Bring-Up",
+          "description": "Progress systematically from physical cabling and Open5GS container builds to 5G USIM provisioning and verified UE user-plane connectivity."
+        },
+        {
+          "title": "Decoupled Local-First Management",
+          "description": "Operate the base station (Spark Console) and UE (Jetson Console) independently with live SSE telemetry, telemetry freshness gating, automated Wi-Fi/cellular route failover, and bounded self-recovery."
+        },
+        {
+          "title": "Programmable AI Extensibility",
+          "description": "Allocate dedicated AI compute at both the DGX Spark RAN and Jetson Orin UE endpoints with reserved inference ports and authenticated REST/SSE APIs for custom AI workloads and pipelines."
+        }
+      ]
     }
   ]
 }

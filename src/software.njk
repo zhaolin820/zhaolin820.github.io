@@ -37,19 +37,27 @@ socialImage: /assets/images/software/openairtwin-showcase.png
   <nav class="software-actions" aria-label="{{ project.name }} resources">
     <ul>
       <li><a class="button-link" href="{{ project.repository }}">GitHub Repository</a></li>
-      <li><a class="software-action-link" href="{{ project.website }}">Website</a></li>
-      <li><a class="software-action-link" href="{{ project.architecture }}">Architecture</a></li>
-      <li><a class="software-action-link" href="{{ project.release }}">Latest Release</a></li>
+      {% for link in project.links %}
+      <li><a class="software-action-link" href="{{ link.url }}">{{ link.label }}</a></li>
+      {% endfor %}
     </ul>
   </nav>
 
   <figure class="software-hero">
+    {% if project.image_viewbox %}
     {# Fit the screenshot window to the content width, excluding transparent padding. #}
     <svg viewBox="{{ project.image_viewbox }}" role="img" aria-label="{{ project.image_alt }}">
       <image href="{{ project.image }}"
              width="{{ project.image_width }}"
              height="{{ project.image_height }}" />
     </svg>
+    {% else %}
+    <img src="{{ project.image }}"
+         width="{{ project.image_width }}"
+         height="{{ project.image_height }}"
+         alt="{{ project.image_alt }}"
+         loading="lazy">
+    {% endif %}
   </figure>
 </article>
 
@@ -60,10 +68,10 @@ socialImage: /assets/images/software/openairtwin-showcase.png
   "name": "{{ project.name }}",
   "description": "{{ project.description }}",
   "codeRepository": "{{ project.repository }}",
-  "url": "{{ project.website }}",
+  "url": "{{ project.website or project.repository }}",
   "license": "https://www.apache.org/licenses/LICENSE-2.0",
   "version": "{{ project.version | replace('v', '') }}",
-  "programmingLanguage": ["Python", "TypeScript", "JavaScript"]
+  "programmingLanguage": {{ project.programming_languages | dump | safe }}
 }
 </script>
 {% endfor %}

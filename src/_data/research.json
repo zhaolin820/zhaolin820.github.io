@@ -11,6 +11,7 @@
         {
           "title": "Wireless Digital Twins",
           "publication_ids": [
+            "site-specific-cell-shaping-an-agentic-framework",
             "agents-in-the-scene-an-agentic-framework-for-resource-efficient-site-specific-base-station-deployment",
             "fidelity-where-it-matters-site-specific-nonuniform-refinement-for-wireless-digital-twins"
           ]
@@ -19,6 +20,7 @@
           "title": "Site-Specific Beamforming",
           "publication_ids": [
             "generative-site-specific-beamforming-for-next-generation-spatial-intelligence",
+            "strategic-beam-brainstorming-for-generative-site-specific-beamforming",
             "beam-step-generative-site-specific-beam-prediction-with-spatio-temporal-priors",
             "kdgen-bf-a-generative-site-specific-multi-user-beamforming-approach",
             "beam-brainstorm-a-generative-site-specific-beamforming-approach",
@@ -52,6 +54,7 @@
         {
           "title": "Communication Systems",
           "publication_ids": [
+            "ca-onet-a-deep-operator-network-for-continuous-aperture-beamforming",
             "1-bit-quantized-continuous-aperture-arrays",
             "mutual-coupling-in-continuous-aperture-arrays-physical-modeling-and-beamforming-design",
             "beamforming-design-for-continuous-aperture-array-capa-based-mimo-systems",

@@ -81,11 +81,28 @@ for (const item of [...site.navigation, ...site.profiles]) {
 }
 
 for (const project of software.projects ?? []) {
-  if (!project.id || !project.name || !project.tagline || !project.description || !project.image || !project.logo_light || !project.logo_dark) {
+  if (!project.id || !project.name || !project.tagline || !project.description || !project.image || !project.logo_light || !project.logo_dark || !project.version) {
     errors.push(`Software project ${project.id || "(missing id)"} is incomplete.`);
   }
-  for (const field of ["repository", "website", "architecture", "release"]) {
+  for (const field of ["repository", "release"]) {
     if (!urlPattern.test(project[field] ?? "")) errors.push(`Software project ${project.id || "(missing id)"} has an invalid ${field} URL.`);
+  }
+  for (const field of ["website", "architecture"]) {
+    if (project[field] !== undefined && !urlPattern.test(project[field])) {
+      errors.push(`Software project ${project.id || "(missing id)"} has an invalid ${field} URL.`);
+    }
+  }
+  if (!Array.isArray(project.links) || project.links.length === 0) {
+    errors.push(`Software project ${project.id || "(missing id)"} must define non-empty links.`);
+  } else {
+    for (const [index, link] of project.links.entries()) {
+      if (!link.label || !urlPattern.test(link.url ?? "")) {
+        errors.push(`Software project ${project.id || "(missing id)"} has an invalid link at index ${index}.`);
+      }
+    }
+  }
+  if (!Array.isArray(project.programming_languages) || project.programming_languages.length === 0 || project.programming_languages.some((lang) => typeof lang !== "string" || !lang.trim())) {
+    errors.push(`Software project ${project.id || "(missing id)"} must define non-empty programming_languages.`);
   }
 }
 

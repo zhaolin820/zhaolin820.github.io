@@ -7,7 +7,8 @@ const expectedArtifacts = [
   "index.html", "cv.html", "research.html", "publications.html", "software.html", "404.html",
   "robots.txt", "sitemap.xml", "data/publications.json",
   "data/publications.schema.json",
-  "assets/images/software/openairtwin-showcase.png"
+  "assets/images/software/openairtwin-showcase.png",
+  "assets/images/software/openairkit-showcase.png"
 ];
 const htmlFiles = [];
 const errors = [];

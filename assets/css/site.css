@@ -978,8 +978,9 @@
   }
 
   .software-logo {
-    inline-size: clamp(13rem, 36vw, 18.5rem);
-    block-size: auto;
+    inline-size: auto;
+    max-inline-size: 100%;
+    block-size: clamp(2rem, 5.5vw, 2.82rem);
   }
 
   .software-logo-dark {
@@ -1077,6 +1078,12 @@
     display: block;
     /* Preserve the original PNG's rounded corners and shadow beyond the viewBox. */
     overflow: visible;
+    inline-size: 100%;
+    block-size: auto;
+  }
+
+  .software-hero img {
+    display: block;
     inline-size: 100%;
     block-size: auto;
   }
